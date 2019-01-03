@@ -453,7 +453,7 @@
         @media only screen and (max-width: 1024px) {
           .weaContain .aboutIntro .imgLogo .abtLogo {
             height: 260px;
-            width: 220px;
+            width: 212px;
             margin-top: -220px;
             margin-left: 200px; } }
       .weaContain .aboutIntro .imgLogo .abtLogo:hover {
@@ -475,7 +475,7 @@
         align-items: center;
         padding-left: 10px;
         text-align: center;
-        width: 384px; } }
+        width: 400px; } }
 
 .supportContain {
   background: linear-gradient(to bottom, #3030307b, #3030307b), url(../imgs/securityguard1.jpg);
@@ -513,9 +513,9 @@
         margin-right: 40px; } }
     @media only screen and (max-width: 425px) {
       .supportContain .supportGrid {
-        grid-template-columns: 200px 200px;
+        grid-template-columns: 190px 190px;
         margin-right: 0px;
-        margin-left: 30px;
+        margin-left: 20px;
         float: unset; } }
   .supportContain #gridBlock {
     width: 350px; }
@@ -545,6 +545,10 @@
     @media only screen and (max-width: 425px) {
       .supportContain #gridBlock {
         width: 170px; } }
+  @media only screen and (max-width: 425px) {
+    .supportContain {
+      height: 100%;
+      padding-bottom: 20px; } }
 
 .hmeService {
   width: 100%; }

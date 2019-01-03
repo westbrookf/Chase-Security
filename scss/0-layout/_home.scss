@@ -180,7 +180,7 @@
         //Responsive
         @include Laptop {
           height: 260px;
-          width: 220px;
+          width: 212px;
           margin-top: -220px;
           margin-left: 200px;
         }
@@ -204,7 +204,7 @@
       @include Display(column, center, center);
       padding-left: 10px;
       text-align: center;
-      width: 384px;
+      width: 400px;
     }
   }
 }
@@ -238,9 +238,9 @@
       margin-right: 40px;
     }
     @include Mobile {
-      grid-template-columns: 200px 200px;
+      grid-template-columns: 190px 190px;
       margin-right: 0px;
-      margin-left: 30px;
+      margin-left: 20px;
       float: unset;
     }
   }
@@ -278,6 +278,11 @@
     @include Mobile {
       width: 170px;
     }
+  }
+  //Support contain Responsive
+  @include Mobile {
+    height: 100%;
+    padding-bottom: 20px;
   }
 }
 //Services

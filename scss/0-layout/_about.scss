@@ -1,0 +1,280 @@
+.aboutHeader {
+  @include Background(url(../imgs/chaseofficer.jpg));
+  height: 40vh;
+}
+.aboutWelcome {
+  margin-top: 80px;
+  h2 {
+    font-size: 34px;
+  }
+}
+.mainAbout {
+  .aboutRow {
+    @include Display(row, space-evenly, unset);
+    padding-top: 50px;
+    img {
+      height: 500px;
+      width: 500px;
+      //Responsive
+      @include Laptop {
+        width: 400px;
+      }
+      @include Tablet {
+        width: 340px;
+        height: 500px;
+      }
+      @include Mobile {
+        width: 360px;
+      }
+    }
+    .ourStry {
+      width: 500px;
+      height: 500px;
+      h3 {
+        font-size: 30px;
+        font-weight: $light-weight;
+        text-transform: capitalize;
+        color: $dark-text;
+      }
+      p {
+        font-size: 17px;
+        font-weight: $light-weight;
+        text-transform: capitalize;
+        color: $dark-text;
+        line-height: 30px;
+        padding-top: 20px;
+        //Responsive
+        @include Mobile {
+          text-align: center;
+          width: 90%;
+        }
+      }
+      //Our Story Responsive
+      @include Tablet {
+        width: 400px;
+      }
+      @include Mobile {
+        width: 384px;
+      }
+    }
+    //About Row Responsive
+    @include Mobile {
+      @include Display(column, unset, unset);
+      margin-left: 32px;
+    }
+  }
+}
+//true security Section
+.trueSecure {
+  width: 100%;
+  .trueRow {
+    @include Display(row, center, center);
+    margin-top: 90px;
+    width: 100%;
+    //Responsive
+    @include Mobile {
+      @include Display(column, unset, unset);
+    }
+  }
+  .trueText {
+    height: 400px;
+    width: 740px;
+    background-color: $chase-blue;
+    z-index: 99;
+    h2 {
+      font-size: 30px;
+      font-weight: $light-weight;
+      text-transform: capitalize;
+      color: $light-text;
+      padding: 100px 0 0 120px;
+      width: 400px;
+      //Responsive
+      @include Laptop {
+        padding-left: 70px;
+      }
+      @include Tablet {
+        font-size: 24px;
+        text-align: center;
+        padding-left: 20px;
+        width: 300px;
+      }
+      @include Mobile {
+        width: 100%;
+        padding-left: 0px;
+      }
+    }
+    p {
+      font-size: 17px;
+      font-weight: $light-text;
+      color: $light-text;
+      line-height: 24px;
+      width: 400px;
+      padding: 20px 0 0 120px;
+      //Responsive
+      @include Laptop {
+        width: 300px;
+        padding-left: 70px;
+      }
+      @include Tablet {
+        width: 300px;
+        text-align: center;
+        padding-left: 20px;
+      }
+      @include Mobile {
+        padding-left: 60px;
+      }
+    }
+    // True Text Responsive
+    @include Laptop {
+      width: 500px;
+    }
+    @include Tablet {
+      width: 350px;
+    }
+    @include Mobile {
+      width: 100%;
+    }
+  }
+  img {
+    height: 400px;
+    width: 740px;
+    //Responsive
+    @include Laptop {
+      width: 500px;
+    }
+    @include Tablet {
+      width: 400px;
+    }
+    @include Mobile {
+      width: 100%;
+    }
+  }
+}
+//Our Version
+.versionExist {
+  width: 100%;
+}
+.veContainer {
+  @include Display(row, space-evenly, unset);
+  width: 1200px;
+  margin-top: 100px;
+  margin-left: 120px;
+  //Responsive
+  @include Laptop {
+    margin-left: 100px;
+    width: 900px;
+  }
+  @include Tablet {
+    @include Display(column, unset, unset);
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+.ourVersion {
+  .vTitle {
+    font-size: 30px;
+    font-weight: $light-weight;
+    text-transform: capitalize;
+    //Responsive
+    @include Tablet {
+      text-align: center;
+    }
+  }
+  .version {
+    padding-top: 40px;
+    h2 {
+      font-size: 24px;
+      font-weight: $light-weight;
+      text-transform: capitalize;
+      padding-top: 6px;
+      //Responsive
+      @include Tablet {
+        text-align: center;
+      }
+      @include Mobile {
+        font-size: 20px;
+      }
+    }
+    #vIcon {
+      color: $chase-blue;
+      padding-right: 10px;
+    }
+    p {
+      width: 400px;
+      padding-left: 32px;
+      //Responsive
+      @include Laptop {
+        width: 340px;
+      }
+      @include Tablet {
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 220px;
+      }
+      @include Mobile {
+        padding-left: 40px;
+        font-size: 14px;
+      }
+    }
+  }
+  //Version Responsive
+  @include Laptop {
+    padding-right: 60px;
+  }
+  @include Tablet {
+    background-color: $accent;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+.weExist {
+  width: 600px;
+  h2 {
+    font-size: 24px;
+    font-weight: $light-weight;
+    text-transform: capitalize;
+    padding-top: 6px;
+    //Responsive
+    @include Tablet {
+      text-align: center;
+      padding-top: 60px;
+    }
+  }
+  p {
+    line-height: 30px;
+    padding-top: 30px;
+    //Responsive
+    @include Laptop {
+      width: 400px;
+    }
+    @include Tablet {
+      width: 95%;
+      padding-left: 10px;
+    }
+  }
+  //Responsive
+  @include Laptop {
+    width: 440px;
+  }
+  @include Tablet {
+    width: 100%;
+  }
+}
+.committed {
+  @include Background(url(../imgs/testBack.jpg));
+  height: 30vh;
+  width: 100%;
+  margin-top: 40px;
+  h2 {
+    font-size: 30px;
+    font-weight: $light-weight;
+    text-transform: capitalize;
+    color: $light-text;
+    text-align: center;
+    padding-top: 100px;
+    //Responsive
+    @include Mobile {
+      font-size: 24px;
+    }
+  }
+}

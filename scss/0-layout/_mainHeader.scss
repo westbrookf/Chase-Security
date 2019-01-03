@@ -1,0 +1,173 @@
+.mainHeader {
+  @include Background(url(../imgs/Barnes2.jpg));
+  height: 100vh;
+  z-index: 99;
+  //Responsive
+  @include Mobile {
+    height: 100vh;
+  }
+}
+.headContact {
+  height: 40px;
+  border-bottom: 1px solid $accent;
+  @include Display(row, unset, unset);
+  padding-left: 660px;
+  //Responsive
+  @include Laptop {
+    padding-left: 300px;
+  }
+  @include Tablet {
+    padding-left: 72px;
+  }
+  @include Mobile {
+    @include Display(column, unset, unset);
+    border-bottom: none;
+    text-align: center;
+    padding-left: 0px;
+  }
+}
+.headEmail {
+  border-right: 1px solid $accent;
+  padding-right: 20px;
+  h4 {
+    font-size: 18px;
+    font-weight: $light-weight;
+    color: $light-text;
+    padding-top: 6px;
+  }
+  .fa-envelope {
+    padding-right: 10px;
+  }
+}
+.headPhone {
+  margin-left: 40px;
+  border-right: 1px solid $accent;
+  padding-right: 20px;
+  h4 {
+    font-size: 18px;
+    font-weight: $light-weight;
+    color: $light-text;
+    padding-top: 6px;
+  }
+  .fa-phone {
+    padding-right: 10px;
+  }
+  //responsive
+  @include Mobile {
+    margin-left: 0px;
+  }
+}
+.clientPortal {
+  margin-top: 5px;
+  margin-left: 60px;
+  a {
+    font-size: 22px;
+    color: $light-text;
+  }
+  //Responsive
+  @include Laptop {
+    margin-left: 30px;
+  }
+  @include Mobile {
+    margin-left: 0px;
+  }
+}
+.menuContain {
+  @include Display(row, space-between, unset);
+  width: 100%;
+  //Responsive
+  @include Mobile {
+    @include Display(column, unset, unset);
+    padding-top: 60px;
+  }
+}
+.Logo {
+  margin-left: 70px;
+  h2 {
+    font-size: 60px;
+    font-weight: $heavy-weight;
+    color: $light-text;
+    //Responsive
+    @include Mobile {
+      display: none;
+    }
+  }
+  img {
+    height: 50px;
+    width: 50px;
+  }
+  p {
+    font-size: 24px;
+    font-weight: $light-weight;
+    text-transform: capitalize;
+    color: $light-text;
+    letter-spacing: 14px;
+  }
+}
+//Current Page Section
+.current {
+  border: 2px solid $chase-blue;
+  border-radius: $btn-Radius;
+  padding: 6px 10px 6px 10px;
+}
+.mainMenu {
+  margin-top: 30px;
+  margin-right: 40px;
+  a {
+    font-size: 20px;
+    font-weight: $light-weight;
+    color: $light-text;
+    padding-left: 10px;
+    transition: $global-Trans;
+  }
+  a:hover {
+    color: $chase-blue;
+  }
+  //Responsive
+  @include Mobile {
+    width: 400px;
+    margin: 20px 0 0 20px;
+  }
+}
+.showcaseWelcome {
+  margin-top: 200px;
+  margin-left: 70px;
+  width: 500px;
+  h2 {
+    font-size: 50px;
+    font-weight: $light-weight;
+    color: $light-text;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    //Responsive
+    @include Tablet {
+      font-size: 40px;
+    }
+  }
+  p {
+    font-size: 17px;
+    font-weight: $light-weight;
+    color: $light-text;
+    width: 350px;
+  }
+  .btnContain {
+    @include readMore;
+    margin-top: 30px;
+    a {
+      @include rmText;
+    }
+  }
+  .btnContain:hover {
+    @include rmbtnHover;
+    border: none;
+  }
+  //Showcase welcome Responsive
+  @include Tablet {
+    margin-left: 40px;
+  }
+  @include Mobile {
+    margin-top: 260px;
+
+    width: 350px;
+  }
+}

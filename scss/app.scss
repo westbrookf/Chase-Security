@@ -1,0 +1,11 @@
+@import "1-variables/variables";
+@import "2-mixins/mixins";
+@import "0-layout/layout-Dir";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font;
+  text-decoration: none;
+  list-style-type: none;
+}

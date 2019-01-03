@@ -1,0 +1,115 @@
+//Global Mixins
+@mixin Background($showcase) {
+  background: linear-gradient(to bottom, #3030307b, #3030307b), $showcase;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+//Flex
+@mixin Display($direction, $justified, $alignment) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justified;
+  align-items: $alignment;
+}
+//Read More Buttons
+@mixin readMore() {
+  border: 1px solid $light-text;
+  border-radius: $btn-Radius;
+  width: 100px;
+  text-align: center;
+  padding: 6px 12px 6px 12px;
+  transition: $global-Trans;
+}
+//Read More Button Text
+@mixin rmText() {
+  font-size: 18px;
+  font-weight: $light-weight;
+  color: $light-text;
+  text-transform: capitalize;
+}
+//Read More Button Hover
+@mixin rmbtnHover() {
+  background-color: $chase-blue;
+  box-shadow: $global-shadow;
+}
+//Section Title
+@mixin secTitle() {
+  font-size: 26px;
+  font-weight: $light-weight;
+  color: $chase-blue;
+  text-transform: capitalize;
+}
+
+//Home Page Mixins
+//CompRow
+@mixin compRowText() {
+  font-size: 20px;
+  font-weight: $light-weight;
+  color: $dark-text;
+  text-transform: capitalize;
+  transition-delay: 0.1s;
+}
+@mixin compRowDesc() {
+  font-size: 14px;
+  font-weight: $light-weight;
+  text-transform: capitalize;
+  width: 160px;
+  margin-left: 70px;
+}
+//Block Hover
+@mixin blockHover() {
+  color: $light-text;
+  background-color: $chase-blue;
+  transform: $global-scale;
+  box-shadow: $global-shadow;
+  border-right: none;
+}
+
+//Map Banner
+@mixin bannerText() {
+  font-size: 20px;
+  font-weight: $light-weight;
+  color: $light-text;
+  text-transform: capitalize;
+}
+@mixin bannerPara() {
+  font-size: 14px;
+  font-weight: $light-weight;
+  color: $light-text;
+  padding-top: 10px;
+  width: 200px;
+}
+//Footer Mixin
+@mixin footerTitle() {
+  font-size: 30px;
+  font-weight: $light-weight;
+  color: $dark-text;
+  text-transform: capitalize;
+}
+@mixin footerPara() {
+  font-size: 17px;
+  font-weight: $light-weight;
+  line-height: 24px;
+  padding-top: 10px;
+}
+//Responsive Mixins
+@mixin Laptop {
+  @media only screen and(max-width: 1024px) {
+    @content;
+  }
+}
+//Tablet
+@mixin Tablet {
+  @media only screen and(max-width: 768px) {
+    @content;
+  }
+}
+//Mobile
+@mixin Mobile {
+  @media only screen and(max-width: 425px) {
+    @content;
+  }
+}

@@ -1,0 +1,94 @@
+.globalFoot {
+  height: 45vh;
+  width: 100%;
+  padding-top: 160px;
+}
+.footerNav {
+  @include Display(row, space-evenly, unset);
+  .abtBlock {
+    width: 400px;
+    h3 {
+      @include footerTitle;
+      //Responsive
+      @include Mobile {
+        font-size: 20px;
+      }
+    }
+    p {
+      @include footerPara;
+      //Responsive
+      @include Mobile {
+        font-size: 14px;
+      }
+    }
+    //abtBlock Responsive
+    @include Laptop {
+      width: 300px;
+      margin-left: 40px;
+    }
+  }
+  .contactBlock {
+    width: 300px;
+    h3 {
+      @include footerTitle;
+      //Responsive
+      @include Mobile {
+        font-size: 20px;
+      }
+    }
+    p {
+      @include footerPara;
+      //Responsive
+      @include Mobile {
+        font-size: 14px;
+      }
+    }
+  }
+  .navBlock {
+    width: 200px;
+    @include Display(column, unset, unset);
+    h3 {
+      @include footerTitle;
+      //Responsive
+      @include Mobile {
+        font-size: 20px;
+      }
+    }
+    a {
+      @include footerPara;
+      color: $dark-text;
+      transition: $global-Trans;
+      width: 90px;
+      //Responsive
+      @include Mobile {
+        font-size: 14px;
+      }
+    }
+    a:hover {
+      color: $chase-blue;
+    }
+  }
+  #footerIcon {
+    font-size: 20px;
+    margin-right: 60px;
+    background-color: $accent;
+    padding: 10px;
+    color: $dark-text;
+    //Responsive
+    @include Laptop {
+      display: none;
+    }
+  }
+}
+.copyRight {
+  margin-top: 142px;
+  text-align: center;
+  background-color: $dark-text;
+  height: 40px;
+  p {
+    font-size: 18px;
+    font-weight: $light-weight;
+    color: $light-text;
+    padding-top: 6px;
+  }
+}

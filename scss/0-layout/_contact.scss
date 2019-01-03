@@ -1,0 +1,121 @@
+.formContain {
+  @include Display(row, center, unset);
+  margin-top: 40px;
+  .Banner {
+    height: 70vh;
+    width: 26vw;
+    background-color: $bgColor;
+    position: relative;
+    .stl {
+      font-size: 30px;
+      font-weight: $light-weight;
+      color: $light-text;
+      text-align: center;
+      padding-top: 30px;
+      text-transform: capitalize;
+    }
+    .contactBanner {
+      padding-top: 40px;
+      padding-left: 30px;
+      h4 {
+        @include bannerText;
+        .conBanIcon {
+          padding-right: 10px;
+        }
+      }
+      p {
+        @include bannerPara;
+        font-size: 18px;
+        padding-left: 30px;
+        //Responsive
+        @include Laptop {
+          font-size: 14px;
+        }
+      }
+      //Contact Banner Responsive
+      @include Laptop {
+        padding-left: 10px;
+      }
+    }
+    //Banner Responsive
+    @include Tablet {
+      display: none;
+    }
+  }
+}
+//Contact Form
+.contactForm {
+  width: 800px;
+  background-color: $accent;
+  @include Display(column, unset, unset);
+  h3 {
+    padding-left: 40px;
+    font-size: 30px;
+    font-weight: $light-weight;
+    color: $dark-text;
+    padding-top: 30px;
+    text-transform: capitalize;
+  }
+  #messageInput {
+    height: 200px;
+    width: 700px;
+    margin-top: 40px;
+    margin-left: 40px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 6px 0 0 10px;
+    //Responsive
+    @include Laptop {
+      margin-left: 30px;
+    }
+    @include Mobile {
+      width: 340px;
+      margin-top: 20px;
+    }
+  }
+  .formRow {
+    margin-top: 20px;
+    margin-left: 60px;
+    .Input {
+      height: 40px;
+      width: 200px;
+      padding-left: 14px;
+      font-size: 14px;
+      border: none;
+      border-radius: 6px;
+      //Responsive
+      @include Mobile {
+        margin-top: 10px;
+        width: 340px;
+      }
+    }
+    //Form row Responsive
+    @include Mobile {
+      margin-top: 10px;
+      margin-left: 30px;
+    }
+  }
+  #submit {
+    width: 140px;
+    background-color: $chase-blue;
+    padding: 10px;
+    border-radius: 20px;
+    color: $light-text;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 18px;
+    text-transform: capitalize;
+    //responsive
+    @include Tablet {
+      margin-top: 10px;
+    }
+  }
+  //Contact Form Responsive
+  @include Mobile {
+    width: 400px;
+  }
+}
+.contactMap {
+  margin-top: 60px;
+}

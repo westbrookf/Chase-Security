@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width,height=device-height, initial-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/app.css" />
+
+    <!-- Typography -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt"
+      crossorigin="anonymous"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <header class="mainHeader serviceHeader">
+      <div class="headContact">
+        <div class="headEmail">
+          <h4><i class="fal fa-envelope"></i>chaseadmin@safewithchase.com</h4>
+        </div>
+        <div class="headPhone">
+          <h4><i class="fal fa-phone"></i>(314)607-1220</h4>
+        </div>
+        <div class="clientPortal"><a href="#">client portal</a></div>
+      </div>
+      <div class="menuContain">
+        <div class="Logo">
+          <a href="index.html"
+            ><h2><strong>Chase</strong> <img src="/imgs/Logo.png" /></h2
+          ></a>
+        </div>
+        <nav class="mainMenu">
+          <a href="index.html">Home</a> <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html" class="current">Contact Us</a>
+        </nav>
+      </div>
+      <div class="showcaseWelcome serviceWelcome"><h2>contacts</h2></div>
+    </header>
+    <section class="formContain">
+      <div class="Banner">
+        <h2 class="stl">arnold Office</h2>
+        <div class="bannerAd contactBanner">
+          <h4><i class="fal fa-map-marker conBanIcon"></i>office</h4>
+          <p>4075 West Outer Rd Arnold, Missouri</p>
+        </div>
+        <div class="bannerPhone contactBanner">
+          <h4><i class="fal fa-phone conBanIcon"></i>phone</h4>
+          <p>(314)607-1220</p>
+        </div>
+        <div class="bannerEmail contactBanner">
+          <h4><i class="fal fa-envelope conBanIcon"></i>email</h4>
+          <p>chaseadmin@safewithchase.com</p>
+        </div>
+        <div class="bannerHours contactBanner">
+          <h4><i class="fal fa-clock conBanIcon"></i>hours</h4>
+          <p>Mon-Sat: 8am-5pm</p>
+          <p>sunday: CLOSED</p>
+        </div>
+      </div>
+      <form class="contactForm">
+        <h3>send us a message</h3>
+        <textarea placeholder=" Message" id="messageInput"></textarea>
+        <div class="formRow">
+          <input type="text" placeholder="Name" class="name Input" />
+          <input type="email" placeholder="Email" class="email Input" />
+          <input type="number" placeholder="Phone" class="phone Input" />
+        </div>
+        <button type="submit" name="Send Message" value="Send" id="submit">
+          send message
+        </button>
+      </form>
+    </section>
+    <div class="mapContain contactMap">
+      <div id="map"></div>
+      <div class="mapBanner">
+        <h2 class="stl">arnold Office</h2>
+        <div class="bannerAd">
+          <h4>office <i class="fal fa-map-marker"></i></h4>
+          <p>4075 West Outer Rd Arnold, Missouri</p>
+        </div>
+        <div class="bannerPhone">
+          <h4>phone <i class="fal fa-phone"></i></h4>
+          <p>(314)607-1220</p>
+        </div>
+        <div class="bannerEmail">
+          <h4>email <i class="fal fa-envelope"></i></h4>
+          <p>chaseadmin@safewithchase.com</p>
+        </div>
+        <div class="bannerHours">
+          <h4>hours <i class="fal fa-clock"></i></h4>
+          <p>Mon-Sat: 8am-5pm</p>
+          <p>sunday: CLOSED</p>
+        </div>
+      </div>
+    </div>
+    <footer class="globalFoot">
+      <div class="footerNav">
+        <div class="abtBlock">
+          <h3>about</h3>
+          <p>
+            We believe Security Professionals should offer more than a physical
+            deterrent to possible threats and act to protect life and property
+          </p>
+        </div>
+        <div class="contactBlock">
+          <h3>contact</h3>
+          <p>4075 West Outer Rd Arnold, Missouri</p>
+          <p>tel: (314)607-1220</p>
+        </div>
+        <div class="navBlock">
+          <h3>pages</h3>
+          <a href="home/html">Home</a> <a href="about/html">About Us</a>
+          <a href="services/html">Services</a>
+          <a href="contact/html">Contact Us</a>
+        </div>
+        <div class="socailFoot">
+          <span> <i class="fab fa-facebook-f" id="footerIcon"></i> </span>
+          <span> <i class="fab fa-linkedin-in" id="footerIcon"></i> </span>
+        </div>
+      </div>
+      <div class="copyRight"><p>&copy; copyright Chase Security 2018</p></div>
+    </footer>
+    <script src="app.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbcylgeQrU_4KBcPFqQ8_FpdLfUeE8dgo&callback=initMap"
+      type="text/javascript"
+    ></script>
+  </body>
+</html>

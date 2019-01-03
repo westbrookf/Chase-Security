@@ -1,0 +1,740 @@
+.compContain {
+  width: 100%;
+  margin-top: -60px;
+}
+.compRow {
+  @include Display(row, center, center);
+  .block {
+    height: 150px;
+    width: 300px;
+    background-color: $accent;
+    border-right: 2px solid #c4c4c4;
+    transition: $global-Trans;
+    text-align: center;
+    h4 {
+      @include compRowText;
+    }
+    p {
+      @include compRowDesc;
+      //Responsive
+      @include Laptop {
+        margin-left: 40px;
+      }
+      @include Tablet {
+        margin-left: 10px;
+      }
+      @include Mobile {
+        margin-left: 70px;
+      }
+    }
+    //Block responsive
+    @include Tablet {
+      width: 180px;
+    }
+    @include Mobile {
+      border-bottom: 2px solid #c4c4c4;
+      border-right: none;
+      width: 300px;
+    }
+  }
+  .block:nth-last-child(1) {
+    border-right: none;
+    //Responsive
+    @include Mobile {
+      border-bottom: none;
+    }
+  }
+  #faster {
+    .fa-stopwatch {
+      font-size: 30px;
+      padding-top: 30px;
+    }
+  }
+  #faster:hover {
+    @include blockHover;
+    h4 {
+      color: $light-text;
+    }
+  }
+  //Stronger
+  #stronger {
+    .fa-dumbbell {
+      font-size: 30px;
+      padding-top: 30px;
+    }
+  }
+  #stronger:hover {
+    @include blockHover;
+    h4 {
+      color: $light-text;
+    }
+  }
+  //Smarter
+  #smarter {
+    .fa-brain {
+      font-size: 30px;
+      padding-top: 30px;
+    }
+  }
+  #smarter:hover {
+    @include blockHover;
+    h4 {
+      color: $light-text;
+    }
+  }
+  //Alert
+  #alert {
+    .fa-lightbulb-exclamation {
+      font-size: 30px;
+      padding-top: 30px;
+    }
+  }
+  #alert:hover {
+    @include blockHover;
+    h4 {
+      color: $light-text;
+    }
+  }
+  //Comp Row Responsive
+  @include Mobile {
+    @include Display(column, unset, unset);
+    margin-top: 100px;
+    margin-left: 70px;
+  }
+}
+.weaContain {
+  width: 100%;
+  .aboutIntro {
+    @include Display(row, space-evenly, unset);
+    width: 1200px;
+    padding-top: 100px;
+    padding-left: 100px;
+    .textblock {
+      width: 500px;
+      .title {
+        @include secTitle;
+      }
+      h3 {
+        font-size: 40px;
+        font-weight: $light-weight;
+        color: $dark-text;
+        text-transform: capitalize;
+        padding-top: 40px;
+        //responsive
+        @include Tablet {
+          font-size: 30px;
+        }
+      }
+      p {
+        font-size: 18px;
+        font-weight: $light-weight;
+        padding-top: 10px;
+        color: $dark-text;
+      }
+      .btnContain {
+        margin-top: 30px;
+        @include readMore;
+        border: 1px solid $chase-blue;
+        transition: $global-Trans;
+        .mainRM {
+          @include rmText;
+          color: $dark-text;
+        }
+        //Responsive
+        @include Mobile {
+          margin-left: 80px;
+          margin-bottom: 40px;
+        }
+      }
+      .btnContain:hover {
+        @include rmbtnHover;
+        border: none;
+        .mainRM {
+          color: $light-text;
+        }
+      }
+      // text block responsive
+      @include Tablet {
+        width: 300px;
+      }
+      @include Mobile {
+        margin-left: 40px;
+      }
+    }
+    .imgLogo {
+      width: 500px;
+      img {
+        height: 400px;
+        width: 500px;
+        border-radius: 10px;
+        @include Laptop {
+          width: 400px;
+        }
+      }
+      .abtLogo {
+        height: 360px;
+        width: 360px;
+        margin-top: -270px;
+        margin-left: 320px;
+        transition: $global-Trans;
+        //Responsive
+        @include Laptop {
+          height: 260px;
+          width: 220px;
+          margin-top: -220px;
+          margin-left: 200px;
+        }
+      }
+      .abtLogo:hover {
+        transform: $global-scale;
+      }
+      //ImgLogo Responsive
+      @include Laptop {
+        width: 400px;
+      }
+    }
+    //About Intro Responsive
+    @include Laptop {
+      width: 900px;
+    }
+    @include Tablet {
+      width: 600px;
+    }
+    @include Mobile {
+      @include Display(column, center, center);
+      padding-left: 10px;
+      text-align: center;
+      width: 384px;
+    }
+  }
+}
+//Support Section
+.supportContain {
+  @include Background(url(../imgs/securityguard1.jpg));
+  height: 70vh;
+  margin-top: 40px;
+  .title {
+    @include secTitle;
+    padding-top: 40px;
+    padding-left: 620px;
+    //Responsive
+    @include Laptop {
+      padding-left: 360px;
+    }
+    @include Mobile {
+      padding-left: 30px;
+    }
+  }
+  .supportGrid {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+    float: right;
+    margin-top: 50px;
+    @include Laptop {
+      grid-template-columns: 300px 300px;
+      margin-top: 30px;
+      margin-right: 40px;
+    }
+    @include Mobile {
+      grid-template-columns: 200px 200px;
+      margin-right: 0px;
+      margin-left: 30px;
+      float: unset;
+    }
+  }
+  #gridBlock {
+    width: 350px;
+    #gridIcon {
+      font-size: 30px;
+      color: $chase-blue;
+    }
+    h3 {
+      font-size: 24px;
+      font-weight: $light-weight;
+      text-transform: capitalize;
+      color: $light-text;
+      padding-top: 6px;
+      //Responsive
+      @include Mobile {
+        font-size: 18px;
+      }
+    }
+    p {
+      font-size: 18px;
+      font-weight: $light-weight;
+      color: $light-text;
+      padding-top: 6px;
+      //Responsive
+      @include Mobile {
+        font-size: 14px;
+      }
+    }
+    //Grid Block Responsive
+    @include Laptop {
+      width: 300px;
+    }
+    @include Mobile {
+      width: 170px;
+    }
+  }
+}
+//Services
+.hmeService {
+  width: 100%;
+  .title {
+    @include secTitle;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .servSubTitle {
+    font-size: 36px;
+    font-weight: $light-weight;
+    color: $dark-text;
+    text-transform: capitalize;
+    padding-top: 10px;
+    text-align: center;
+  }
+}
+.serviceRow {
+  width: 100%;
+  margin-top: 50px;
+  @include Display(row, center, center);
+  //Responsive
+  @include Tablet {
+    @include Display(column, center, center);
+  }
+}
+.serviceNav {
+  height: 400px;
+  width: 340px;
+  padding-left: 80px;
+  h3 {
+    font-size: 40px;
+    font-weight: $light-weight;
+    color: $dark-text;
+    text-transform: capitalize;
+    padding-top: 22px;
+    //responsive
+    @include Laptop {
+      display: none;
+    }
+  }
+  p {
+    font-size: 17px;
+    font-weight: $light-weight;
+    padding-top: 10px;
+    //responsive
+    @include Laptop {
+      display: none;
+    }
+  }
+  .navArrows {
+    margin-top: 30px;
+    a {
+      font-size: 30px;
+      color: $dark-text;
+      transition: $global-Trans;
+      cursor: pointer;
+    }
+    a:hover {
+      color: $chase-blue;
+    }
+    #prev {
+      padding-right: 30px;
+    }
+    // Nav Arrows Responsive
+    @include Laptop {
+      margin-top: 380px;
+      margin-left: 30px;
+      width: 80px;
+    }
+    @include Tablet {
+      display: none;
+    }
+  }
+  //Service Nav Responsive
+  @include Laptop {
+    width: 0px;
+    padding-left: 0px;
+  }
+}
+.serviceSlide {
+  width: 900px;
+  @include Display(row, unset, unset);
+  padding-left: 120px;
+  overflow-x: hidden;
+  //Global Padding For Each Slide block
+  #slideBlockPad {
+    padding-right: 20px;
+    //Responsive
+    @include Mobile {
+      padding-right: 0px;
+    }
+  }
+  //Display for each block
+  #slideBlockOne {
+    @include Display(row, space-evenly, unset);
+    width: 900px;
+    transition: 1.5s;
+    //Responsive
+    @include Tablet {
+      @include Display(column, unset, unset);
+    }
+    @include Mobile {
+      width: 285px;
+    }
+  }
+  #slideBlockTwo {
+    @include Display(row, space-evenly, unset);
+    width: 900px;
+    transition: 1.5s;
+    opacity: 0;
+    //Responsive
+    @include Tablet {
+      @include Display(column, unset, unset);
+      opacity: 1;
+    }
+    @include Mobile {
+      width: 285px;
+    }
+  }
+  .serviceBlock {
+    img {
+      height: 200px;
+      width: 280px;
+    }
+    h3 {
+      font-size: 24px;
+      font-weight: $light-weight;
+      color: $dark-text;
+      text-transform: capitalize;
+    }
+    p {
+      font-size: 14px;
+      font-weight: $light-weight;
+      color: $dark-text;
+      //Responsive
+      @include Mobile {
+        width: 300px;
+      }
+    }
+    .hsReadBtn {
+      padding-top: 20px;
+      a {
+        font-size: 17px;
+        color: $dark-text;
+        transition: $global-Trans;
+        text-transform: capitalize;
+        .fa-arrow-right {
+          padding-left: 6px;
+          color: $chase-blue;
+          transition: 0.8s;
+        }
+      }
+      a:hover {
+        color: $chase-blue;
+      }
+    }
+    //Service Block Responsive
+    @include Tablet {
+      padding-top: 40px;
+    }
+    @include Mobile {
+      width: 285px;
+    }
+  }
+  //service Slide Responsive
+  @include Tablet {
+    width: 600px;
+    padding-left: 30px;
+    margin-top: -360px;
+  }
+  @include Mobile {
+    @include Display(column, unset, unset);
+    width: 285px;
+    padding-left: 0px;
+  }
+}
+.videoReview {
+  @include Background(url(../imgs/gopro.jpg));
+  height: 50vh;
+  background-position: top 30% left 70%;
+  background-attachment: fixed;
+  margin-top: 60px;
+  .reviewText {
+    padding-top: 100px;
+    padding-left: 170px;
+    width: 550px;
+    .title {
+      @include secTitle;
+    }
+    h3 {
+      font-size: 40px;
+      font-weight: $light-weight;
+      color: $light-text;
+      text-transform: capitalize;
+      padding-top: 22px;
+      //Responsive
+      @include Laptop {
+        font-size: 30px;
+      }
+      @include Tablet {
+        width: 340px;
+      }
+    }
+    //Review Text Responsive
+    @include Laptop {
+      padding-left: 60px;
+    }
+    @include Mobile {
+      width: 340px;
+    }
+  }
+}
+.quoteContain {
+  width: 100%;
+  margin-top: 60px;
+  .quoteRow {
+    @include Display(row, space-evenly, center);
+    //Responsive
+    @include Laptop {
+      @include Display(column, unset, center);
+    }
+  }
+  .quoteText {
+    height: 400px;
+    width: 340px;
+    padding-left: 80px;
+    .title {
+      @include secTitle;
+    }
+    h3 {
+      font-size: 40px;
+      font-weight: $heavy-weight;
+      color: $dark-text;
+      text-transform: capitalize;
+      padding-top: 22px;
+    }
+    p {
+      font-size: 17px;
+      font-weight: $light-weight;
+      padding-top: 10px;
+      //Responsive
+      @include Laptop {
+        display: none;
+      }
+    }
+    //quote Text Responsive
+    @include Laptop {
+      height: 200px;
+      width: 400px;
+      padding-left: 0px;
+    }
+  }
+  // Quote Form
+  .quoteForm {
+    display: grid;
+    grid-template-columns: 370px 370px;
+    grid-gap: 30px;
+    margin-top: -60px;
+    //responsive
+    @include Tablet {
+      grid-template-columns: 300px 300px;
+    }
+    @include Mobile {
+      grid-template-columns: 300px;
+    }
+  }
+  .inputStyle {
+    height: 30px;
+    font-size: 18px;
+    font-weight: $light-weight;
+    padding-left: 6px;
+    //responsive
+    @include Tablet {
+      width: 300px;
+    }
+  }
+  .serviceInterest {
+    position: relative;
+    height: 30px;
+    background-color: transpartent;
+    font-size: 18px;
+  }
+}
+#submit {
+  width: 136px;
+  @include rmText;
+  font-size: 14px;
+  background-color: $chase-blue;
+  border-radius: $btn-Radius;
+  cursor: pointer;
+}
+#submit:hover {
+  @include rmbtnHover;
+}
+
+.testimonialContain {
+  width: 100%;
+  height: 70vh;
+  background-color: $bgColor;
+  .title {
+    @include secTitle;
+    text-align: center;
+    padding-top: 60px;
+  }
+  h3 {
+    font-size: 34px;
+    font-weight: $heavy-weight;
+    color: $light-text;
+    text-transform: capitalize;
+    padding-top: 22px;
+    text-align: center;
+    //Responsive
+    @include Mobile {
+      font-size: 18px;
+    }
+  }
+  .testRow {
+    @include Display(row, space-evenly, center);
+    padding-top: 60px;
+    @include Mobile {
+      padding-top: 40px;
+    }
+  }
+  .testimonial {
+    width: 400px;
+    #testIcon {
+      font-size: 30px;
+      color: $chase-blue;
+    }
+    p {
+      font-size: 17px;
+      font-weight: $light-weight;
+      color: $light-text;
+      padding-top: 10px;
+      line-height: 24px;
+      //Responsive
+      @include Mobile {
+        font-size: 14px;
+        line-height: unset;
+      }
+    }
+    .user {
+      font-size: 20px;
+      color: $light-text;
+      text-transform: capitalize;
+      padding-top: 10px;
+      //Responsive
+      @include Mobile {
+        font-size: 18px;
+      }
+    }
+    //testimonial responsive
+    @include Laptop {
+      width: 300px;
+      padding-left: 20px;
+    }
+  }
+  //Testimonial Contain Responsive
+  @include Laptop {
+    margin-top: 40px;
+  }
+}
+//GoogleMaps
+#map {
+  height: 70vh;
+  width: 100%;
+  z-index: 0;
+}
+.mapBanner {
+  height: 70vh;
+  width: 26vw;
+  background-color: $chase-blue;
+  position: relative;
+  float: right;
+  margin-top: -559px;
+  margin-right: 120px;
+  .stl {
+    font-size: 30px;
+    font-weight: $light-weight;
+    color: $light-text;
+    text-align: center;
+    padding-top: 30px;
+    text-transform: capitalize;
+  }
+  .bannerAd {
+    padding-top: 40px;
+    padding-left: 30px;
+    h4 {
+      @include bannerText;
+      .fa-map-marker {
+        padding-left: 210px;
+        //Responsive
+        @include Laptop {
+          display: none;
+        }
+      }
+    }
+    p {
+      @include bannerPara;
+    }
+  }
+  .bannerPhone {
+    padding-top: 40px;
+    padding-left: 30px;
+    h4 {
+      @include bannerText;
+      .fa-phone {
+        padding-left: 200px;
+        //Responsive
+        @include Laptop {
+          display: none;
+        }
+      }
+    }
+    p {
+      @include bannerPara;
+    }
+  }
+  .bannerEmail {
+    padding-top: 40px;
+    padding-left: 30px;
+    h4 {
+      @include bannerText;
+      .fa-envelope {
+        padding-left: 210px;
+        //Responsive
+        @include Laptop {
+          display: none;
+        }
+      }
+    }
+    p {
+      @include bannerPara;
+    }
+  }
+  .bannerHours {
+    padding-top: 40px;
+    padding-left: 30px;
+    h4 {
+      @include bannerText;
+      .fa-clock {
+        padding-left: 210px;
+        //Responsive
+        @include Laptop {
+          display: none;
+        }
+      }
+    }
+    p {
+      @include bannerPara;
+    }
+  }
+  //Map Banner Responsive
+  @include Tablet {
+    display: none;
+  }
+}

@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: 99; }
   @media only screen and (max-width: 425px) {
     .mainHeader {
@@ -504,8 +504,8 @@
     grid-template-columns: 400px 400px;
     grid-column-gap: 20px;
     grid-row-gap: 40px;
-    float: right;
-    margin-top: 50px; }
+    margin-top: 50px;
+    margin-left: 620px; }
     @media only screen and (max-width: 1024px) {
       .supportContain .supportGrid {
         grid-template-columns: 300px 300px;
@@ -515,8 +515,7 @@
       .supportContain .supportGrid {
         grid-template-columns: 190px 190px;
         margin-right: 0px;
-        margin-left: 20px;
-        float: unset; } }
+        margin-left: 20px; } }
   .supportContain #gridBlock {
     width: 350px; }
     .supportContain #gridBlock #gridIcon {

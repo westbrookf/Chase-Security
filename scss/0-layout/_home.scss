@@ -230,8 +230,8 @@
     grid-template-columns: 400px 400px;
     grid-column-gap: 20px;
     grid-row-gap: 40px;
-    float: right;
     margin-top: 50px;
+    margin-left: 620px;
     @include Laptop {
       grid-template-columns: 300px 300px;
       margin-top: 30px;
@@ -241,7 +241,6 @@
       grid-template-columns: 190px 190px;
       margin-right: 0px;
       margin-left: 20px;
-      float: unset;
     }
   }
   #gridBlock {

@@ -1,6 +1,6 @@
 .mainHeader {
   @include Background(url(../imgs/Barnes2.jpg));
-  height: 100vh;
+  height: 100%;
   z-index: 99;
   //Responsive
   @include Mobile {

@@ -606,6 +606,7 @@
     padding-top: 60px;
     @include Mobile {
       padding-top: 40px;
+      flex-direction: column;
     }
   }
   .testimonial {
@@ -641,10 +642,17 @@
       width: 300px;
       padding-left: 20px;
     }
+    @include Mobile {
+      padding-top: 20px;
+    }
   }
   //Testimonial Contain Responsive
   @include Laptop {
     margin-top: 40px;
+  }
+  @include Mobile {
+    height: 100%;
+    padding-bottom: 20px;
   }
 }
 //GoogleMaps

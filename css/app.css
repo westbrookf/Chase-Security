@@ -6,6 +6,7 @@
   height: 100vh;
   width: 100%;
   height: 100%;
+  width: 100%;
   z-index: 99; }
   @media only screen and (max-width: 425px) {
     .mainHeader {

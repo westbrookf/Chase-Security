@@ -8,273 +8,253 @@
     font-size: 34px;
   }
 }
-.mainAbout {
-  .aboutRow {
-    @include Display(row, space-evenly, unset);
-    padding-top: 50px;
-    img {
-      height: 500px;
-      width: 500px;
-      //Responsive
-      @include Laptop {
-        width: 400px;
-      }
-      @include Tablet {
-        width: 340px;
-        height: 500px;
-      }
-      @include Mobile {
-        width: 360px;
+.valuesContent {
+  height: auto;
+  width: 80%;
+  margin-top: 60px;
+  margin-left: 130px;
+  #ourMission,
+  #ourVision,
+  #Situation {
+    height: 50vh;
+    width: 100%;
+    @include Display(row, space-evenly, center);
+    .valueImg {
+      height: 100%;
+      width: 30%;
+      img {
+        height: 100%;
+        width: 100%;
       }
     }
-    .ourStry {
-      width: 500px;
-      height: 500px;
+    .valueText {
+      height: 100%;
+      width: 50%;
       h3 {
+        font-family: $primary-font;
         font-size: 30px;
-        font-weight: $light-weight;
-        text-transform: capitalize;
+        font-weight: lighter;
         color: $dark-text;
+        padding-bottom: 10px;
       }
       p {
         font-size: 17px;
-        font-weight: $light-weight;
-        text-transform: capitalize;
-        color: $dark-text;
-        line-height: 30px;
-        padding-top: 20px;
-        //Responsive
-        @include Mobile {
-          text-align: center;
-          width: 90%;
+        line-height: 24px;
+        color: #303030af;
+      }
+    }
+  }
+  .hidden {
+    display: none !important;
+  }
+}
+.valuesRowContainer {
+  height: 40vh;
+  width: 100%;
+  .thumbLinks {
+    height: auto;
+    width: 80%;
+    @include Display(row, space-evenly, unset);
+    margin-top: 80px;
+    margin-left: 150px;
+    .Link {
+      height: auto;
+      width: 30%;
+      text-align: center;
+      cursor: pointer;
+      .thumbImg {
+        height: 30vh;
+        width: 100%;
+        overflow: hidden;
+        img {
+          height: inherit;
+          width: inherit;
+          transition: $global-Trans;
+        }
+        img:hover {
+          transform: scale(1.1);
         }
       }
-      //Our Story Responsive
-      @include Tablet {
-        width: 400px;
+      h4 {
+        font-family: $primary-font;
+        font-size: 22px;
+        color: $dark-text;
+        text-transform: capitalize;
+        transition: $global-Trans;
+        margin-top: 20px;
       }
-      @include Mobile {
-        width: 384px;
+      h4:hover {
+        color: $chase-blue;
       }
-    }
-    //About Row Responsive
-    @include Mobile {
-      @include Display(column, unset, unset);
-      margin-left: 32px;
+      p {
+        font-size: 17px;
+        line-height: 24px;
+        color: #303030af;
+        margin-top: 10px;
+      }
     }
   }
 }
-//true security Section
-.trueSecure {
+.bestProtection {
+  height: 40vh;
   width: 100%;
-  .trueRow {
-    @include Display(row, center, center);
-    margin-top: 90px;
-    width: 100%;
-    //Responsive
-    @include Mobile {
-      @include Display(column, unset, unset);
+  background-color: #62adc2;
+  @include Display(row, unset, unset);
+  margin-top: 100px;
+  .patrolVehicle {
+    height: 100%;
+    width: 50%;
+    img {
+      height: 100%;
+      width: 100%;
     }
   }
-  .trueText {
-    height: 400px;
-    width: 740px;
-    background-color: $chase-blue;
-    z-index: 99;
+  .protectionText {
+    height: 100%;
+    width: 50%;
     h2 {
+      font-family: $primary-font;
+      font-weight: lighter;
       font-size: 30px;
-      font-weight: $light-weight;
-      text-transform: capitalize;
       color: $light-text;
-      padding: 100px 0 0 120px;
-      width: 400px;
-      //Responsive
-      @include Laptop {
-        padding-left: 70px;
-      }
-      @include Tablet {
-        font-size: 24px;
-        text-align: center;
-        padding-left: 20px;
-        width: 300px;
-      }
-      @include Mobile {
-        width: 100%;
-        padding-left: 0px;
-      }
+      text-transform: capitalize;
+      padding-top: 70px;
+      padding-left: 60px;
+      width: 70%;
+      // text-align: center;
     }
     p {
-      font-size: 17px;
-      font-weight: $light-text;
+      font-size: 18px;
+      font-weight: lighter;
       color: $light-text;
-      line-height: 24px;
-      width: 400px;
-      padding: 20px 0 0 120px;
-      //Responsive
-      @include Laptop {
-        width: 300px;
-        padding-left: 70px;
-      }
-      @include Tablet {
-        width: 300px;
-        text-align: center;
-        padding-left: 20px;
-      }
-      @include Mobile {
-        padding-left: 60px;
-      }
-    }
-    // True Text Responsive
-    @include Laptop {
-      width: 500px;
-    }
-    @include Tablet {
-      width: 350px;
-    }
-    @include Mobile {
-      width: 100%;
-    }
-  }
-  img {
-    height: 400px;
-    width: 740px;
-    //Responsive
-    @include Laptop {
-      width: 500px;
-    }
-    @include Tablet {
-      width: 400px;
-    }
-    @include Mobile {
-      width: 100%;
+      width: 90%;
+      padding-top: 20px;
+      padding-left: 60px;
     }
   }
 }
-//Our Version
-.versionExist {
+.meetTeam {
+  height: auto;
   width: 100%;
-}
-.veContainer {
-  @include Display(row, space-evenly, unset);
-  width: 1200px;
-  margin-top: 100px;
-  margin-left: 120px;
-  //Responsive
-  @include Laptop {
-    margin-left: 100px;
-    width: 900px;
-  }
-  @include Tablet {
-    @include Display(column, unset, unset);
-    width: 100%;
-    margin-left: 0px;
-  }
-}
-.ourVersion {
-  .vTitle {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  h2 {
+    font-family: $primary-font;
+    font-weight: lighter;
     font-size: 30px;
-    font-weight: $light-weight;
     text-transform: capitalize;
-    //Responsive
-    @include Tablet {
-      text-align: center;
+  }
+}
+.theTeam {
+  height: 40vh;
+  width: 100%;
+  @include Display(row, space-evenly, center);
+  .member {
+    height: 100%;
+    width: 20%;
+    transition: $global-Trans;
+  }
+  .member:hover {
+    box-shadow: $global-shadow;
+    .hovConnect {
+      transform: scale(1);
+      opacity: 1;
     }
   }
-  .version {
-    padding-top: 40px;
-    h2 {
-      font-size: 24px;
-      font-weight: $light-weight;
-      text-transform: capitalize;
-      padding-top: 6px;
-      //Responsive
-      @include Tablet {
-        text-align: center;
-      }
-      @include Mobile {
-        font-size: 20px;
-      }
+  .hovConnect {
+    height: 100%;
+    width: 100%;
+    background-color: $chase-blue;
+    text-align: center;
+    transform: scale(0);
+    transition: $global-Trans;
+    opacity: 0;
+    .connectIcons {
+      padding-top: 140px;
+      font-size: 30px;
+      color: $light-text;
     }
-    #vIcon {
-      color: $chase-blue;
+    .fa-facebook-f {
       padding-right: 10px;
     }
-    p {
-      width: 400px;
-      padding-left: 32px;
-      //Responsive
-      @include Laptop {
-        width: 340px;
-      }
-      @include Tablet {
-        text-align: center;
-        padding-top: 10px;
-        padding-left: 220px;
-      }
-      @include Mobile {
-        padding-left: 40px;
-        font-size: 14px;
-      }
-    }
-  }
-  //Version Responsive
-  @include Laptop {
-    padding-right: 60px;
-  }
-  @include Tablet {
-    background-color: $accent;
-    padding-top: 30px;
-    padding-bottom: 30px;
   }
 }
-.weExist {
-  width: 600px;
-  h2 {
-    font-size: 24px;
-    font-weight: $light-weight;
-    text-transform: capitalize;
-    padding-top: 6px;
-    //Responsive
-    @include Tablet {
-      text-align: center;
-      padding-top: 60px;
-    }
-  }
-  p {
-    line-height: 30px;
-    padding-top: 30px;
-    //Responsive
-    @include Laptop {
-      width: 400px;
-    }
-    @include Tablet {
-      width: 95%;
-      padding-left: 10px;
-    }
-  }
-  //Responsive
-  @include Laptop {
-    width: 440px;
-  }
-  @include Tablet {
-    width: 100%;
-  }
+/* Team Member Profile photo*/
+.Justin {
+  @include Background(url(../imgs/justin.jpg));
 }
-.committed {
-  @include Background(url(../imgs/testBack.jpg));
-  height: 30vh;
+.Jeff {
+  @include Background(url(../imgs/JH.jpg));
+}
+.Mike {
+  @include Background(url(../imgs/Mike.jpg));
+}
+.Brock {
+  @include Background(url(../imgs/mainLogo.jpg));
+}
+//Member Bio
+.memberBioContainer {
+  height: auto;
   width: 100%;
-  margin-top: 40px;
-  h2 {
-    font-size: 30px;
-    font-weight: $light-weight;
-    text-transform: capitalize;
-    color: $light-text;
+  @include Display(row, space-evenly, center);
+  .Bio {
+    height: auto;
+    width: 20%;
     text-align: center;
-    padding-top: 100px;
-    //Responsive
-    @include Mobile {
-      font-size: 24px;
+    padding-top: 10px;
+    h3 {
+      font-family: $primary-font;
+      font-weight: lighter;
+      text-transform: capitalize;
+      color: $dark-text;
+      font-size: 26px;
+    }
+    h4 {
+      font-family: $primary-font;
+      font-size: 20px;
+      color: $chase-blue;
+    }
+  }
+}
+//Free Consultation Section
+.freeCons {
+  @include Background(url(../imgs/testBack.jpg));
+  background-attachment: fixed;
+  height: 22vh;
+  width: 100%;
+  margin-top: 10px;
+  .consultationText {
+    padding-top: 20px;
+    text-align: center;
+    h2 {
+      font-family: $primary-font;
+      font-size: 26px;
+      font-weight: lighter;
+      color: $light-text;
+      strong {
+        color: $chase-blue;
+        font-size: 32px;
+      }
+    }
+    p {
+      font-size: 18px;
+      font-weight: lighter;
+      color: $light-text;
+      padding-top: 3px;
+      padding-bottom: 20px;
+    }
+    .opnConBtn {
+      font-family: $primary-font;
+      font-weight: lighter;
+      font-size: 18px;
+      text-transform: capitalize;
+      color: $light-text;
+      background-color: $chase-blue;
+      padding: 10px;
+      cursor: pointer;
+      width: 160px;
+      margin-left: 615px;
     }
   }
 }

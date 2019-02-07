@@ -1,0 +1,54 @@
+// Consultation Module starts here
+.abtConModule {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  transition: $global-Trans;
+  .consultationForm {
+    background-color: #f7f4f4;
+    margin-top: 200px;
+    margin-left: 370px;
+    width: 50%;
+    height: 50vh;
+    border: 4px solid $chase-blue;
+    box-shadow: $global-shadow;
+    transition: $global-Trans;
+    h2 {
+      font-family: $primary-font;
+      font-size: 26px;
+      width: 100%;
+      // text-align: center;
+      padding-top: 40px;
+      padding-left: 64px;
+    }
+    .inputStyle {
+      display: block;
+      height: 5vh;
+      width: 80%;
+      margin-top: 10px;
+      margin-left: 60px;
+      font-size: 18px;
+      padding-left: 6px;
+      border: none;
+      border-bottom: 1px solid #dedddd;
+      background: transparent;
+    }
+    .sendConsult {
+      height: 40px;
+      width: 120px;
+      font-size: 18px;
+      font-weight: lighter;
+      text-transform: capitalize;
+      color: $light-text;
+      background-color: $chase-blue;
+      margin-left: 280px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  }
+}

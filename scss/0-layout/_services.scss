@@ -70,12 +70,15 @@
     transform: scale(1.1);
     box-shadow: $global-shadow;
   }
-  h3 {
-    font-size: 26px;
-    font-weight: $light-weight;
-    text-transform: capitalize;
-    padding-top: 10px;
-    padding-left: 10px;
+  a {
+    color: inherit;
+    h3 {
+      font-size: 26px;
+      font-weight: $light-weight;
+      text-transform: capitalize;
+      padding-top: 10px;
+      padding-left: 10px;
+    }
   }
   p {
     width: 300px;

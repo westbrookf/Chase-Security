@@ -3,6 +3,7 @@
   height: 100vh;
   width: 100%;
   z-index: 99;
+  background-attachment: fixed;
   //Responsive
   @include Mobile {
     height: 100vh;

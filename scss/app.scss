@@ -1,6 +1,7 @@
 @import "1-variables/variables";
 @import "2-mixins/mixins";
 @import "0-layout/layout-Dir";
+@import "3-Modals/modals";
 
 * {
   margin: 0;
@@ -11,4 +12,5 @@
 }
 body {
   overflow-x: hidden;
+  background-color: #f5f5f5;
 }

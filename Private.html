@@ -7,6 +7,8 @@
       content="user-scalable=no, width=device-width,height=device-height, initial-scale=1, maximum-scale=1"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--FavIcon-->
+    <link rel="shorcut icon" type="image/jpg" href="imgs/mainLogo.png" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/app.css" />
 
@@ -26,34 +28,44 @@
     <title>Private Security</title>
   </head>
   <body>
-    <header class="mainHeader aboutHeader">
-      <div class="headContact">
-        <div class="headEmail">
-          <h4><i class="fal fa-envelope"></i>chaseadmin@safewithchase.com</h4>
+    <header class="headerContain aboutHeader">
+      <nav class="navContainer">
+        <div class="headerRow rowOne">
+          <div class="headerLogo">
+            <div class="logoText">
+              <h1>Chase</h1>
+              <h4>security</h4>
+            </div>
+            <div class="logo">
+              <img src="imgs/mainLogo.png" />
+            </div>
+          </div>
+          <div class="headerContact">
+            <h3 class="headerLink headerPhone">
+              <i class="fal fa-phone-square"></i>
+              (314)607-1220
+            </h3>
+            <!--Email-->
+            <h3 class="headerLink headerEmail">
+              <i class="far fa-envelope-square"></i>
+              chaseadmin@safewithchase.com
+            </h3>
+          </div>
         </div>
-        <div class="headPhone">
-          <h4><i class="fal fa-phone"></i>(314)607-1220</h4>
+        <div class="headerRow rowTwo">
+          <nav class="mainMenu">
+            <a href="index.html">home</a>
+            <a class="current" href="about.html">about</a>
+            <a href="services.html">services</a>
+            <a href="contact.html">contact</a>
+            <a href="#">client portal</a>
+          </nav>
+          <div class="headerSocialMed">
+            <a href="#"><i class="fab fa-facebook-f headSocIcon"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in headSocIcon"></i></a>
+          </div>
         </div>
-        <div class="clientPortal">
-          <a href="#">client portal</a>
-        </div>
-      </div>
-      <div class="menuContain">
-        <div class="Logo">
-          <a href="index.html"
-            ><h2><strong>Chase</strong> <img src="imgs/mainLogo.png" /></h2
-          ></a>
-        </div>
-        <nav class="mainMenu">
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="services.html">Services</a>
-          <a href="contact.html">Contact Us</a>
-        </nav>
-      </div>
-      <div class="showcaseWelcome aboutWelcome">
-        <h2>private security</h2>
-      </div>
+      </nav>
     </header>
     <div class="mainContainer">
       <aside class="lftCol">
@@ -153,32 +165,121 @@
         </section>
       </main>
     </div>
-    <footer class="globalFoot">
-      <div class="footerNav">
-        <div class="abtBlock">
-          <h3>about</h3>
-          <p>
-            We believe Security Professionals should offer more than a physical
-            deterrent to possible threats and act to protect life and property
-          </p>
+    <footer class="globalFooter">
+      <section class="footerFlex">
+        <div class="footCol colOne">
+          <div class="Logo">
+            <a href="index.html"
+              ><h2><strong>Chase</strong> <img src="imgs/mainLogo.png" /></h2
+            ></a>
+          </div>
+          <div class="compFootDesc">
+            <p>
+              We believe Security Professionals should offer more than a
+              physical deterrent to possible threats and act to protect life and
+              property
+            </p>
+          </div>
+          <div class="footLocLinks">
+            <h4>
+              <i class="fal fa-map-marker-alt footLocIcon"></i>4075 West Outer
+              Rd Arnold, Missouri
+            </h4>
+            <h4>
+              <i class="fal fa-phone-volume footLocIcon"></i>call us today
+            </h4>
+            <p>+1(314)607-1220</p>
+            <h4>
+              <i class="fal fa-envelope-open footLocIcon"></i>email us today
+            </h4>
+            <p>chaseadmin@safewithchase.com</p>
+          </div>
         </div>
-        <div class="contactBlock">
-          <h3>contact</h3>
-          <p>4075 West Outer Rd Arnold, Missouri</p>
-          <p>tel: (314)607-1220</p>
+        <div class="footCol colTwo">
+          <h2>more services</h2>
+          <div class="underline"></div>
+          <div class="servminiThumb">
+            <div class="footThumbImg">
+              <img src="imgs/Barnes6.jpg" />
+            </div>
+            <div class="footmreServ">
+              <h4>
+                <strong
+                  >We offer only the best of the best in our private
+                  security.</strong
+                >
+              </h4>
+              <p>
+                We bring only the highest trained officers, prior military
+                specialist for our private security service.
+              </p>
+              <div class="btnSpace">
+                <a href="Private.html"
+                  >More about Private Security <i class="fal fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="servminiThumb">
+            <div class="footThumbImg">
+              <img src="imgs/Barnes6.jpg" />
+            </div>
+            <div class="footmreServ">
+              <h4>
+                <strong
+                  >We offer only the best of the best in our private
+                  security.</strong
+                >
+              </h4>
+              <p>
+                We bring only the highest trained officers, prior military
+                specialist for our private security service.
+              </p>
+              <div class="btnSpace">
+                <a href="Industrial.html"
+                  >More about Industrial Security
+                  <i class="fal fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="navBlock">
-          <h3>pages</h3>
-          <a href="index.html">Home</a> <a href="about.html">About Us</a>
-          <a href="services.html">Services</a>
-          <a href="contact.html">Contact Us</a>
+        <div class="footCol colThree">
+          <h2>useful links</h2>
+          <div class="underline"></div>
+          <div class="otherLinks">
+            <ul class="useLinks linksColOne">
+              <li><a href="index.html">home</a></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href="services.html">services</a></li>
+              <li><a href="contact.html">contact</a></li>
+              <li><a href="Patrol.html">patrol</a></li>
+            </ul>
+            <ul class="useLinks linksColTwo">
+              <li><a href="Private.html">private</a></li>
+              <li><a href="uniformed.html">uniformed</a></li>
+              <li><a href="Industrial.html">industrial</a></li>
+              <li><a href="business.html">business</a></li>
+              <li><a href="Event.html">event</a></li>
+            </ul>
+          </div>
+          <div class="footOptHours">
+            <h2>opening hours</h2>
+            <div class="underline"></div>
+            <h4>
+              Monday - Friday:
+              <p class="hours">0900am - 1830pm</p>
+            </h4>
+            <h4>
+              saturday - sunday:
+              <p class="hours">closed</p>
+            </h4>
+          </div>
         </div>
-        <div class="soccialFoot">
-          <span> <i class="fab fa-facebook-f" id="footerIcon"></i> </span>
-          <span> <i class="fab fa-linkedin-in" id="footerIcon"></i> </span>
-        </div>
+      </section>
+      <div class="copyRight">
+        <p>Copyrights &copy; 2019 All Rights Reserved.</p>
       </div>
-      <div class="copyRight"><p>&copy; copyright Chase Security 2018</p></div>
     </footer>
   </body>
 </html>

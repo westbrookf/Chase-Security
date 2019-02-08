@@ -1,94 +1,170 @@
-.globalFoot {
-  height: 45vh;
+.globalFooter {
+  height: 60vh;
   width: 100%;
-  padding-top: 160px;
-}
-.footerNav {
-  @include Display(row, space-evenly, unset);
-  .abtBlock {
-    width: 400px;
-    h3 {
-      @include footerTitle;
-      //Responsive
-      @include Mobile {
-        font-size: 20px;
+  background-color: $accent;
+  padding-top: 40px;
+  .footerFlex {
+    height: 100%;
+    width: 100%;
+    @include Display(row, space-evenly, unset);
+    .footCol {
+      height: 100%;
+      width: 30%;
+    }
+    .colOne {
+      .Logo {
+        margin-left: 0px;
+        h2 {
+          font-size: 60px;
+          font-weight: $heavy-weight;
+          color: $dark-text;
+          img {
+            height: 50px;
+            width: 50px;
+          }
+        }
+      }
+      .compFootDesc {
+        font-size: 18px;
+        font-weight: lighter;
+        color: $dark-text;
+        line-height: 26px;
+        padding-top: 20px;
+        width: 95%;
+      }
+      .footLocLinks {
+        padding-top: 40px;
+        h4 {
+          font-family: $primary-font;
+          font-size: 18px;
+          color: $dark-text;
+          text-transform: capitalize;
+          margin-top: 20px;
+          .footLocIcon {
+            font-size: 22px;
+            padding-right: 20px;
+          }
+        }
+        p {
+          font-size: 18px;
+          font-weight: lighter;
+          color: $chase-blue;
+          margin-top: 3px;
+          margin-left: 40px;
+        }
       }
     }
+    .colTwo {
+      h2 {
+        font-family: $primary-font;
+        font-weight: lighter;
+        font-size: 30px;
+        text-transform: capitalize;
+      }
+      .servminiThumb {
+        height: 45%;
+        width: 100%;
+        @include Display(row, unset, unset);
+        .footThumbImg {
+          height: 45%;
+          width: 20%;
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+        .footmreServ {
+          width: 80%;
+          margin-left: 10px;
+          h4 {
+            font-size: 18px;
+            width: 100%;
+            color: $chase-blue;
+          }
+          p {
+            font-size: 14px;
+            font-weight: lighter;
+            color: #30303092;
+            padding-top: 10px;
+            line-height: 26px;
+          }
+          .btnSpace {
+            margin-top: 20px;
+          }
+          a {
+            font-size: 18px;
+            font-weight: lighter;
+            color: $dark-text;
+            padding-top: 20px;
+            transition: $global-Trans;
+          }
+          a:hover {
+            color: $chase-blue;
+          }
+        }
+      }
+    }
+    .colThree {
+      width: 24%;
+      h2 {
+        font-family: $primary-font;
+        font-weight: lighter;
+        text-transform: capitalize;
+        font-size: 30px;
+        color: $dark-text;
+      }
+      .otherLinks {
+        height: auto;
+        width: 100%;
+        @include Display(row, unset, center);
+        .useLinks {
+          li {
+            padding-top: 12px;
+            a {
+              font-family: $primary-font;
+              font-size: 18px;
+              font-weight: lighter;
+              color: $dark-text;
+              text-transform: capitalize;
+            }
+          }
+        }
+        .linksColTwo {
+          padding-left: 100px;
+        }
+      }
+      .footOptHours {
+        margin-top: 75px;
+        h2 {
+          font-family: $primary-font;
+          font-weight: lighter;
+          text-transform: capitalize;
+          color: $dark-text;
+        }
+        h4 {
+          font-family: $primary-font;
+          font-size: 20px;
+          font-weight: lighter;
+          padding-top: 12px;
+        }
+        .hours {
+          font-size: 18px;
+          font-weight: lighter;
+          color: $chase-blue;
+          display: inline-block;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+  .copyRight {
+    height: auto;
+    width: 100%;
+    background-color: #303030;
     p {
-      @include footerPara;
-      //Responsive
-      @include Mobile {
-        font-size: 14px;
-      }
+      font-family: $primary-font;
+      color: $light-text;
+      padding: 10px 0px 10px 40px;
     }
-    //abtBlock Responsive
-    @include Laptop {
-      width: 300px;
-      margin-left: 40px;
-    }
-  }
-  .contactBlock {
-    width: 300px;
-    h3 {
-      @include footerTitle;
-      //Responsive
-      @include Mobile {
-        font-size: 20px;
-      }
-    }
-    p {
-      @include footerPara;
-      //Responsive
-      @include Mobile {
-        font-size: 14px;
-      }
-    }
-  }
-  .navBlock {
-    width: 200px;
-    @include Display(column, unset, unset);
-    h3 {
-      @include footerTitle;
-      //Responsive
-      @include Mobile {
-        font-size: 20px;
-      }
-    }
-    a {
-      @include footerPara;
-      color: $dark-text;
-      transition: $global-Trans;
-      width: 90px;
-      //Responsive
-      @include Mobile {
-        font-size: 14px;
-      }
-    }
-    a:hover {
-      color: $chase-blue;
-    }
-  }
-  #footerIcon {
-    font-size: 20px;
-    margin-right: 60px;
-    background-color: $accent;
-    padding: 10px;
-    color: $dark-text;
-    //Responsive
-    @include Laptop {
-      display: none;
-    }
-  }
-}
-.copyRight {
-  margin-top: 142px;
-  text-align: center;
-  background-color: $dark-text;
-  height: 40px;
-  p {
-    font-size: 18px;
-    font-weight: $light-weight;
-    color: $light-text;
-    padding-top: 6px;
   }
 }

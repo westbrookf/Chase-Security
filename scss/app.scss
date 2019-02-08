@@ -11,6 +11,11 @@
   list-style-type: none;
 }
 body {
-  overflow-x: hidden;
   background-color: #f5f5f5;
+}
+.underline {
+  height: 2px;
+  width: 70px;
+  background-color: $chase-blue;
+  margin-bottom: 10px;
 }

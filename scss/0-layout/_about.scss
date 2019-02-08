@@ -221,9 +221,10 @@
 .freeCons {
   @include Background(url(../imgs/testBack.jpg));
   background-attachment: fixed;
-  height: 22vh;
+  height: 26vh;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 40px;
+  box-shadow: $global-shadow;
   .consultationText {
     padding-top: 20px;
     text-align: center;

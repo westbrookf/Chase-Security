@@ -1,175 +1,232 @@
-.mainHeader {
-  @include Background(url(../imgs/Barnes2.jpg));
+.headerContain {
   height: 100vh;
   width: 100%;
-  z-index: 99;
+  @include Background(url(../imgs/Barnes2.jpg));
   background-attachment: fixed;
-  //Responsive
-  @include Mobile {
-    height: 100vh;
-  }
-}
-.headContact {
-  height: 40px;
-  border-bottom: 1px solid $accent;
-  @include Display(row, unset, unset);
-  padding-left: 660px;
-  //Responsive
-  @include Laptop {
-    padding-left: 300px;
-  }
-  @include Tablet {
-    padding-left: 72px;
-  }
-  @include Mobile {
-    @include Display(column, unset, unset);
-    border-bottom: none;
-    text-align: center;
-    padding-left: 0px;
-  }
-}
-.headEmail {
-  border-right: 1px solid $accent;
-  padding-right: 20px;
-  h4 {
-    font-size: 18px;
-    font-weight: $light-weight;
-    color: $light-text;
-    padding-top: 6px;
-  }
-  .fa-envelope {
-    padding-right: 10px;
-  }
-}
-.headPhone {
-  margin-left: 40px;
-  border-right: 1px solid $accent;
-  padding-right: 20px;
-  h4 {
-    font-size: 18px;
-    font-weight: $light-weight;
-    color: $light-text;
-    padding-top: 6px;
-  }
-  .fa-phone {
-    padding-right: 10px;
-  }
-  //responsive
-  @include Mobile {
-    margin-left: 0px;
-  }
-}
-.clientPortal {
-  margin-top: 5px;
-  margin-left: 60px;
-  a {
-    font-size: 22px;
-    color: $light-text;
-  }
-  //Responsive
-  @include Laptop {
-    margin-left: 30px;
-  }
-  @include Mobile {
-    margin-left: 0px;
-  }
-}
-.menuContain {
-  @include Display(row, space-between, unset);
-  width: 100%;
-  //Responsive
-  @include Mobile {
-    @include Display(column, unset, unset);
-    padding-top: 60px;
-  }
-}
-.Logo {
-  margin-left: 70px;
-  h2 {
-    font-size: 60px;
-    font-weight: $heavy-weight;
-    color: $light-text;
-    //Responsive
-    @include Mobile {
-      display: none;
-    }
-  }
-  img {
-    height: 50px;
-    width: 50px;
-  }
-  p {
-    font-size: 24px;
-    font-weight: $light-weight;
-    text-transform: capitalize;
-    color: $light-text;
-    letter-spacing: 14px;
-  }
-}
-//Current Page Section
-.current {
-  border: 2px solid $chase-blue;
-  border-radius: $btn-Radius;
-  padding: 6px 10px 6px 10px;
-}
-.mainMenu {
-  margin-top: 30px;
-  margin-right: 40px;
-  a {
-    font-size: 20px;
-    font-weight: $light-weight;
-    color: $light-text;
-    padding-left: 10px;
-    transition: $global-Trans;
-  }
-  a:hover {
-    color: $chase-blue;
-  }
-  //Responsive
-  @include Mobile {
-    width: 400px;
-    margin: 20px 0 0 20px;
-  }
-}
-.showcaseWelcome {
-  margin-top: 200px;
-  margin-left: 70px;
-  width: 500px;
-  h2 {
-    font-size: 50px;
-    font-weight: $light-weight;
-    color: $light-text;
-    text-transform: capitalize;
-    word-spacing: 2px;
+  padding-top: 10px;
+  .navContainer {
+    height: 24vh;
+    width: 95%;
+    padding-left: 20px;
     //Responsive
     @include Tablet {
-      font-size: 40px;
+      height: 42vh;
+      padding-left: 0px;
+    }
+    .headerRow {
+      height: 50%;
+      width: 100%;
+      @include Display(row, spaced-evenly, unset);
+      //Responsive
+      @include Tablet {
+        @include Display(column, unset, center);
+      }
+    }
+    .rowOne {
+      .headerLogo {
+        height: 100%;
+        width: 40%;
+        @include Display(row, space-evenly, unset);
+        //Responsive
+        @include Tablet {
+          margin-left: 100px;
+        }
+        @include Mobile {
+          margin-left: -40px;
+        }
+        .logoText {
+          width: 50%;
+          height: 100%;
+          h1 {
+            font-family: $primary-font;
+            font-weight: lighter;
+            color: $light-text;
+            font-size: 66px;
+            text-transform: capitalize;
+          }
+          h4 {
+            font-family: $primary-font;
+            font-size: 30px;
+            font-weight: lighter;
+            color: $light-text;
+            letter-spacing: 17px;
+            margin-left: 8px;
+            margin-top: -22px;
+          }
+        }
+        .logo {
+          img {
+            height: 100%;
+            width: 40%;
+            margin-left: -120px;
+            //Responsive
+            @include lgLaptop {
+              margin-left: -64px;
+            }
+            @include Laptop {
+              margin-left: -16px;
+            }
+            @include Tablet {
+              margin-left: 32px;
+              height: 80%;
+            }
+            @include Mobile {
+              margin-left: 100px;
+              margin-top: 20px;
+              width: 60%;
+              height: 60%;
+            }
+          }
+        }
+      }
+      .headerContact {
+        padding-top: 33px;
+        padding-left: 3%;
+        @include Display(row, space-evenly, unset);
+        //Responsive
+        @include lgLaptop {
+          padding-left: 15%;
+        }
+        @include Laptop {
+          padding-left: 8%;
+        }
+        @include Tablet {
+          padding-left: 6%;
+        }
+        @include Mobile {
+          width: 100%;
+          padding-left: 5%;
+        }
+        @include medMobile {
+          @include Display(column, unset, unset);
+          text-align: center;
+        }
+        .headerLink {
+          font-family: $primary-font;
+          font-size: 20px;
+          font-weight: lighter;
+          color: $light-text;
+          //Responsive
+          @include Mobile {
+            font-size: 15px;
+          }
+        }
+        .headerEmail {
+          padding-left: 30px;
+          //Responsive
+          @include medMobile {
+            padding-left: 0px;
+          }
+        }
+      }
+    }
+    .rowTwo {
+      margin-top: 30px;
+      .mainMenu {
+        height: 100%;
+        width: 94%;
+        //Responsive
+        @include Tablet {
+          height: 32%;
+          margin-left: 150px;
+        }
+        @include Mobile {
+          width: 100%;
+          margin-left: 32px;
+        }
+        .current {
+          border: 2px solid #62adc292;
+        }
+        a {
+          font-family: $primary-font;
+          font-size: 20px;
+          font-weight: lighter;
+          color: $light-text;
+          text-transform: capitalize;
+          margin-left: 2%;
+          width: 20%;
+          padding: 6px 12px 6px 12px;
+          //Responsive
+          @include Mobile {
+            font-size: 14px;
+            margin-left: 0%;
+            width: 10%;
+          }
+          @include medMobile {
+            font-size: 11px;
+          }
+        }
+      }
+      .headSocIcon {
+        font-size: 22px;
+        color: $light-text;
+        //Responsive
+        @include Tablet {
+          margin-left: 34px;
+        }
+        @include Mobile {
+          margin-left: 0px;
+        }
+        @include medMobile {
+          font-size: 16px;
+        }
+      }
+      .headSocIcon:hover {
+        color: $chase-blue;
+      }
+      .fa-linkedin-in {
+        padding-left: 10px;
+      }
     }
   }
-  p {
-    font-size: 17px;
-    font-weight: $light-weight;
-    color: $light-text;
-    width: 350px;
-  }
-  .btnContain {
-    @include readMore;
-    margin-top: 30px;
-    a {
-      @include rmText;
+  .welcomeMessageContain {
+    height: auto;
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 3%;
+    //Responsive
+    @include Tablet {
+      text-align: center;
+      width: 94%;
     }
-  }
-  .btnContain:hover {
-    @include rmbtnHover;
-    border: none;
-  }
-  //Showcase welcome Responsive
-  @include Tablet {
-    margin-left: 40px;
-  }
-  @include Mobile {
-    margin-top: 260px;
-
-    width: 350px;
+    @include Mobile {
+      width: 100%;
+      margin-top: 16%;
+    }
+    h2 {
+      font-family: $primary-font;
+      font-size: 46px;
+      font-weight: lighter;
+      color: $light-text;
+      word-spacing: 4px;
+      //Responsive
+      @include Tablet {
+        font-size: 34px;
+        width: 80%;
+        margin-left: 64px;
+      }
+      @include Mobile {
+        width: 90%;
+        margin-left: 10px;
+        font-size: 24px;
+      }
+    }
+    p {
+      font-family: $primary-font;
+      font-weight: lighter;
+      font-size: 18px;
+      color: #f5f5f592;
+      line-height: 32px;
+      width: 70%;
+      margin-top: 20px;
+      //Responsive
+      @include Tablet {
+        margin-left: 100px;
+      }
+      @include Mobile {
+        margin-left: 30px;
+        width: 80%;
+      }
+    }
   }
 }

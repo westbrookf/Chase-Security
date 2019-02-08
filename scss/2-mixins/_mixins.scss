@@ -1,6 +1,6 @@
 //Global Mixins
 @mixin Background($showcase) {
-  background: linear-gradient(to bottom, #30303054, #30303054), $showcase;
+  background: linear-gradient(to bottom, #30303096, #30303035), $showcase;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -96,8 +96,14 @@
   padding-top: 10px;
 }
 //Responsive Mixins
+//Responsive Mixin
+@mixin lgLaptop {
+  @media only screen and(max-width: 1200px) {
+    @content;
+  }
+}
 @mixin Laptop {
-  @media only screen and(max-width: 1024px) {
+  @media only screen and(max-width: 1020px) {
     @content;
   }
 }
@@ -107,9 +113,21 @@
     @content;
   }
 }
+//600
+@mixin lgMobile {
+  @media only screen and(max-width: 600px) {
+    @content;
+  }
+}
 //Mobile
 @mixin Mobile {
   @media only screen and(max-width: 425px) {
+    @content;
+  }
+}
+//Medium Mobile
+@mixin medMobile {
+  @media only screen and(max-width: 375px) {
     @content;
   }
 }

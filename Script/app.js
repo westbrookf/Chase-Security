@@ -9,7 +9,7 @@ prev.addEventListener("click", SlideLeft);
 next.addEventListener("click", SlideRight);
 
 function SlideRight() {
-  BlockOne.style.marginLeft = "-1000px";
+  BlockOne.style.marginLeft = "-900px";
   BlockOne.style.opacity = "0";
   BlockTwo.style.opacity = "1";
 }

@@ -9,6 +9,10 @@
   width: 100%;
   background-attachment: fixed;
   padding-top: 10px; }
+  @media only screen and (max-width: 600px) {
+    .headerContain {
+      transform: scale(0.9);
+      background-attachment: unset; } }
   .headerContain .navContainer {
     height: 24vh;
     width: 95%;

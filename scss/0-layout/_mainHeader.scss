@@ -4,6 +4,11 @@
   @include Background(url(../imgs/Barnes2.jpg));
   background-attachment: fixed;
   padding-top: 10px;
+  @include lgMobile {
+    // height: 60vh;
+    transform: scale(0.9);
+    background-attachment: unset;
+  }
   .navContainer {
     height: 24vh;
     width: 95%;

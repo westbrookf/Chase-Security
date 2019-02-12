@@ -594,14 +594,19 @@
   }
 }
 
+.mapContain {
+  height: 70vh;
+  width: 100%;
+}
 //GoogleMaps
 #map {
-  height: 70vh;
+  height: 100%;
   width: 100%;
   z-index: 0;
 }
 .mapBanner {
-  height: 70vh;
+  z-index: 99;
+  height: 100%;
   width: 26vw;
   background-color: $chase-blue;
   position: relative;

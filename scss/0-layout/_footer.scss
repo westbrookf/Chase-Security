@@ -85,6 +85,9 @@
           @include Tablet {
             font-size: 14px;
           }
+          @include Mobile {
+            font-size: 12px;
+          }
           .footLocIcon {
             font-size: 22px;
             padding-right: 20px;

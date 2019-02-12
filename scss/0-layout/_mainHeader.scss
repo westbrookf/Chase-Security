@@ -26,6 +26,9 @@
       @include Tablet {
         @include Display(column, unset, center);
       }
+      @include lgMobile {
+        height: 30%;
+      }
     }
     .rowOne {
       .headerLogo {
@@ -56,14 +59,14 @@
             @include Laptop {
               font-size: 50px;
             }
-            @include Mobile {
+            @include lgMobile {
               font-size: 35px;
             }
             img {
               height: 60px;
               width: 70px;
               //Responsive
-              @include Mobile {
+              @include lgMobile {
                 height: 40px;
                 width: 40px;
               }
@@ -81,7 +84,7 @@
             @include Laptop {
               letter-spacing: 12px;
             }
-            @include Mobile {
+            @include lgMobile {
               font-size: 26px;
               letter-spacing: 4px;
               margin-left: 0px;
@@ -100,10 +103,13 @@
         @include Tablet {
           padding-left: 6%;
         }
-        @include Mobile {
+        @include lgMobile {
           width: 100%;
           padding-left: 5%;
           padding-top: 0px;
+        }
+        @include Mobile {
+          padding-top: 20px;
         }
         @include medMobile {
           @include Display(column, unset, unset);
@@ -135,8 +141,11 @@
     .rowTwo {
       margin-top: 30px;
       //Responsive
+      @include lgMobile {
+        margin-top: 30px;
+      }
       @include Mobile {
-        margin-top: -30px;
+        margin-top: 20px;
       }
       .mainMenu {
         height: 100%;
@@ -186,8 +195,12 @@
         @include Tablet {
           margin-left: 34px;
         }
-        @include Mobile {
+        @include lgMobile {
+          margin-top: 20px;
           margin-left: 0px;
+        }
+        @include Mobile {
+          margin-top: 10px;
         }
         @include medMobile {
           font-size: 16px;

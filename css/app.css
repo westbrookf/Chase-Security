@@ -1,7 +1,7 @@
 .headerContain {
-  height: 100vh;
+  height: 60vh;
   width: 100%;
-  background: linear-gradient(to bottom, #30303096, #30303035), url(../imgs/Barnes2.jpg);
+  background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/Barnes2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,7 +11,6 @@
   padding-top: 10px; }
   @media only screen and (max-width: 600px) {
     .headerContain {
-      transform: scale(0.9);
       background-attachment: unset; } }
   .headerContain .navContainer {
     height: 24vh;
@@ -26,7 +25,7 @@
       width: 100%;
       display: flex;
       flex-direction: row;
-      justify-content: spaced-evenly;
+      justify-content: space-between;
       align-items: unset; }
       @media only screen and (max-width: 768px) {
         .headerContain .navContainer .headerRow {
@@ -39,23 +38,40 @@
       width: 40%;
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: space-between;
       align-items: unset; }
       @media only screen and (max-width: 768px) {
         .headerContain .navContainer .rowOne .headerLogo {
           margin-left: 100px; } }
+      @media only screen and (max-width: 600px) {
+        .headerContain .navContainer .rowOne .headerLogo {
+          margin-left: 20px; } }
       @media only screen and (max-width: 425px) {
         .headerContain .navContainer .rowOne .headerLogo {
-          margin-left: -40px; } }
+          height: 50%; } }
       .headerContain .navContainer .rowOne .headerLogo .logoText {
-        width: 50%;
-        height: 100%; }
+        width: 100%;
+        height: 100%;
+        padding-left: 20px; }
         .headerContain .navContainer .rowOne .headerLogo .logoText h1 {
           font-family: "Open Sans", sans-serif;
           font-weight: lighter;
           color: #e7e7e7eb;
           font-size: 66px;
           text-transform: capitalize; }
+          @media only screen and (max-width: 1020px) {
+            .headerContain .navContainer .rowOne .headerLogo .logoText h1 {
+              font-size: 50px; } }
+          @media only screen and (max-width: 425px) {
+            .headerContain .navContainer .rowOne .headerLogo .logoText h1 {
+              font-size: 35px; } }
+          .headerContain .navContainer .rowOne .headerLogo .logoText h1 img {
+            height: 60px;
+            width: 70px; }
+            @media only screen and (max-width: 425px) {
+              .headerContain .navContainer .rowOne .headerLogo .logoText h1 img {
+                height: 40px;
+                width: 40px; } }
         .headerContain .navContainer .rowOne .headerLogo .logoText h4 {
           font-family: "Open Sans", sans-serif;
           font-size: 30px;
@@ -64,26 +80,14 @@
           letter-spacing: 17px;
           margin-left: 8px;
           margin-top: -22px; }
-      .headerContain .navContainer .rowOne .headerLogo .logo img {
-        height: 100%;
-        width: 40%;
-        margin-left: -120px; }
-        @media only screen and (max-width: 1200px) {
-          .headerContain .navContainer .rowOne .headerLogo .logo img {
-            margin-left: -64px; } }
-        @media only screen and (max-width: 1020px) {
-          .headerContain .navContainer .rowOne .headerLogo .logo img {
-            margin-left: -16px; } }
-        @media only screen and (max-width: 768px) {
-          .headerContain .navContainer .rowOne .headerLogo .logo img {
-            margin-left: 32px;
-            height: 80%; } }
-        @media only screen and (max-width: 425px) {
-          .headerContain .navContainer .rowOne .headerLogo .logo img {
-            margin-left: 100px;
-            margin-top: 20px;
-            width: 60%;
-            height: 60%; } }
+          @media only screen and (max-width: 1020px) {
+            .headerContain .navContainer .rowOne .headerLogo .logoText h4 {
+              letter-spacing: 12px; } }
+          @media only screen and (max-width: 425px) {
+            .headerContain .navContainer .rowOne .headerLogo .logoText h4 {
+              font-size: 26px;
+              letter-spacing: 4px;
+              margin-left: 0px; } }
     .headerContain .navContainer .rowOne .headerContact {
       padding-top: 33px;
       padding-left: 3%;
@@ -91,19 +95,17 @@
       flex-direction: row;
       justify-content: space-evenly;
       align-items: unset; }
-      @media only screen and (max-width: 1200px) {
-        .headerContain .navContainer .rowOne .headerContact {
-          padding-left: 15%; } }
       @media only screen and (max-width: 1020px) {
         .headerContain .navContainer .rowOne .headerContact {
-          padding-left: 8%; } }
+          padding-left: 0%; } }
       @media only screen and (max-width: 768px) {
         .headerContain .navContainer .rowOne .headerContact {
           padding-left: 6%; } }
       @media only screen and (max-width: 425px) {
         .headerContain .navContainer .rowOne .headerContact {
           width: 100%;
-          padding-left: 5%; } }
+          padding-left: 5%;
+          padding-top: 0px; } }
       @media only screen and (max-width: 375px) {
         .headerContain .navContainer .rowOne .headerContact {
           display: flex;
@@ -116,9 +118,13 @@
         font-size: 20px;
         font-weight: lighter;
         color: #e7e7e7eb; }
+        @media only screen and (max-width: 1020px) {
+          .headerContain .navContainer .rowOne .headerContact .headerLink {
+            font-size: 18px;
+            font-weight: lighter; } }
         @media only screen and (max-width: 425px) {
           .headerContain .navContainer .rowOne .headerContact .headerLink {
-            font-size: 15px; } }
+            font-size: 14px; } }
       .headerContain .navContainer .rowOne .headerContact .headerEmail {
         padding-left: 30px; }
         @media only screen and (max-width: 375px) {
@@ -126,6 +132,9 @@
             padding-left: 0px; } }
     .headerContain .navContainer .rowTwo {
       margin-top: 30px; }
+      @media only screen and (max-width: 425px) {
+        .headerContain .navContainer .rowTwo {
+          margin-top: -30px; } }
       .headerContain .navContainer .rowTwo .mainMenu {
         height: 100%;
         width: 94%; }
@@ -133,6 +142,9 @@
           .headerContain .navContainer .rowTwo .mainMenu {
             height: 32%;
             margin-left: 150px; } }
+        @media only screen and (max-width: 600px) {
+          .headerContain .navContainer .rowTwo .mainMenu {
+            margin-left: 60px; } }
         @media only screen and (max-width: 425px) {
           .headerContain .navContainer .rowTwo .mainMenu {
             width: 100%;
@@ -148,6 +160,9 @@
           margin-left: 2%;
           width: 20%;
           padding: 6px 12px 6px 12px; }
+          @media only screen and (max-width: 600px) {
+            .headerContain .navContainer .rowTwo .mainMenu a {
+              font-size: 16px; } }
           @media only screen and (max-width: 425px) {
             .headerContain .navContainer .rowTwo .mainMenu a {
               font-size: 14px;
@@ -177,6 +192,9 @@
     width: 50%;
     margin-top: 10%;
     margin-left: 3%; }
+    @media only screen and (max-width: 1020px) {
+      .headerContain .welcomeMessageContain {
+        margin-top: 15%; } }
     @media only screen and (max-width: 768px) {
       .headerContain .welcomeMessageContain {
         text-align: center;
@@ -191,6 +209,9 @@
       font-weight: lighter;
       color: #e7e7e7eb;
       word-spacing: 4px; }
+      @media only screen and (max-width: 1020px) {
+        .headerContain .welcomeMessageContain h2 {
+          font-size: 34px; } }
       @media only screen and (max-width: 768px) {
         .headerContain .welcomeMessageContain h2 {
           font-size: 34px;
@@ -209,9 +230,12 @@
       line-height: 32px;
       width: 70%;
       margin-top: 20px; }
+      @media only screen and (max-width: 1020px) {
+        .headerContain .welcomeMessageContain p {
+          width: 85%; } }
       @media only screen and (max-width: 768px) {
         .headerContain .welcomeMessageContain p {
-          margin-left: 100px; } }
+          margin-left: 50px; } }
       @media only screen and (max-width: 425px) {
         .headerContain .welcomeMessageContain p {
           margin-left: 30px;
@@ -220,8 +244,8 @@
 .globalFooter {
   height: 60vh;
   width: 100%;
-  background-color: #e7e7e7;
-  padding-top: 40px; }
+  padding-top: 40px;
+  border-top: 1px solid #e7e7e7; }
   .globalFooter .footerFlex {
     height: 100%;
     width: 100%;
@@ -238,9 +262,26 @@
         font-size: 60px;
         font-weight: 400;
         color: #303030; }
+        @media only screen and (max-width: 1020px) {
+          .globalFooter .footerFlex .colOne .Logo h2 {
+            font-size: 50px; } }
+        @media only screen and (max-width: 600px) {
+          .globalFooter .footerFlex .colOne .Logo h2 {
+            font-size: 40px; } }
+        @media only screen and (max-width: 425px) {
+          .globalFooter .footerFlex .colOne .Logo h2 {
+            font-size: 30px; } }
         .globalFooter .footerFlex .colOne .Logo h2 img {
           height: 50px;
           width: 50px; }
+          @media only screen and (max-width: 600px) {
+            .globalFooter .footerFlex .colOne .Logo h2 img {
+              height: 40px;
+              width: 40px; } }
+          @media only screen and (max-width: 425px) {
+            .globalFooter .footerFlex .colOne .Logo h2 img {
+              height: 30px;
+              width: 30px; } }
     .globalFooter .footerFlex .colOne .compFootDesc {
       font-size: 18px;
       font-weight: lighter;
@@ -248,28 +289,79 @@
       line-height: 26px;
       padding-top: 20px;
       width: 95%; }
+      @media only screen and (max-width: 1020px) {
+        .globalFooter .footerFlex .colOne .compFootDesc {
+          padding-top: 10px;
+          font-size: 16px;
+          width: 100%; } }
+      @media only screen and (max-width: 768px) {
+        .globalFooter .footerFlex .colOne .compFootDesc {
+          font-size: 14px; } }
+      @media only screen and (max-width: 600px) {
+        .globalFooter .footerFlex .colOne .compFootDesc {
+          font-size: 12px; } }
+      @media only screen and (max-width: 425px) {
+        .globalFooter .footerFlex .colOne .compFootDesc {
+          line-height: unset; } }
     .globalFooter .footerFlex .colOne .footLocLinks {
-      padding-top: 40px; }
+      padding-top: 20px; }
+      @media only screen and (max-width: 1200px) {
+        .globalFooter .footerFlex .colOne .footLocLinks {
+          padding-top: 0px; } }
       .globalFooter .footerFlex .colOne .footLocLinks h4 {
         font-family: "Open Sans", sans-serif;
         font-size: 18px;
         color: #303030;
         text-transform: capitalize;
         margin-top: 20px; }
+        @media only screen and (max-width: 1020px) {
+          .globalFooter .footerFlex .colOne .footLocLinks h4 {
+            font-size: 16px; } }
+        @media only screen and (max-width: 768px) {
+          .globalFooter .footerFlex .colOne .footLocLinks h4 {
+            font-size: 14px; } }
         .globalFooter .footerFlex .colOne .footLocLinks h4 .footLocIcon {
           font-size: 22px;
           padding-right: 20px; }
+          @media only screen and (max-width: 768px) {
+            .globalFooter .footerFlex .colOne .footLocLinks h4 .footLocIcon {
+              padding-right: 10px; } }
       .globalFooter .footerFlex .colOne .footLocLinks p {
         font-size: 18px;
         font-weight: lighter;
         color: #62adc2;
         margin-top: 3px;
         margin-left: 40px; }
+        @media only screen and (max-width: 768px) {
+          .globalFooter .footerFlex .colOne .footLocLinks p {
+            margin-left: 0px;
+            font-size: 14px; } }
+        @media only screen and (max-width: 600px) {
+          .globalFooter .footerFlex .colOne .footLocLinks p {
+            font-size: 12px; } }
+        @media only screen and (max-width: 425px) {
+          .globalFooter .footerFlex .colOne .footLocLinks p {
+            font-size: 10px; } }
+    @media only screen and (max-width: 425px) {
+      .globalFooter .footerFlex .colTwo {
+        margin-left: 6px; } }
     .globalFooter .footerFlex .colTwo h2 {
       font-family: "Open Sans", sans-serif;
       font-weight: lighter;
       font-size: 30px;
       text-transform: capitalize; }
+      @media only screen and (max-width: 1020px) {
+        .globalFooter .footerFlex .colTwo h2 {
+          font-size: 26px; } }
+      @media only screen and (max-width: 768px) {
+        .globalFooter .footerFlex .colTwo h2 {
+          font-size: 22px; } }
+      @media only screen and (max-width: 600px) {
+        .globalFooter .footerFlex .colTwo h2 {
+          font-size: 18px; } }
+      @media only screen and (max-width: 425px) {
+        .globalFooter .footerFlex .colTwo h2 {
+          font-size: 14px; } }
     .globalFooter .footerFlex .colTwo .servminiThumb {
       height: 45%;
       width: 100%;
@@ -280,30 +372,67 @@
       .globalFooter .footerFlex .colTwo .servminiThumb .footThumbImg {
         height: 45%;
         width: 20%; }
+        @media only screen and (max-width: 768px) {
+          .globalFooter .footerFlex .colTwo .servminiThumb .footThumbImg {
+            display: none; } }
         .globalFooter .footerFlex .colTwo .servminiThumb .footThumbImg img {
           height: 100%;
           width: 100%; }
       .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ {
         width: 80%;
         margin-left: 10px; }
+        @media only screen and (max-width: 768px) {
+          .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ {
+            margin-left: 0px; } }
         .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ h4 {
           font-size: 18px;
           width: 100%;
           color: #62adc2; }
+          @media only screen and (max-width: 768px) {
+            .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ h4 {
+              font-size: 14px; } }
+          @media only screen and (max-width: 425px) {
+            .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ h4 {
+              display: none; } }
         .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ p {
           font-size: 14px;
           font-weight: lighter;
           color: #30303092;
           padding-top: 10px;
           line-height: 26px; }
+          @media only screen and (max-width: 768px) {
+            .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ p {
+              font-size: 12px;
+              line-height: unset; } }
+          @media only screen and (max-width: 425px) {
+            .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ p {
+              padding-top: 4px; } }
         .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ .btnSpace {
           margin-top: 20px; }
+          @media only screen and (max-width: 1200px) {
+            .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ .btnSpace {
+              margin-top: 0px; } }
+          @media only screen and (max-width: 768px) {
+            .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ .btnSpace {
+              margin-top: 20px; } }
+          @media only screen and (max-width: 600px) {
+            .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ .btnSpace {
+              margin-top: 6px; } }
         .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ a {
           font-size: 18px;
           font-weight: lighter;
           color: #303030;
           padding-top: 20px;
           transition: 0.6s; }
+          @media only screen and (max-width: 1020px) {
+            .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ a {
+              font-size: 16px; } }
+          @media only screen and (max-width: 768px) {
+            .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ a {
+              font-size: 12px; } }
+          @media only screen and (max-width: 600px) {
+            .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ a {
+              font-size: 9px; } }
         .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ a:hover {
           color: #62adc2; }
     .globalFooter .footerFlex .colThree {
@@ -314,6 +443,18 @@
         text-transform: capitalize;
         font-size: 30px;
         color: #303030; }
+        @media only screen and (max-width: 1020px) {
+          .globalFooter .footerFlex .colThree h2 {
+            font-size: 26px; } }
+        @media only screen and (max-width: 768px) {
+          .globalFooter .footerFlex .colThree h2 {
+            font-size: 22px; } }
+        @media only screen and (max-width: 600px) {
+          .globalFooter .footerFlex .colThree h2 {
+            font-size: 18px; } }
+        @media only screen and (max-width: 425px) {
+          .globalFooter .footerFlex .colThree h2 {
+            font-size: 14px; } }
       .globalFooter .footerFlex .colThree .otherLinks {
         height: auto;
         width: 100%;
@@ -329,30 +470,94 @@
             font-weight: lighter;
             color: #303030;
             text-transform: capitalize; }
+            @media only screen and (max-width: 768px) {
+              .globalFooter .footerFlex .colThree .otherLinks .useLinks li a {
+                font-size: 16px; } }
+            @media only screen and (max-width: 600px) {
+              .globalFooter .footerFlex .colThree .otherLinks .useLinks li a {
+                font-size: 14px; } }
+            @media only screen and (max-width: 425px) {
+              .globalFooter .footerFlex .colThree .otherLinks .useLinks li a {
+                font-size: 12px; } }
+          .globalFooter .footerFlex .colThree .otherLinks .useLinks li a:hover {
+            color: #62adc2; }
         .globalFooter .footerFlex .colThree .otherLinks .linksColTwo {
           padding-left: 100px; }
+          @media only screen and (max-width: 1020px) {
+            .globalFooter .footerFlex .colThree .otherLinks .linksColTwo {
+              padding-left: 70px; } }
+          @media only screen and (max-width: 768px) {
+            .globalFooter .footerFlex .colThree .otherLinks .linksColTwo {
+              padding-left: 40px; } }
+          @media only screen and (max-width: 600px) {
+            .globalFooter .footerFlex .colThree .otherLinks .linksColTwo {
+              padding-left: 20px; } }
+          @media only screen and (max-width: 425px) {
+            .globalFooter .footerFlex .colThree .otherLinks .linksColTwo {
+              padding-left: 10px; } }
       .globalFooter .footerFlex .colThree .footOptHours {
-        margin-top: 75px; }
+        margin-top: 30px; }
+        @media only screen and (max-width: 1020px) {
+          .globalFooter .footerFlex .colThree .footOptHours {
+            margin-top: 50px; } }
         .globalFooter .footerFlex .colThree .footOptHours h2 {
           font-family: "Open Sans", sans-serif;
           font-weight: lighter;
           text-transform: capitalize;
           color: #303030; }
+          @media only screen and (max-width: 1020px) {
+            .globalFooter .footerFlex .colThree .footOptHours h2 {
+              font-size: 26px; } }
+          @media only screen and (max-width: 768px) {
+            .globalFooter .footerFlex .colThree .footOptHours h2 {
+              font-size: 22px; } }
+          @media only screen and (max-width: 600px) {
+            .globalFooter .footerFlex .colThree .footOptHours h2 {
+              font-size: 18px; } }
+          @media only screen and (max-width: 425px) {
+            .globalFooter .footerFlex .colThree .footOptHours h2 {
+              font-size: 14px; } }
         .globalFooter .footerFlex .colThree .footOptHours h4 {
           font-family: "Open Sans", sans-serif;
           font-size: 20px;
           font-weight: lighter;
-          padding-top: 12px; }
+          padding-top: 12px;
+          text-transform: capitalize; }
+          @media only screen and (max-width: 1200px) {
+            .globalFooter .footerFlex .colThree .footOptHours h4 {
+              font-size: 18px; } }
+          @media only screen and (max-width: 1020px) {
+            .globalFooter .footerFlex .colThree .footOptHours h4 {
+              font-size: 16px;
+              padding-top: 6px; } }
+          @media only screen and (max-width: 768px) {
+            .globalFooter .footerFlex .colThree .footOptHours h4 {
+              font-size: 12px; } }
         .globalFooter .footerFlex .colThree .footOptHours .hours {
           font-size: 18px;
           font-weight: lighter;
           color: #62adc2;
           display: inline-block;
           padding-left: 20px; }
+          @media only screen and (max-width: 1200px) {
+            .globalFooter .footerFlex .colThree .footOptHours .hours {
+              font-size: 16px;
+              padding-left: 12px; } }
+          @media only screen and (max-width: 1020px) {
+            .globalFooter .footerFlex .colThree .footOptHours .hours {
+              font-size: 14px;
+              padding-left: 2px; } }
+          @media only screen and (max-width: 768px) {
+            .globalFooter .footerFlex .colThree .footOptHours .hours {
+              padding-left: 0px;
+              display: block; } }
+          @media only screen and (max-width: 425px) {
+            .globalFooter .footerFlex .colThree .footOptHours .hours {
+              font-size: 12px; } }
   .globalFooter .copyRight {
     height: auto;
     width: 100%;
-    background-color: #303030; }
+    background-image: url(../imgs/texture.png); }
     .globalFooter .copyRight p {
       font-family: "Open Sans", sans-serif;
       color: #e7e7e7eb;
@@ -368,36 +573,60 @@
     align-items: unset;
     width: 90%;
     padding-top: 100px;
-    padding-left: 100px; }
+    margin-left: 110px; }
+    @media only screen and (max-width: 1020px) {
+      .weaContain .aboutIntro {
+        margin-left: 60px; } }
+    @media only screen and (max-width: 768px) {
+      .weaContain .aboutIntro {
+        margin-left: 30px;
+        padding-top: 40px; } }
     .weaContain .aboutIntro .textblock {
       height: auto;
       width: 40%; }
+      @media only screen and (max-width: 425px) {
+        .weaContain .aboutIntro .textblock {
+          width: 100%;
+          text-align: center; } }
       .weaContain .aboutIntro .textblock .title {
         font-size: 26px;
         font-weight: lighter;
         color: #62adc2;
         text-transform: capitalize; }
+        @media only screen and (max-width: 768px) {
+          .weaContain .aboutIntro .textblock .title {
+            padding-top: 0px; } }
       .weaContain .aboutIntro .textblock h3 {
         font-size: 40px;
         font-weight: lighter;
         color: #303030;
         text-transform: capitalize;
         padding-top: 40px; }
+        @media only screen and (max-width: 768px) {
+          .weaContain .aboutIntro .textblock h3 {
+            font-size: 30px;
+            padding-top: 20px; } }
+        @media only screen and (max-width: 425px) {
+          .weaContain .aboutIntro .textblock h3 {
+            font-size: 20px; } }
       .weaContain .aboutIntro .textblock p {
         font-size: 18px;
         font-weight: lighter;
         padding-top: 10px;
         color: #303030; }
+        @media only screen and (max-width: 425px) {
+          .weaContain .aboutIntro .textblock p {
+            font-size: 16px; } }
       .weaContain .aboutIntro .textblock .btnContain {
         margin-top: 30px;
-        border: 1px solid #e7e7e7eb;
-        border-radius: 40px;
-        width: 100px;
-        text-align: center;
-        padding: 6px 12px 6px 12px;
-        transition: 0.6s;
+        width: 120px;
         border: 1px solid #62adc2;
-        transition: 0.6s; }
+        transition: 0.6s;
+        text-align: center;
+        padding: 6px; }
+        @media only screen and (max-width: 425px) {
+          .weaContain .aboutIntro .textblock .btnContain {
+            margin-left: 140px; } }
         .weaContain .aboutIntro .textblock .btnContain .mainRM {
           font-size: 18px;
           font-weight: lighter;
@@ -412,20 +641,30 @@
           color: #e7e7e7eb; }
     .weaContain .aboutIntro .imgLogo {
       width: 50%; }
+      @media only screen and (max-width: 425px) {
+        .weaContain .aboutIntro .imgLogo {
+          display: none; } }
       .weaContain .aboutIntro .imgLogo img {
         height: 90%;
         width: 90%; }
+        @media only screen and (max-width: 768px) {
+          .weaContain .aboutIntro .imgLogo img {
+            height: 100%;
+            width: 100%; } }
       .weaContain .aboutIntro .imgLogo .abtLogo {
         height: 70%;
         width: 50%;
         margin-top: -270px;
         margin-left: 50%;
         transition: 0.6s; }
+        @media only screen and (max-width: 768px) {
+          .weaContain .aboutIntro .imgLogo .abtLogo {
+            margin-left: 60%; } }
       .weaContain .aboutIntro .imgLogo .abtLogo:hover {
         transform: scale(1.1); }
 
 .supportContain {
-  background: linear-gradient(to bottom, #30303096, #30303035), url(../imgs/securityguard1.jpg);
+  background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/securityguard1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -440,6 +679,12 @@
     text-transform: capitalize;
     padding-top: 40px;
     padding-left: 43%; }
+    @media only screen and (max-width: 1020px) {
+      .supportContain .title {
+        padding-left: 40%; } }
+    @media only screen and (max-width: 768px) {
+      .supportContain .title {
+        padding-left: 6%; } }
   .supportContain .supportGrid {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -450,25 +695,51 @@
     @media only screen and (max-width: 1200px) {
       .supportContain .supportGrid {
         margin-top: 20px; } }
+    @media only screen and (max-width: 1020px) {
+      .supportContain .supportGrid {
+        grid-row-gap: 28px;
+        margin-left: 40%; } }
+    @media only screen and (max-width: 768px) {
+      .supportContain .supportGrid {
+        margin-left: 6%; } }
   .supportContain #gridBlock {
     width: 25vw; }
+    @media only screen and (max-width: 768px) {
+      .supportContain #gridBlock {
+        width: 40vw; } }
     .supportContain #gridBlock #gridIcon {
       font-size: 30px;
       color: #62adc2; }
+      @media only screen and (max-width: 425px) {
+        .supportContain #gridBlock #gridIcon {
+          font-size: 22px; } }
     .supportContain #gridBlock h3 {
       font-size: 24px;
       font-weight: lighter;
       text-transform: capitalize;
       color: #e7e7e7eb;
       padding-top: 6px; }
+      @media only screen and (max-width: 425px) {
+        .supportContain #gridBlock h3 {
+          font-size: 18px; } }
     .supportContain #gridBlock p {
       font-size: 18px;
       font-weight: lighter;
       color: #e7e7e7eb;
       padding-top: 6px; }
+      @media only screen and (max-width: 1020px) {
+        .supportContain #gridBlock p {
+          font-size: 16px; } }
+      @media only screen and (max-width: 425px) {
+        .supportContain #gridBlock p {
+          font-size: 14px; } }
 
 .hmeService {
+  height: auto;
   width: 100%; }
+  @media only screen and (max-width: 1020px) {
+    .hmeService {
+      margin-bottom: 20px; } }
   .hmeService .title {
     font-size: 26px;
     font-weight: lighter;
@@ -491,87 +762,158 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center; }
+  @media only screen and (max-width: 768px) {
+    .serviceRow {
+      display: flex;
+      flex-direction: column;
+      justify-content: unset;
+      align-items: unset; } }
+  @media only screen and (max-width: 600px) {
+    .serviceRow {
+      margin-top: 18px; } }
 
 .serviceNav {
   height: 50vh;
-  width: 25vw; }
+  width: 28vw;
+  border: 1px solid #e7e7e7;
+  padding: 40px 14px 14px 14px; }
+  @media only screen and (max-width: 1020px) {
+    .serviceNav {
+      padding-top: 0px; } }
+  @media only screen and (max-width: 768px) {
+    .serviceNav {
+      width: 80%;
+      height: 30vh;
+      text-align: center;
+      margin-left: 60px; } }
+  @media only screen and (max-width: 425px) {
+    .serviceNav {
+      margin-left: 40px; } }
+  .serviceNav .title {
+    font-size: 26px;
+    font-weight: lighter;
+    color: #62adc2;
+    text-transform: capitalize;
+    width: 20%; }
+    @media only screen and (max-width: 768px) {
+      .serviceNav .title {
+        width: 100%; } }
+    @media only screen and (max-width: 600px) {
+      .serviceNav .title {
+        font-size: 22px; } }
   .serviceNav h3 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: lighter;
     color: #303030;
     text-transform: capitalize;
-    padding-top: 22px; }
+    padding-top: 12px;
+    width: 100%; }
+    @media only screen and (max-width: 1020px) {
+      .serviceNav h3 {
+        padding-top: 4px; } }
+    @media only screen and (max-width: 600px) {
+      .serviceNav h3 {
+        font-size: 26px; } }
+    @media only screen and (max-width: 425px) {
+      .serviceNav h3 {
+        font-size: 22px; } }
   .serviceNav p {
     font-size: 17px;
     font-weight: lighter;
-    padding-top: 10px; }
-  .serviceNav .navArrows {
-    margin-top: 30px; }
-    .serviceNav .navArrows a {
-      font-size: 30px;
-      color: #303030;
-      transition: 0.6s;
-      cursor: pointer; }
-    .serviceNav .navArrows a:hover {
-      color: #62adc2; }
-    .serviceNav .navArrows #prev {
-      padding-right: 30px; }
+    padding-top: 10px;
+    line-height: 28px;
+    width: 100%; }
+    @media only screen and (max-width: 600px) {
+      .serviceNav p {
+        font-size: 14px; } }
+    @media only screen and (max-width: 425px) {
+      .serviceNav p {
+        font-size: 12px; } }
 
-.serviceSlide {
-  width: 61vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: unset;
-  align-items: unset;
-  padding-left: 66px;
-  overflow: hidden; }
-  .serviceSlide #slideBlockPad {
-    padding-right: 20px; }
-  .serviceSlide #slideBlockOne {
+.serviceThumbnails {
+  width: 60vw;
+  padding-left: 30px;
+  padding-bottom: 40px; }
+  @media only screen and (max-width: 768px) {
+    .serviceThumbnails {
+      width: 100%;
+      padding-left: 8px; } }
+  .serviceThumbnails .serviceSlides {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: unset;
-    width: 61vw;
-    transition: 1.5s; }
-  .serviceSlide #slideBlockTwo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: unset;
-    width: 61vw;
-    transition: 1.5s;
-    opacity: 0; }
-  .serviceSlide .serviceBlock {
-    width: 21vw; }
-    .serviceSlide .serviceBlock img {
+    width: 100%; }
+    @media only screen and (max-width: 768px) {
+      .serviceThumbnails .serviceSlides {
+        display: flex;
+        flex-direction: row;
+        justify-content: unset;
+        align-items: unset; } }
+  .serviceThumbnails #slideBlockTwo {
+    margin-top: 20px; }
+  .serviceThumbnails #serveZoom {
+    transform: scale(0.9);
+    transition: 0.6s; }
+  .serviceThumbnails #serveZoom:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 20px #30303092;
+    background-color: #f5f5f5; }
+    .serviceThumbnails #serveZoom:hover h3 {
+      color: #62adc2; }
+    @media only screen and (max-width: 768px) {
+      .serviceThumbnails #serveZoom:hover {
+        transform: scale(1); } }
+  .serviceThumbnails .serviceBlock {
+    height: 43vh;
+    width: 18vw; }
+    @media only screen and (max-width: 768px) {
+      .serviceThumbnails .serviceBlock {
+        width: 32%;
+        height: 53%; } }
+    .serviceThumbnails .serviceBlock img {
       height: 52%;
-      width: 21vw; }
-    .serviceSlide .serviceBlock h3 {
+      width: 100%; }
+    .serviceThumbnails .serviceBlock h3 {
       font-size: 24px;
       font-weight: lighter;
       color: #303030;
-      text-transform: capitalize; }
-    .serviceSlide .serviceBlock p {
+      text-transform: capitalize;
+      padding: 10px; }
+      @media only screen and (max-width: 1200px) {
+        .serviceThumbnails .serviceBlock h3 {
+          font-size: 20px; } }
+      @media only screen and (max-width: 1020px) {
+        .serviceThumbnails .serviceBlock h3 {
+          font-size: 18px; } }
+    .serviceThumbnails .serviceBlock p {
       font-size: 14px;
       font-weight: lighter;
-      color: #303030; }
-    .serviceSlide .serviceBlock .hsReadBtn {
-      padding-top: 20px; }
-      .serviceSlide .serviceBlock .hsReadBtn a {
+      color: #303030;
+      padding: 0px 10px 0px 10px;
+      width: 100%; }
+      @media only screen and (max-width: 1200px) {
+        .serviceThumbnails .serviceBlock p {
+          font-size: 12px; } }
+      @media only screen and (max-width: 768px) {
+        .serviceThumbnails .serviceBlock p {
+          font-size: 14px; } }
+    .serviceThumbnails .serviceBlock .hsReadBtn {
+      padding: 12px 0px 8px 10px; }
+      .serviceThumbnails .serviceBlock .hsReadBtn a {
         font-size: 17px;
         color: #303030;
         transition: 0.6s;
         text-transform: capitalize; }
-        .serviceSlide .serviceBlock .hsReadBtn a .fa-arrow-right {
+        .serviceThumbnails .serviceBlock .hsReadBtn a .fa-arrow-right {
           padding-left: 6px;
           color: #62adc2;
           transition: 0.8s; }
-      .serviceSlide .serviceBlock .hsReadBtn a:hover {
+      .serviceThumbnails .serviceBlock .hsReadBtn a:hover {
         color: #62adc2; }
 
 .videoReview {
-  background: linear-gradient(to bottom, #30303096, #30303035), url(../imgs/gopro.jpg);
+  background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/gopro.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -579,13 +921,24 @@
   width: 100%;
   height: 50vh;
   width: 100%;
-  background-position: top 30% left 70%;
-  background-attachment: fixed;
-  margin-top: 60px; }
+  background-position: top 30% left 70%; }
+  @media only screen and (max-width: 425px) {
+    .videoReview {
+      height: 30vh; } }
   .videoReview .reviewText {
-    padding-top: 100px;
-    padding-left: 170px;
+    padding-top: 80px;
+    padding-left: 60px;
     width: 44vw; }
+    @media only screen and (max-width: 1020px) {
+      .videoReview .reviewText {
+        width: 50vw; } }
+    @media only screen and (max-width: 768px) {
+      .videoReview .reviewText {
+        width: 60%; } }
+    @media only screen and (max-width: 425px) {
+      .videoReview .reviewText {
+        width: 80%;
+        padding-top: 40px; } }
     .videoReview .reviewText .title {
       font-size: 26px;
       font-weight: lighter;
@@ -597,119 +950,173 @@
       color: #e7e7e7eb;
       text-transform: capitalize;
       padding-top: 22px; }
+      @media only screen and (max-width: 1020px) {
+        .videoReview .reviewText h3 {
+          font-size: 34px; } }
+      @media only screen and (max-width: 768px) {
+        .videoReview .reviewText h3 {
+          font-size: 30px; } }
+      @media only screen and (max-width: 600px) {
+        .videoReview .reviewText h3 {
+          font-size: 24px; } }
 
-.quoteContain {
-  height: 40vh;
+.testimonialQuoteContain {
+  background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/texture.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
   width: 100%;
-  margin-top: 60px; }
-  .quoteContain .quoteRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: unset;
-    width: 90%; }
-  .quoteContain .quoteText {
+  height: 70vh;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: unset; }
+  .testimonialQuoteContain .quoteText {
+    height: 80%;
+    width: 30%;
+    margin-top: 50px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    transition: 0.6s;
+    transform: scale(0.9); }
+    @media only screen and (max-width: 768px) {
+      .testimonialQuoteContain .quoteText {
+        width: 60%; } }
+    .testimonialQuoteContain .quoteText .quoteForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: unset;
+      align-items: unset;
+      margin-left: 10px;
+      width: 96%; }
+      .testimonialQuoteContain .quoteText .quoteForm h3 {
+        font-size: 30px;
+        font-weight: 400;
+        color: #303030;
+        text-transform: capitalize;
+        padding-top: 10px;
+        text-align: center; }
+        @media only screen and (max-width: 1020px) {
+          .testimonialQuoteContain .quoteText .quoteForm h3 {
+            font-size: 24px; } }
+        @media only screen and (max-width: 425px) {
+          .testimonialQuoteContain .quoteText .quoteForm h3 {
+            font-size: 20px; } }
+      .testimonialQuoteContain .quoteText .quoteForm .inputStyle {
+        height: 5vh;
+        font-size: 18px;
+        font-weight: lighter;
+        padding-left: 6px;
+        background: transparent;
+        border: none;
+        border-bottom: 3px solid #e7e7e7;
+        margin-top: 20px; }
+      .testimonialQuoteContain .quoteText .quoteForm .serviceInterest {
+        position: relative;
+        height: 5vh;
+        background-color: transparent;
+        font-size: 18px;
+        border: none;
+        border-bottom: 3px solid #e7e7e7 !important;
+        cursor: pointer;
+        margin-top: 10px; }
+      .testimonialQuoteContain .quoteText .quoteForm #submit {
+        height: 5vh;
+        width: 10vw;
+        font-size: 18px;
+        font-weight: lighter;
+        color: #e7e7e7eb;
+        text-transform: capitalize;
+        font-size: 14px;
+        background-color: #62adc2;
+        cursor: pointer;
+        margin-top: 20px; }
+      .testimonialQuoteContain .quoteText .quoteForm #submit:hover {
+        background-color: #62adc2;
+        box-shadow: 0px 4px 20px #30303092; }
+  .testimonialQuoteContain .quoteText:hover {
+    box-shadow: 0px 4px 20px #30303092;
+    transform: scale(1); }
+  .testimonialQuoteContain .testimonialsContainer {
     height: 100%;
-    width: 40%;
-    padding-left: 80px; }
-    .quoteContain .quoteText .title {
+    width: 50%; }
+    @media only screen and (max-width: 768px) {
+      .testimonialQuoteContain .testimonialsContainer {
+        width: 40%;
+        margin-top: 40px;
+        margin-right: 40px; } }
+    @media only screen and (max-width: 600px) {
+      .testimonialQuoteContain .testimonialsContainer {
+        margin-top: 10px; } }
+    @media only screen and (max-width: 425px) {
+      .testimonialQuoteContain .testimonialsContainer {
+        margin-top: 10px;
+        margin-right: 20px; } }
+    .testimonialQuoteContain .testimonialsContainer .title {
       font-size: 26px;
       font-weight: lighter;
       color: #62adc2;
-      text-transform: capitalize; }
-    .quoteContain .quoteText h3 {
-      font-size: 40px;
-      font-weight: 400;
-      color: #303030;
       text-transform: capitalize;
-      padding-top: 22px; }
-    .quoteContain .quoteText p {
-      font-size: 17px;
-      font-weight: lighter;
-      padding-top: 10px; }
-  .quoteContain .quoteForm {
-    display: flex;
-    flex-direction: column;
-    justify-content: unset;
-    align-items: unset;
-    margin-top: -40px;
-    margin-left: 110px;
-    width: 40%; }
-  .quoteContain .inputStyle {
-    height: 5vh;
-    font-size: 18px;
-    font-weight: lighter;
-    padding-left: 6px;
-    background: transparent;
-    border: none;
-    border-bottom: 3px solid #e7e7e7;
-    margin-top: 10px; }
-  .quoteContain .serviceInterest {
-    position: relative;
-    height: 5vh;
-    background-color: transparent;
-    font-size: 18px;
-    border: none;
-    border-bottom: 3px solid #e7e7e7 !important;
-    cursor: pointer;
-    margin-top: 10px; }
-
-#submit {
-  height: 5vh;
-  width: 10vw;
-  font-size: 18px;
-  font-weight: lighter;
-  color: #e7e7e7eb;
-  text-transform: capitalize;
-  font-size: 14px;
-  background-color: #62adc2;
-  cursor: pointer;
-  margin-top: 20px; }
-
-#submit:hover {
-  background-color: #62adc2;
-  box-shadow: 0px 4px 20px #30303092; }
-
-.testimonialContain {
-  width: 100%;
-  height: 70vh;
-  background-color: #303030; }
-  .testimonialContain .title {
-    font-size: 26px;
-    font-weight: lighter;
-    color: #62adc2;
-    text-transform: capitalize;
-    text-align: center;
-    padding-top: 60px; }
-  .testimonialContain h3 {
-    font-size: 34px;
-    font-weight: 400;
-    color: #e7e7e7eb;
-    text-transform: capitalize;
-    padding-top: 22px;
-    text-align: center; }
-  .testimonialContain .testRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 60px; }
-  .testimonialContain .testimonial {
-    width: 30%; }
-    .testimonialContain .testimonial #testIcon {
+      text-align: center;
+      margin-top: 90px; }
+      @media only screen and (max-width: 768px) {
+        .testimonialQuoteContain .testimonialsContainer .title {
+          font-size: 18px; } }
+    .testimonialQuoteContain .testimonialsContainer h3 {
       font-size: 30px;
-      color: #62adc2; }
-    .testimonialContain .testimonial p {
-      font-size: 17px;
-      font-weight: lighter;
-      color: #e7e7e7eb;
-      padding-top: 10px;
-      line-height: 24px; }
-    .testimonialContain .testimonial .user {
-      font-size: 20px;
+      font-weight: 400;
       color: #e7e7e7eb;
       text-transform: capitalize;
-      padding-top: 10px; }
+      padding-top: 22px;
+      text-align: center; }
+      @media only screen and (max-width: 768px) {
+        .testimonialQuoteContain .testimonialsContainer h3 {
+          font-size: 18px; } }
+    .testimonialQuoteContain .testimonialsContainer .testRow {
+      padding-top: 60px;
+      width: 100%;
+      position: relative; }
+      @media only screen and (max-width: 768px) {
+        .testimonialQuoteContain .testimonialsContainer .testRow {
+          padding-top: 30px; } }
+      .testimonialQuoteContain .testimonialsContainer .testRow #testSlide {
+        display: none; }
+      .testimonialQuoteContain .testimonialsContainer .testRow .testimonial {
+        width: 100%; }
+        .testimonialQuoteContain .testimonialsContainer .testRow .testimonial #testIcon {
+          font-size: 30px;
+          color: #62adc2;
+          width: 100%;
+          text-align: center; }
+        .testimonialQuoteContain .testimonialsContainer .testRow .testimonial p {
+          font-size: 17px;
+          font-weight: lighter;
+          color: #e7e7e7eb;
+          padding-top: 10px;
+          line-height: 24px;
+          width: 90%;
+          text-align: center;
+          margin-left: 30px; }
+          @media only screen and (max-width: 768px) {
+            .testimonialQuoteContain .testimonialsContainer .testRow .testimonial p {
+              width: 100%;
+              margin-left: 0px;
+              font-size: 12px; } }
+          @media only screen and (max-width: 425px) {
+            .testimonialQuoteContain .testimonialsContainer .testRow .testimonial p {
+              line-height: unset; } }
+        .testimonialQuoteContain .testimonialsContainer .testRow .testimonial .user {
+          font-size: 20px;
+          color: #e7e7e7eb;
+          text-transform: capitalize;
+          padding-top: 10px;
+          width: 100%;
+          text-align: center; }
+          @media only screen and (max-width: 768px) {
+            .testimonialQuoteContain .testimonialsContainer .testRow .testimonial .user {
+              font-size: 18px; } }
 
 #map {
   height: 70vh;
@@ -722,8 +1129,11 @@
   background-color: #62adc2;
   position: relative;
   float: right;
-  margin-top: -559px;
-  margin-right: 120px; }
+  margin-top: -517px;
+  margin-right: 166px; }
+  @media only screen and (max-width: 600px) {
+    .mapBanner {
+      margin-right: 120px; } }
   .mapBanner .stl {
     font-size: 30px;
     font-weight: lighter;
@@ -731,9 +1141,22 @@
     text-align: center;
     padding-top: 30px;
     text-transform: capitalize; }
+    @media only screen and (max-width: 600px) {
+      .mapBanner .stl {
+        font-size: 24px; } }
   .mapBanner .bannerAd {
     padding-top: 40px;
     padding-left: 30px; }
+    @media only screen and (max-width: 768px) {
+      .mapBanner .bannerAd {
+        padding-left: 10px; } }
+    @media only screen and (max-width: 600px) {
+      .mapBanner .bannerAd {
+        text-align: center;
+        padding-left: 0px; } }
+    @media only screen and (max-width: 425px) {
+      .mapBanner .bannerAd {
+        padding-top: 20px; } }
     .mapBanner .bannerAd h4 {
       font-size: 20px;
       font-weight: lighter;
@@ -741,15 +1164,34 @@
       text-transform: capitalize; }
       .mapBanner .bannerAd h4 .fa-map-marker {
         padding-left: 60%; }
+        @media only screen and (max-width: 768px) {
+          .mapBanner .bannerAd h4 .fa-map-marker {
+            padding-left: 45%; } }
+        @media only screen and (max-width: 600px) {
+          .mapBanner .bannerAd h4 .fa-map-marker {
+            padding-left: 0%; } }
     .mapBanner .bannerAd p {
       font-size: 14px;
       font-weight: lighter;
       color: #e7e7e7eb;
       padding-top: 10px;
       width: 200px; }
+      @media only screen and (max-width: 600px) {
+        .mapBanner .bannerAd p {
+          width: 100%; } }
   .mapBanner .bannerPhone {
     padding-top: 40px;
     padding-left: 30px; }
+    @media only screen and (max-width: 768px) {
+      .mapBanner .bannerPhone {
+        padding-left: 10px; } }
+    @media only screen and (max-width: 600px) {
+      .mapBanner .bannerPhone {
+        padding-left: 0px;
+        text-align: center; } }
+    @media only screen and (max-width: 425px) {
+      .mapBanner .bannerPhone {
+        padding-top: 20px; } }
     .mapBanner .bannerPhone h4 {
       font-size: 20px;
       font-weight: lighter;
@@ -757,15 +1199,34 @@
       text-transform: capitalize; }
       .mapBanner .bannerPhone h4 .fa-phone {
         padding-left: 55%; }
+        @media only screen and (max-width: 768px) {
+          .mapBanner .bannerPhone h4 .fa-phone {
+            padding-left: 40%; } }
+        @media only screen and (max-width: 600px) {
+          .mapBanner .bannerPhone h4 .fa-phone {
+            padding-left: 0%; } }
     .mapBanner .bannerPhone p {
       font-size: 14px;
       font-weight: lighter;
       color: #e7e7e7eb;
       padding-top: 10px;
       width: 200px; }
+      @media only screen and (max-width: 600px) {
+        .mapBanner .bannerPhone p {
+          width: 100%; } }
   .mapBanner .bannerEmail {
     padding-top: 40px;
     padding-left: 30px; }
+    @media only screen and (max-width: 768px) {
+      .mapBanner .bannerEmail {
+        padding-left: 10px; } }
+    @media only screen and (max-width: 600px) {
+      .mapBanner .bannerEmail {
+        padding-left: 0px;
+        text-align: center; } }
+    @media only screen and (max-width: 425px) {
+      .mapBanner .bannerEmail {
+        padding-top: 20px; } }
     .mapBanner .bannerEmail h4 {
       font-size: 20px;
       font-weight: lighter;
@@ -773,15 +1234,38 @@
       text-transform: capitalize; }
       .mapBanner .bannerEmail h4 .fa-envelope {
         padding-left: 58%; }
+        @media only screen and (max-width: 768px) {
+          .mapBanner .bannerEmail h4 .fa-envelope {
+            padding-left: 45%; } }
+        @media only screen and (max-width: 600px) {
+          .mapBanner .bannerEmail h4 .fa-envelope {
+            padding-left: 0%; } }
     .mapBanner .bannerEmail p {
       font-size: 14px;
       font-weight: lighter;
       color: #e7e7e7eb;
       padding-top: 10px;
       width: 200px; }
+      @media only screen and (max-width: 768px) {
+        .mapBanner .bannerEmail p {
+          font-size: 12px; } }
+      @media only screen and (max-width: 600px) {
+        .mapBanner .bannerEmail p {
+          font-size: 11px;
+          width: 100%; } }
   .mapBanner .bannerHours {
     padding-top: 40px;
     padding-left: 30px; }
+    @media only screen and (max-width: 768px) {
+      .mapBanner .bannerHours {
+        padding-left: 10px; } }
+    @media only screen and (max-width: 600px) {
+      .mapBanner .bannerHours {
+        padding-left: 0px;
+        text-align: center; } }
+    @media only screen and (max-width: 425px) {
+      .mapBanner .bannerHours {
+        padding-top: 20px; } }
     .mapBanner .bannerHours h4 {
       font-size: 20px;
       font-weight: lighter;
@@ -789,15 +1273,24 @@
       text-transform: capitalize; }
       .mapBanner .bannerHours h4 .fa-clock {
         padding-left: 55%; }
+        @media only screen and (max-width: 768px) {
+          .mapBanner .bannerHours h4 .fa-clock {
+            padding-left: 40%; } }
+        @media only screen and (max-width: 600px) {
+          .mapBanner .bannerHours h4 .fa-clock {
+            padding-left: 0%; } }
     .mapBanner .bannerHours p {
       font-size: 14px;
       font-weight: lighter;
       color: #e7e7e7eb;
       padding-top: 10px;
       width: 200px; }
+      @media only screen and (max-width: 600px) {
+        .mapBanner .bannerHours p {
+          width: 100%; } }
 
 .aboutHeader {
-  background: linear-gradient(to bottom, #30303096, #30303035), url(../imgs/chaseofficer.jpg);
+  background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/chaseofficer.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -978,7 +1471,7 @@
 
 /* Team Member Profile photo*/
 .Justin {
-  background: linear-gradient(to bottom, #30303096, #30303035), url(../imgs/justin.jpg);
+  background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/justin.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -986,7 +1479,7 @@
   width: 100%; }
 
 .Jeff {
-  background: linear-gradient(to bottom, #30303096, #30303035), url(../imgs/JH.jpg);
+  background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/JH.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -994,7 +1487,7 @@
   width: 100%; }
 
 .Mike {
-  background: linear-gradient(to bottom, #30303096, #30303035), url(../imgs/Mike.jpg);
+  background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/Mike.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1002,7 +1495,7 @@
   width: 100%; }
 
 .Brock {
-  background: linear-gradient(to bottom, #30303096, #30303035), url(../imgs/mainLogo.jpg);
+  background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/mainLogo.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1033,7 +1526,7 @@
       color: #62adc2; }
 
 .freeCons {
-  background: linear-gradient(to bottom, #30303096, #30303035), url(../imgs/testBack.jpg);
+  background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/testBack.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1074,7 +1567,7 @@
       margin-left: 615px; }
 
 .serviceHeader {
-  background: linear-gradient(to bottom, #30303096, #30303035), url(../imgs/chaseofficer.jpg);
+  background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/chaseofficer.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1243,7 +1736,7 @@
     justify-content: space-evenly;
     align-items: center; }
     .lftCol .mreServices .currentLink {
-      background-color: black;
+      background-image: url(../imgs/texture.png);
       border: 2px solid #62adc2;
       color: #62adc2; }
     .lftCol .mreServices a {
@@ -1256,7 +1749,7 @@
       padding: 10px 0 10px 10px;
       border-top: 3px solid #f5f5f5; }
     .lftCol .mreServices a:hover {
-      background-color: black;
+      background-image: url(../imgs/texture.png);
       border: 2px solid #62adc2;
       color: #62adc2; }
   .lftCol .testimonialThumbnail {
@@ -1345,7 +1838,7 @@
     line-height: 28px; }
 
 .photoLink {
-  background: linear-gradient(to bottom, #30303096, #30303035), url(../imgs/consultPhoto.jpg);
+  background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/consultPhoto.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1477,12 +1970,13 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
   list-style-type: none; }
 
 body {
-  background-color: #f5f5f5; }
+  background-image: url(../imgs/dustscratchestexture.png); }
 
 .underline {
   height: 2px;

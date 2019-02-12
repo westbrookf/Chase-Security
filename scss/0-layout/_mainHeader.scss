@@ -1,13 +1,13 @@
 .headerContain {
-  height: 100vh;
+  height: 60vh;
   width: 100%;
   @include Background(url(../imgs/Barnes2.jpg));
   background-attachment: fixed;
   padding-top: 10px;
   @include lgMobile {
     // height: 60vh;
-    transform: scale(0.9);
     background-attachment: unset;
+    // background-size: 100%;
   }
   .navContainer {
     height: 24vh;
@@ -21,7 +21,7 @@
     .headerRow {
       height: 50%;
       width: 100%;
-      @include Display(row, spaced-evenly, unset);
+      @include Display(row, space-between, unset);
       //Responsive
       @include Tablet {
         @include Display(column, unset, center);
@@ -31,23 +31,43 @@
       .headerLogo {
         height: 100%;
         width: 40%;
-        @include Display(row, space-evenly, unset);
+        @include Display(row, space-between, unset);
         //Responsive
         @include Tablet {
           margin-left: 100px;
         }
+        @include lgMobile {
+          margin-left: 20px;
+        }
         @include Mobile {
-          margin-left: -40px;
+          height: 50%;
         }
         .logoText {
-          width: 50%;
+          width: 100%;
           height: 100%;
+          padding-left: 20px;
           h1 {
             font-family: $primary-font;
             font-weight: lighter;
             color: $light-text;
             font-size: 66px;
             text-transform: capitalize;
+            //Responsive
+            @include Laptop {
+              font-size: 50px;
+            }
+            @include Mobile {
+              font-size: 35px;
+            }
+            img {
+              height: 60px;
+              width: 70px;
+              //Responsive
+              @include Mobile {
+                height: 40px;
+                width: 40px;
+              }
+            }
           }
           h4 {
             font-family: $primary-font;
@@ -57,29 +77,14 @@
             letter-spacing: 17px;
             margin-left: 8px;
             margin-top: -22px;
-          }
-        }
-        .logo {
-          img {
-            height: 100%;
-            width: 40%;
-            margin-left: -120px;
             //Responsive
-            @include lgLaptop {
-              margin-left: -64px;
-            }
             @include Laptop {
-              margin-left: -16px;
-            }
-            @include Tablet {
-              margin-left: 32px;
-              height: 80%;
+              letter-spacing: 12px;
             }
             @include Mobile {
-              margin-left: 100px;
-              margin-top: 20px;
-              width: 60%;
-              height: 60%;
+              font-size: 26px;
+              letter-spacing: 4px;
+              margin-left: 0px;
             }
           }
         }
@@ -89,11 +94,8 @@
         padding-left: 3%;
         @include Display(row, space-evenly, unset);
         //Responsive
-        @include lgLaptop {
-          padding-left: 15%;
-        }
         @include Laptop {
-          padding-left: 8%;
+          padding-left: 0%;
         }
         @include Tablet {
           padding-left: 6%;
@@ -101,6 +103,7 @@
         @include Mobile {
           width: 100%;
           padding-left: 5%;
+          padding-top: 0px;
         }
         @include medMobile {
           @include Display(column, unset, unset);
@@ -112,8 +115,12 @@
           font-weight: lighter;
           color: $light-text;
           //Responsive
+          @include Laptop {
+            font-size: 18px;
+            font-weight: lighter;
+          }
           @include Mobile {
-            font-size: 15px;
+            font-size: 14px;
           }
         }
         .headerEmail {
@@ -127,6 +134,10 @@
     }
     .rowTwo {
       margin-top: 30px;
+      //Responsive
+      @include Mobile {
+        margin-top: -30px;
+      }
       .mainMenu {
         height: 100%;
         width: 94%;
@@ -134,6 +145,9 @@
         @include Tablet {
           height: 32%;
           margin-left: 150px;
+        }
+        @include lgMobile {
+          margin-left: 60px;
         }
         @include Mobile {
           width: 100%;
@@ -152,6 +166,9 @@
           width: 20%;
           padding: 6px 12px 6px 12px;
           //Responsive
+          @include lgMobile {
+            font-size: 16px;
+          }
           @include Mobile {
             font-size: 14px;
             margin-left: 0%;
@@ -190,6 +207,9 @@
     margin-top: 10%;
     margin-left: 3%;
     //Responsive
+    @include Laptop {
+      margin-top: 15%;
+    }
     @include Tablet {
       text-align: center;
       width: 94%;
@@ -205,6 +225,9 @@
       color: $light-text;
       word-spacing: 4px;
       //Responsive
+      @include Laptop {
+        font-size: 34px;
+      }
       @include Tablet {
         font-size: 34px;
         width: 80%;
@@ -225,8 +248,11 @@
       width: 70%;
       margin-top: 20px;
       //Responsive
+      @include Laptop {
+        width: 85%;
+      }
       @include Tablet {
-        margin-left: 100px;
+        margin-left: 50px;
       }
       @include Mobile {
         margin-left: 30px;

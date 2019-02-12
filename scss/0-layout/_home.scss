@@ -5,12 +5,29 @@
     @include Display(row, space-evenly, unset);
     width: 90%;
     padding-top: 100px;
-    padding-left: 100px;
+    margin-left: 110px;
+    //Responsive
+    @include Laptop {
+      margin-left: 60px;
+    }
+    @include Tablet {
+      margin-left: 30px;
+      padding-top: 40px;
+    }
     .textblock {
       height: auto;
       width: 40%;
+      //Responsive
+      @include Mobile {
+        width: 100%;
+        text-align: center;
+      }
       .title {
         @include secTitle;
+        //Responsive
+        @include Tablet {
+          padding-top: 0px;
+        }
       }
       h3 {
         font-size: 40px;
@@ -18,18 +35,36 @@
         color: $dark-text;
         text-transform: capitalize;
         padding-top: 40px;
+        //Responsive
+        @include Tablet {
+          font-size: 30px;
+          padding-top: 20px;
+        }
+        @include Mobile {
+          font-size: 20px;
+        }
       }
       p {
         font-size: 18px;
         font-weight: $light-weight;
         padding-top: 10px;
         color: $dark-text;
+        //Responsive
+        @include Mobile {
+          font-size: 16px;
+        }
       }
       .btnContain {
         margin-top: 30px;
-        @include readMore;
+        width: 120px;
         border: 1px solid $chase-blue;
         transition: $global-Trans;
+        text-align: center;
+        padding: 6px;
+        //Responsive
+        @include Mobile {
+          margin-left: 140px;
+        }
         .mainRM {
           @include rmText;
           color: $dark-text;
@@ -45,9 +80,18 @@
     }
     .imgLogo {
       width: 50%;
+      //Responsive
+      @include Mobile {
+        display: none;
+      }
       img {
         height: 90%;
         width: 90%;
+        //Responsive
+        @include Tablet {
+          height: 100%;
+          width: 100%;
+        }
       }
       .abtLogo {
         height: 70%;
@@ -55,6 +99,10 @@
         margin-top: -270px;
         margin-left: 50%;
         transition: $global-Trans;
+        //Responsive
+        @include Tablet {
+          margin-left: 60%;
+        }
       }
       .abtLogo:hover {
         transform: $global-scale;
@@ -71,6 +119,13 @@
     @include secTitle;
     padding-top: 40px;
     padding-left: 43%;
+    //Responsive
+    @include Laptop {
+      padding-left: 40%;
+    }
+    @include Tablet {
+      padding-left: 6%;
+    }
   }
   .supportGrid {
     display: grid;
@@ -83,12 +138,27 @@
     @include lgLaptop {
       margin-top: 20px;
     }
+    @include Laptop {
+      grid-row-gap: 28px;
+      margin-left: 40%;
+    }
+    @include Tablet {
+      margin-left: 6%;
+    }
   }
   #gridBlock {
     width: 25vw;
+    //Responsive
+    @include Tablet {
+      width: 40vw;
+    }
     #gridIcon {
       font-size: 30px;
       color: $chase-blue;
+      //Responsive
+      @include Mobile {
+        font-size: 22px;
+      }
     }
     h3 {
       font-size: 24px;
@@ -96,18 +166,34 @@
       text-transform: capitalize;
       color: $light-text;
       padding-top: 6px;
+      //Responsive
+      @include Mobile {
+        font-size: 18px;
+      }
     }
     p {
       font-size: 18px;
       font-weight: $light-weight;
       color: $light-text;
       padding-top: 6px;
+      //Responsive
+      @include Laptop {
+        font-size: 16px;
+      }
+      @include Mobile {
+        font-size: 14px;
+      }
     }
   }
 }
 //Services
 .hmeService {
+  height: auto;
   width: 100%;
+  //Responsive
+  @include Laptop {
+    margin-bottom: 20px;
+  }
   .title {
     @include secTitle;
     text-align: center;
@@ -126,78 +212,156 @@
   width: 100%;
   margin-top: 50px;
   @include Display(row, space-evenly, center);
+  //Responsive
+  @include Tablet {
+    @include Display(column, unset, unset);
+  }
+  @include lgMobile {
+    margin-top: 18px;
+  }
 }
 .serviceNav {
   height: 50vh;
-  width: 25vw;
+  width: 28vw;
+  border: 1px solid $accent;
+  padding: 40px 14px 14px 14px;
+  //Responsive
+  @include Laptop {
+    padding-top: 0px;
+  }
+  @include Tablet {
+    width: 80%;
+    height: 30vh;
+    text-align: center;
+    margin-left: 60px;
+  }
+  @include Mobile {
+    margin-left: 40px;
+  }
+  .title {
+    @include secTitle;
+    width: 20%;
+    //Responsive
+    @include Tablet {
+      width: 100%;
+    }
+    @include lgMobile {
+      font-size: 22px;
+    }
+  }
   h3 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: $light-weight;
     color: $dark-text;
     text-transform: capitalize;
-    padding-top: 22px;
+    padding-top: 12px;
+    width: 100%;
+    //Responsive
+    @include Laptop {
+      padding-top: 4px;
+    }
+    @include lgMobile {
+      font-size: 26px;
+    }
+    @include Mobile {
+      font-size: 22px;
+    }
   }
   p {
     font-size: 17px;
     font-weight: $light-weight;
     padding-top: 10px;
-  }
-  .navArrows {
-    margin-top: 30px;
-    a {
-      font-size: 30px;
-      color: $dark-text;
-      transition: $global-Trans;
-      cursor: pointer;
+    line-height: 28px;
+    width: 100%;
+    //Responsive
+    @include lgMobile {
+      font-size: 14px;
     }
-    a:hover {
-      color: $chase-blue;
-    }
-    #prev {
-      padding-right: 30px;
+    @include Mobile {
+      font-size: 12px;
     }
   }
 }
-.serviceSlide {
-  width: 61vw;
-  @include Display(row, unset, unset);
-  padding-left: 66px;
-  overflow: hidden;
-  //Global Padding For Each Slide block
-  #slideBlockPad {
-    padding-right: 20px;
+.serviceThumbnails {
+  width: 60vw;
+  padding-left: 30px;
+  padding-bottom: 40px;
+  //Resposonsive
+  @include Tablet {
+    width: 100%;
+    padding-left: 8px;
+  }
+  .serviceSlides {
+    @include Display(row, space-evenly, unset);
+    width: 100%;
+    //Responsive
+    @include Tablet {
+      @include Display(row, unset, unset);
+    }
   }
   //Display for each block
-  #slideBlockOne {
-    @include Display(row, space-evenly, unset);
-    width: 61vw;
-    transition: 1.5s;
-  }
   #slideBlockTwo {
-    @include Display(row, space-evenly, unset);
-    width: 61vw;
-    transition: 1.5s;
-    opacity: 0;
+    margin-top: 20px;
+  }
+  #serveZoom {
+    transform: scale(0.9);
+    transition: $global-Trans;
+  }
+  #serveZoom:hover {
+    transform: scale(1.1);
+    box-shadow: $global-shadow;
+    // border: 1px solid $accent;
+    background-color: #f5f5f5;
+    h3 {
+      color: $chase-blue;
+    }
+    //Responsive
+    @include Tablet {
+      transform: scale(1);
+    }
   }
   .serviceBlock {
-    width: 21vw;
+    height: 43vh;
+    width: 18vw;
+    //Responsive
+    @include Tablet {
+      width: 32%;
+      height: 53%;
+    }
     img {
       height: 52%;
-      width: 21vw;
+      width: 100%;
     }
     h3 {
       font-size: 24px;
       font-weight: $light-weight;
       color: $dark-text;
       text-transform: capitalize;
+      padding: 10px;
+      //Responsive
+      @include lgLaptop {
+        font-size: 20px;
+      }
+      @include Laptop {
+        font-size: 18px;
+      }
     }
     p {
       font-size: 14px;
       font-weight: $light-weight;
       color: $dark-text;
+      padding: 0px 10px 0px 10px;
+      width: 100%;
+      //Responsive
+      @include lgLaptop {
+        font-size: 12px;
+      }
+      @include Tablet {
+        font-size: 14px;
+      }
     }
     .hsReadBtn {
-      padding-top: 20px;
+      padding: 12px 0px 8px 10px;
       a {
         font-size: 17px;
         color: $dark-text;
@@ -220,12 +384,26 @@
   height: 50vh;
   width: 100%;
   background-position: top 30% left 70%;
-  background-attachment: fixed;
-  margin-top: 60px;
+  // background-attachment: fixed;
+  //Responsive
+  @include Mobile {
+    height: 30vh;
+  }
   .reviewText {
-    padding-top: 100px;
-    padding-left: 170px;
+    padding-top: 80px;
+    padding-left: 60px;
     width: 44vw;
+    //Responsive
+    @include Laptop {
+      width: 50vw;
+    }
+    @include Tablet {
+      width: 60%;
+    }
+    @include Mobile {
+      width: 80%;
+      padding-top: 40px;
+    }
     .title {
       @include secTitle;
     }
@@ -235,120 +413,187 @@
       color: $light-text;
       text-transform: capitalize;
       padding-top: 22px;
+      //Responsive
+      @include Laptop {
+        font-size: 34px;
+      }
+      @include Tablet {
+        font-size: 30px;
+      }
+      @include lgMobile {
+        font-size: 24px;
+      }
     }
   }
 }
-.quoteContain {
-  height: 40vh;
-  width: 100%;
-  margin-top: 60px;
-  .quoteRow {
-    @include Display(row, space-evenly, unset);
-    width: 90%;
-  }
+.testimonialQuoteContain {
+  @include Background(url(../imgs/texture.png));
+  height: 70vh;
+  background-attachment: fixed;
+  @include Display(row, space-evenly, unset);
   .quoteText {
+    height: 80%;
+    width: 30%;
+    margin-top: 50px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    transition: $global-Trans;
+    transform: scale(0.9);
+    //Responsive
+    @include Tablet {
+      width: 60%;
+    }
+    .quoteForm {
+      @include Display(column, unset, unset);
+      margin-left: 10px;
+      width: 96%;
+      h3 {
+        font-size: 30px;
+        font-weight: $heavy-weight;
+        color: $dark-text;
+        text-transform: capitalize;
+        padding-top: 10px;
+        text-align: center;
+        //Responsive
+        @include Laptop {
+          font-size: 24px;
+        }
+        @include Mobile {
+          font-size: 20px;
+        }
+      }
+      .inputStyle {
+        height: 5vh;
+        font-size: 18px;
+        font-weight: $light-weight;
+        padding-left: 6px;
+        background: transparent;
+        border: none;
+        border-bottom: 3px solid $accent;
+        margin-top: 20px;
+      }
+      .serviceInterest {
+        position: relative;
+        height: 5vh;
+        background-color: transparent;
+        font-size: 18px;
+        border: none;
+        border-bottom: 3px solid $accent !important;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      #submit {
+        height: 5vh;
+        width: 10vw;
+        @include rmText;
+        font-size: 14px;
+        background-color: $chase-blue;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      #submit:hover {
+        @include rmbtnHover;
+      }
+    }
+  }
+  .quoteText:hover {
+    box-shadow: $global-shadow;
+    transform: scale(1);
+  }
+  //Testimonials start here
+  .testimonialsContainer {
     height: 100%;
-    width: 40%;
-    padding-left: 80px;
+    width: 50%;
+    //Responsive
+    @include Tablet {
+      width: 40%;
+      margin-top: 40px;
+      margin-right: 40px;
+    }
+    @include lgMobile {
+      margin-top: 10px;
+    }
+    @include Mobile {
+      margin-top: 10px;
+      margin-right: 20px;
+    }
     .title {
       @include secTitle;
+      text-align: center;
+      margin-top: 90px;
+      //Responsive
+      @include Tablet {
+        font-size: 18px;
+      }
     }
     h3 {
-      font-size: 40px;
+      font-size: 30px;
       font-weight: $heavy-weight;
-      color: $dark-text;
+      color: $light-text;
       text-transform: capitalize;
       padding-top: 22px;
+      text-align: center;
+      //Responsive
+      @include Tablet {
+        font-size: 18px;
+      }
     }
-    p {
-      font-size: 17px;
-      font-weight: $light-weight;
-      padding-top: 10px;
+    .testRow {
+      // @include Display(row, space-evenly, center);
+      padding-top: 60px;
+      width: 100%;
+      position: relative;
+      //Responsive
+      @include Tablet {
+        padding-top: 30px;
+      }
+      #testSlide {
+        display: none;
+      }
+      .testimonial {
+        width: 100%;
+        #testIcon {
+          font-size: 30px;
+          color: $chase-blue;
+          width: 100%;
+          text-align: center;
+        }
+        p {
+          font-size: 17px;
+          font-weight: $light-weight;
+          color: $light-text;
+          padding-top: 10px;
+          line-height: 24px;
+          width: 90%;
+          text-align: center;
+          margin-left: 30px;
+          //Responsive
+          @include Tablet {
+            width: 100%;
+            margin-left: 0px;
+            font-size: 12px;
+          }
+          @include Mobile {
+            line-height: unset;
+          }
+        }
+        .user {
+          font-size: 20px;
+          color: $light-text;
+          text-transform: capitalize;
+          padding-top: 10px;
+          width: 100%;
+          text-align: center;
+          //Responsive
+          @include Tablet {
+            font-size: 18px;
+          }
+        }
+      }
     }
   }
-  // Quote Form
-  .quoteForm {
-    @include Display(column, unset, unset);
-    margin-top: -40px;
-    margin-left: 110px;
-    width: 40%;
-  }
-  .inputStyle {
-    height: 5vh;
-    font-size: 18px;
-    font-weight: $light-weight;
-    padding-left: 6px;
-    background: transparent;
-    border: none;
-    border-bottom: 3px solid $accent;
-    margin-top: 10px;
-  }
-  .serviceInterest {
-    position: relative;
-    height: 5vh;
-    background-color: transparent;
-    font-size: 18px;
-    border: none;
-    border-bottom: 3px solid $accent !important;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-}
-#submit {
-  height: 5vh;
-  width: 10vw;
-  @include rmText;
-  font-size: 14px;
-  background-color: $chase-blue;
-  cursor: pointer;
-  margin-top: 20px;
-}
-#submit:hover {
-  @include rmbtnHover;
 }
 
-.testimonialContain {
-  width: 100%;
-  height: 70vh;
-  background-color: $bgColor;
-  .title {
-    @include secTitle;
-    text-align: center;
-    padding-top: 60px;
-  }
-  h3 {
-    font-size: 34px;
-    font-weight: $heavy-weight;
-    color: $light-text;
-    text-transform: capitalize;
-    padding-top: 22px;
-    text-align: center;
-  }
-  .testRow {
-    @include Display(row, space-evenly, center);
-    padding-top: 60px;
-  }
-  .testimonial {
-    width: 30%;
-    #testIcon {
-      font-size: 30px;
-      color: $chase-blue;
-    }
-    p {
-      font-size: 17px;
-      font-weight: $light-weight;
-      color: $light-text;
-      padding-top: 10px;
-      line-height: 24px;
-    }
-    .user {
-      font-size: 20px;
-      color: $light-text;
-      text-transform: capitalize;
-      padding-top: 10px;
-    }
-  }
-}
 //GoogleMaps
 #map {
   height: 70vh;
@@ -361,8 +606,12 @@
   background-color: $chase-blue;
   position: relative;
   float: right;
-  margin-top: -559px;
-  margin-right: 120px;
+  margin-top: -517px;
+  margin-right: 166px;
+  //Responsive
+  @include lgMobile {
+    margin-right: 120px;
+  }
   .stl {
     font-size: 30px;
     font-weight: $light-weight;
@@ -370,57 +619,153 @@
     text-align: center;
     padding-top: 30px;
     text-transform: capitalize;
+    //Responsive
+    @include lgMobile {
+      font-size: 24px;
+    }
   }
   .bannerAd {
     padding-top: 40px;
     padding-left: 30px;
+    //Responsive
+    @include Tablet {
+      padding-left: 10px;
+    }
+    @include lgMobile {
+      text-align: center;
+      padding-left: 0px;
+    }
+    @include Mobile {
+      padding-top: 20px;
+    }
     h4 {
       @include bannerText;
       .fa-map-marker {
         padding-left: 60%;
+        //Responsive
+        @include Tablet {
+          padding-left: 45%;
+        }
+        @include lgMobile {
+          padding-left: 0%;
+        }
       }
     }
     p {
       @include bannerPara;
+      //Responsive
+      @include lgMobile {
+        width: 100%;
+      }
     }
   }
   .bannerPhone {
     padding-top: 40px;
     padding-left: 30px;
+    //Responsive
+    @include Tablet {
+      padding-left: 10px;
+    }
+    @include lgMobile {
+      padding-left: 0px;
+      text-align: center;
+    }
+    @include Mobile {
+      padding-top: 20px;
+    }
     h4 {
       @include bannerText;
       .fa-phone {
         padding-left: 55%;
+        //Responsive
+        @include Tablet {
+          padding-left: 40%;
+        }
+        @include lgMobile {
+          padding-left: 0%;
+        }
       }
     }
     p {
       @include bannerPara;
+      //Responsive
+      @include lgMobile {
+        width: 100%;
+      }
     }
   }
   .bannerEmail {
     padding-top: 40px;
     padding-left: 30px;
+    //Responsive
+    @include Tablet {
+      padding-left: 10px;
+    }
+    @include lgMobile {
+      padding-left: 0px;
+      text-align: center;
+    }
+    @include Mobile {
+      padding-top: 20px;
+    }
     h4 {
       @include bannerText;
       .fa-envelope {
         padding-left: 58%;
+        //Responsive
+        @include Tablet {
+          padding-left: 45%;
+        }
+        @include lgMobile {
+          padding-left: 0%;
+        }
       }
     }
     p {
       @include bannerPara;
+      //Responsive
+      @include Tablet {
+        font-size: 12px;
+      }
+      @include lgMobile {
+        font-size: 11px;
+        width: 100%;
+      }
     }
   }
   .bannerHours {
     padding-top: 40px;
     padding-left: 30px;
+    //Responsive
+    @include Tablet {
+      padding-left: 10px;
+    }
+    @include lgMobile {
+      padding-left: 0px;
+      text-align: center;
+    }
+    @include Mobile {
+      padding-top: 20px;
+    }
     h4 {
       @include bannerText;
       .fa-clock {
         padding-left: 55%;
+        //Responsive
+        @include Tablet {
+          padding-left: 40%;
+        }
+        @include lgMobile {
+          padding-left: 0%;
+        }
       }
     }
     p {
       @include bannerPara;
+      //Responsive
+      @include lgMobile {
+        width: 100%;
+      }
     }
   }
 }

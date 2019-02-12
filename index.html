@@ -33,11 +33,8 @@
         <div class="headerRow rowOne">
           <div class="headerLogo">
             <div class="logoText">
-              <h1>Chase</h1>
+              <h1>Chase<img src="imgs/mainLogo.png"></h1>
               <h4>security</h4>
-            </div>
-            <div class="logo">
-              <img src="imgs/mainLogo.png">
             </div>
           </div>
           <div class="headerContact">
@@ -131,12 +128,11 @@
       </div>
     </section>
     <div class="hmeService">
-      <p class="title" id="serviceTitle">services</p>
-      <h3 class="servSubTitle">compose the perfect security plan</h3>
       <div class="serviceRow">
         <div class="serviceNav">
+            <p class="title" id="serviceTitle">services</p>
           <h3>
-            security for<br />
+            security for
             every site
           </h3>
           <p>
@@ -144,15 +140,11 @@
             to each client. Let us handle all of the security threats that may
             arise by choosing from the list of security options we have to offer
           </p>
-          <div class="navArrows">
-            <span> <a id="prev">&#10094;</a> </span>
-            <span> <a id="next">&#10095;</a> </span>
-          </div>
         </div>
-        <div class="serviceSlide">
-          <!-- Uniformed Security -->
-          <div id="slideBlockOne">
-            <div class="uniformed serviceBlock" id="slideBlockPad">
+        <div class="serviceThumbnails">
+          <div class="serviceSlides" id="slideBlockOne">
+            <!-- Uniformed Security -->
+            <div class="uniformed serviceBlock" id="serveZoom">
               <span> <img src="imgs/Barnes4.jpg" /> </span>
               <h3>uniformed security</h3>
               <p>
@@ -164,7 +156,7 @@
               </div>
             </div>
             <!-- Private Security -->
-            <div class="private serviceBlock" id="slideBlockPad">
+            <div class="private serviceBlock" id="serveZoom">
               <span> <img src="imgs/Barnes3.jpg" /> </span>
               <h3>private security</h3>
               <p>
@@ -176,7 +168,7 @@
               </div>
             </div>
             <!-- Business Security -->
-            <div class="business serviceBlock" id="slideBlockPad">
+            <div class="business serviceBlock" id="serveZoom">
               <span> <img src="imgs/businessHome.jpg" /> </span>
               <h3>business security</h3>
               <p>
@@ -188,9 +180,10 @@
               </div>
             </div>
           </div>
+          <!--Slide Block Two starts here-->
           <div class="serviceSlides" id="slideBlockTwo">
             <!-- Transportation Security -->
-            <div class="transportation serviceBlock" id="slideBlockPad">
+            <div class="transportation serviceBlock" id="serveZoom">
               <span> <img src="imgs/PatrolVehicle.jpg" /> </span>
               <h3>Patrol security</h3>
               <p>
@@ -202,7 +195,7 @@
               </div>
             </div>
             <!-- Event Security -->
-            <div class="event serviceBlock" id="slideBlockPad">
+            <div class="event serviceBlock" id="serveZoom">
               <span> <img src="imgs/event.jpg" /> </span>
               <h3>event security</h3>
               <p>
@@ -214,7 +207,7 @@
               </div>
             </div>
             <!-- Industrial Security -->
-            <div class="industrial serviceBlock">
+            <div class="industrial serviceBlock" id="serveZoom">
               <span> <img src="imgs/industrialHome.jpg" /> </span>
               <h3>industrial security</h3>
               <p>
@@ -235,34 +228,17 @@
         <h3>video review to plan for the next security threat</h3>
       </div>
     </div>
-    <section class="quoteContain">
-      <div class="quoteRow">
-        <div class="quoteText">
-          <p class="title" id="quoteTitle">contact us</p>
-          <h3>request a free quote</h3>
-          <p>
-            We like to work within everyones budget, so if you want to cross
-            your T's and dot your I's by just starting with a free quote.
-            Inquire by form here.
-          </p>
-        </div>
+    <div class="testimonialQuoteContain">
+      <div class="quoteText">
         <form class="quoteForm" method="POST" data-netlify="true">
+          <h3>request a free quote</h3>
           <input
-            type="text"
-            class="first inputStyle"
-            placeholder="First Name"
-          />
+          type="text"
+          class="first inputStyle"
+          placeholder="First Name"/>
           <input type="text" class="last inputStyle" placeholder="Last Name" />
-          <input
-            type="text"
-            class="formPhone inputStyle"
-            placeholder="Phone"
-          />
-          <input
-            type="email"
-            class="formEmail inputStyle"
-            placeholder="Email"
-          />
+          <input type="text" class="formPhone inputStyle" placeholder="Phone"/>
+          <input type="email" class="formEmail inputStyle" placeholder="Email"/>
           <select class="serviceInterest">
             <option value="uniformed">Uniformed</option>
             <option value="Private">Private</option>
@@ -271,49 +247,43 @@
             <option value="Event">Event</option>
             <option value="Industrial">Industrial</option>
           </select>
-          <input
-            type="submit"
-            name="get a free quote"
-            value="Send"
-            id="submit"
-          />
-          </button>
+          <input type="submit"name="get a free quote"value="Send"id="submit"/>
         </form>
       </div>
-    </section>
-    <div class="testimonialContain">
-      <p class="title" id="quoteTitle">testimonials</p>
-      <h3>what our clients think about us</h3>
-      <div class="testRow">
-        <div class="testimonial">
-          <span> <i class="fal fa-quote-left" id="testIcon"></i> </span>
-          <p>
+      <div class="testimonialsContainer">
+        <p class="title" id="quoteTitle">testimonials</p>
+        <h3>what our clients think about us</h3>
+        <div class="testRow">
+          <div class="testimonial" id="testSlide">
+            <span> <i class="fal fa-quote-left" id="testIcon"></i> </span>
+            <p>
             Over the weekend I met Sean and his colleagues at tipper and friends
             and I have to say they are hands down the best security I've
             witnessed. So much love and care for everyone around.
-          </p>
-          <h4 class="user">derek baker</h4>
-        </div>
-        <!-- Testimonial 2 -->
-        <div class="testimonial">
-          <span> <i class="fal fa-quote-left" id="testIcon"></i> </span>
-          <p>
+            </p>
+            <h4 class="user">derek baker</h4>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="testimonial" id="testSlide">
+            <span> <i class="fal fa-quote-left" id="testIcon"></i> </span>
+            <p>
             These guys are so professional, my daughter's vehicle was broken
             into today while she was in the hospital and these guys was able to
             look up our contact info using the insurance cards located in the
             car.
-          </p>
-          <h4 class="user">Oleatha Gurlly</h4>
-        </div>
-        <!-- Testimonial 3 -->
-        <div class="testimonial">
-          <span> <i class="fal fa-quote-left" id="testIcon"></i> </span>
-          <p>
+            </p>
+            <h4 class="user">Oleatha Gurlly</h4>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="testimonial" id="testSlide">
+            <span> <i class="fal fa-quote-left" id="testIcon"></i> </span>
+            <p>
             These guys understand what their job is and do it better than almost
             anyone. Discretion, de-escalation and friendliness are their
             practices. Thanks guys! Highly recommended.
-          </p>
-          <h4 class="user">Jamie Seed</h4>
+            </p>
+            <h4 class="user">Jamie Seed</h4>
+          </div>
         </div>
       </div>
     </div>
@@ -416,7 +386,8 @@
         <p>Copyrights &copy; 2019 All Rights Reserved.</p>
       </div>
     </footer>
-    <script src="Script/app.js"></script>
+    <script src="Script/home.js"></script>
+    <script src="node_modules/animejs/lib/anime.min.js"></script>
     <script
       async
       defer

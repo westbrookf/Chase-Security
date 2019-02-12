@@ -13,7 +13,7 @@
     background-color: $accent;
     @include Display(column, space-evenly, center);
     .currentLink {
-      background-color: black;
+      background-image: url(../imgs/texture.png);
       border: 2px solid $chase-blue;
       color: $chase-blue;
     }
@@ -28,7 +28,7 @@
       border-top: 3px solid #f5f5f5;
     }
     a:hover {
-      background-color: black;
+      background-image: url(../imgs/texture.png);
       border: 2px solid $chase-blue;
       color: $chase-blue;
     }

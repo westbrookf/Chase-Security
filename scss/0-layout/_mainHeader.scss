@@ -153,10 +153,11 @@
         //Responsive
         @include Tablet {
           height: 32%;
-          margin-left: 150px;
+          margin-left: 50px;
+          width: 80%;
         }
         @include lgMobile {
-          margin-left: 60px;
+          margin-left: 10px;
         }
         @include Mobile {
           width: 100%;
@@ -176,7 +177,7 @@
           padding: 6px 12px 6px 12px;
           //Responsive
           @include lgMobile {
-            font-size: 16px;
+            font-size: 14px;
           }
           @include Mobile {
             font-size: 14px;

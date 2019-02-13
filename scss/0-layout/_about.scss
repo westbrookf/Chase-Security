@@ -13,15 +13,34 @@
   width: 80%;
   margin-top: 60px;
   margin-left: 130px;
+  //Responsive
+  @include Tablet {
+    margin-left: 70px;
+  }
+  @include Mobile {
+    margin-left: 30px;
+  }
   #ourMission,
   #ourVision,
-  #Situation {
-    height: 50vh;
+  #Situation,
+  #extraMile {
+    height: 60vh;
     width: 100%;
-    @include Display(row, space-evenly, center);
+    @include Display(row, space-evenly, unset);
+    //Responsive
+    @include lgMobile {
+      height: 40vh;
+    }
+    @include Mobile {
+      height: 50vh;
+    }
     .valueImg {
       height: 100%;
       width: 30%;
+      //Responsive
+      @include lgMobile {
+        display: none;
+      }
       img {
         height: 100%;
         width: 100%;
@@ -30,17 +49,30 @@
     .valueText {
       height: 100%;
       width: 50%;
+      //Responsive
+      @include lgMobile {
+        width: 100%;
+      }
       h3 {
         font-family: $primary-font;
         font-size: 30px;
         font-weight: lighter;
         color: $dark-text;
         padding-bottom: 10px;
+        //Responsive
+        @include Laptop {
+          font-size: 24px;
+        }
       }
       p {
         font-size: 17px;
         line-height: 24px;
         color: #303030af;
+        //Responsive
+        @include Laptop {
+          font-size: 14px;
+          line-height: 22px;
+        }
       }
     }
   }
@@ -53,15 +85,16 @@
   width: 100%;
   .thumbLinks {
     height: auto;
-    width: 80%;
+    width: 100%;
     @include Display(row, space-evenly, unset);
     margin-top: 80px;
-    margin-left: 150px;
     .Link {
       height: auto;
-      width: 30%;
+      width: 20%;
       text-align: center;
       cursor: pointer;
+      transition: $global-Trans;
+      transform: scale(0.9);
       .thumbImg {
         height: 30vh;
         width: 100%;
@@ -71,9 +104,6 @@
           width: inherit;
           transition: $global-Trans;
         }
-        img:hover {
-          transform: scale(1.1);
-        }
       }
       h4 {
         font-family: $primary-font;
@@ -82,15 +112,31 @@
         text-transform: capitalize;
         transition: $global-Trans;
         margin-top: 20px;
-      }
-      h4:hover {
-        color: $chase-blue;
+        //Responsive
+        @include lgMobile {
+          font-size: 18px;
+          text-align: left;
+        }
       }
       p {
         font-size: 17px;
         line-height: 24px;
         color: #303030af;
         margin-top: 10px;
+        //Responsive
+        @include lgMobile {
+          font-size: 14px;
+          line-height: unset;
+          text-align: left;
+        }
+      }
+    }
+    .Link:hover {
+      background-color: #f7f7f7;
+      transform: scale(1.1);
+      box-shadow: $global-shadow;
+      h4 {
+        color: $chase-blue;
       }
     }
   }
@@ -101,6 +147,10 @@
   background-color: #62adc2;
   @include Display(row, unset, unset);
   margin-top: 100px;
+  //Responsive
+  @include Tablet {
+    margin-top: 200px;
+  }
   .patrolVehicle {
     height: 100%;
     width: 50%;
@@ -122,6 +172,23 @@
       padding-left: 60px;
       width: 70%;
       // text-align: center;
+      //Responsive
+      @include lgLaptop {
+        width: 90%;
+        font-size: 30px;
+      }
+      @include Tablet {
+        font-size: 20px;
+        padding-top: 50px;
+      }
+      @include lgMobile {
+        font-size: 18px;
+      }
+      @include Mobile {
+        font-size: 14px;
+        width: 100%;
+        padding-left: 20px;
+      }
     }
     p {
       font-size: 18px;
@@ -130,6 +197,14 @@
       width: 90%;
       padding-top: 20px;
       padding-left: 60px;
+      //Responsive
+      @include lgMobile {
+        font-size: 14px;
+      }
+      @include Mobile {
+        width: 100%;
+        padding-left: 20px;
+      }
     }
   }
 }
@@ -209,11 +284,25 @@
       text-transform: capitalize;
       color: $dark-text;
       font-size: 26px;
+      //Responsive
+      @include Tablet {
+        font-size: 20px;
+      }
+      @include lgMobile {
+        font-size: 18px;
+      }
     }
     h4 {
       font-family: $primary-font;
       font-size: 20px;
       color: $chase-blue;
+      //Responsive
+      @include Tablet {
+        font-size: 18px;
+      }
+      @include lgMobile {
+        font-size: 14px;
+      }
     }
   }
 }
@@ -233,9 +322,17 @@
       font-size: 26px;
       font-weight: lighter;
       color: $light-text;
+      //Responsive
+      @include Mobile {
+        font-size: 18px;
+      }
       strong {
         color: $chase-blue;
         font-size: 32px;
+        //Responsive
+        @include Mobile {
+          font-size: 20px;
+        }
       }
     }
     p {
@@ -244,6 +341,10 @@
       color: $light-text;
       padding-top: 3px;
       padding-bottom: 20px;
+      //Responsive
+      @include Mobile {
+        font-size: 14px;
+      }
     }
     .opnConBtn {
       font-family: $primary-font;
@@ -254,8 +355,24 @@
       background-color: $chase-blue;
       padding: 10px;
       cursor: pointer;
-      width: 160px;
+      width: 200px;
       margin-left: 615px;
+      //Responsive
+      @include lgLaptop {
+        margin-left: 490px;
+      }
+      @include Laptop {
+        margin-left: 390px;
+      }
+      @include Tablet {
+        margin-left: 270px;
+      }
+      @include lgMobile {
+        margin-left: 200px;
+      }
+      @include Mobile {
+        margin-left: 112px;
+      }
     }
   }
 }

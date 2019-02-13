@@ -1,12 +1,14 @@
-//About Page About Us Slide
+// About Us Slide
 let mission = document.getElementById("missionBtn");
 let vision = document.getElementById("visionBtn");
 let situation = document.getElementById("situationBtn");
+let exMile = document.getElementById("extraMileBtn");
 
 //Event Listeners
 mission.addEventListener("click", contentLink);
 vision.addEventListener("click", contentLink);
 situation.addEventListener("click", contentLink);
+exMile.addEventListener("click", contentLink);
 
 //Function
 function contentLink() {

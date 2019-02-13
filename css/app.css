@@ -150,10 +150,11 @@
         @media only screen and (max-width: 768px) {
           .headerContain .navContainer .rowTwo .mainMenu {
             height: 32%;
-            margin-left: 150px; } }
+            margin-left: 50px;
+            width: 80%; } }
         @media only screen and (max-width: 600px) {
           .headerContain .navContainer .rowTwo .mainMenu {
-            margin-left: 60px; } }
+            margin-left: 10px; } }
         @media only screen and (max-width: 425px) {
           .headerContain .navContainer .rowTwo .mainMenu {
             width: 100%;
@@ -171,7 +172,7 @@
           padding: 6px 12px 6px 12px; }
           @media only screen and (max-width: 600px) {
             .headerContain .navContainer .rowTwo .mainMenu a {
-              font-size: 16px; } }
+              font-size: 14px; } }
           @media only screen and (max-width: 425px) {
             .headerContain .navContainer .rowTwo .mainMenu a {
               font-size: 14px;
@@ -1166,7 +1167,7 @@
       .mapBanner .stl {
         font-size: 24px; } }
   .mapBanner .bannerAd {
-    padding-top: 40px;
+    padding-top: 30px;
     padding-left: 30px; }
     @media only screen and (max-width: 768px) {
       .mapBanner .bannerAd {
@@ -1201,7 +1202,7 @@
         .mapBanner .bannerAd p {
           width: 100%; } }
   .mapBanner .bannerPhone {
-    padding-top: 40px;
+    padding-top: 30px;
     padding-left: 30px; }
     @media only screen and (max-width: 768px) {
       .mapBanner .bannerPhone {
@@ -1236,7 +1237,7 @@
         .mapBanner .bannerPhone p {
           width: 100%; } }
   .mapBanner .bannerEmail {
-    padding-top: 40px;
+    padding-top: 30px;
     padding-left: 30px; }
     @media only screen and (max-width: 768px) {
       .mapBanner .bannerEmail {
@@ -1275,7 +1276,7 @@
           font-size: 11px;
           width: 100%; } }
   .mapBanner .bannerHours {
-    padding-top: 40px;
+    padding-top: 30px;
     padding-left: 30px; }
     @media only screen and (max-width: 768px) {
       .mapBanner .bannerHours {
@@ -1329,44 +1330,93 @@
   width: 80%;
   margin-top: 60px;
   margin-left: 130px; }
+  @media only screen and (max-width: 768px) {
+    .valuesContent {
+      margin-left: 70px; } }
+  @media only screen and (max-width: 425px) {
+    .valuesContent {
+      margin-left: 30px; } }
   .valuesContent #ourMission,
   .valuesContent #ourVision,
-  .valuesContent #Situation {
-    height: 50vh;
+  .valuesContent #Situation,
+  .valuesContent #extraMile {
+    height: 60vh;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center; }
+    align-items: unset; }
+    @media only screen and (max-width: 600px) {
+      .valuesContent #ourMission,
+      .valuesContent #ourVision,
+      .valuesContent #Situation,
+      .valuesContent #extraMile {
+        height: 40vh; } }
+    @media only screen and (max-width: 425px) {
+      .valuesContent #ourMission,
+      .valuesContent #ourVision,
+      .valuesContent #Situation,
+      .valuesContent #extraMile {
+        height: 50vh; } }
     .valuesContent #ourMission .valueImg,
     .valuesContent #ourVision .valueImg,
-    .valuesContent #Situation .valueImg {
+    .valuesContent #Situation .valueImg,
+    .valuesContent #extraMile .valueImg {
       height: 100%;
       width: 30%; }
+      @media only screen and (max-width: 600px) {
+        .valuesContent #ourMission .valueImg,
+        .valuesContent #ourVision .valueImg,
+        .valuesContent #Situation .valueImg,
+        .valuesContent #extraMile .valueImg {
+          display: none; } }
       .valuesContent #ourMission .valueImg img,
       .valuesContent #ourVision .valueImg img,
-      .valuesContent #Situation .valueImg img {
+      .valuesContent #Situation .valueImg img,
+      .valuesContent #extraMile .valueImg img {
         height: 100%;
         width: 100%; }
     .valuesContent #ourMission .valueText,
     .valuesContent #ourVision .valueText,
-    .valuesContent #Situation .valueText {
+    .valuesContent #Situation .valueText,
+    .valuesContent #extraMile .valueText {
       height: 100%;
       width: 50%; }
+      @media only screen and (max-width: 600px) {
+        .valuesContent #ourMission .valueText,
+        .valuesContent #ourVision .valueText,
+        .valuesContent #Situation .valueText,
+        .valuesContent #extraMile .valueText {
+          width: 100%; } }
       .valuesContent #ourMission .valueText h3,
       .valuesContent #ourVision .valueText h3,
-      .valuesContent #Situation .valueText h3 {
+      .valuesContent #Situation .valueText h3,
+      .valuesContent #extraMile .valueText h3 {
         font-family: "Open Sans", sans-serif;
         font-size: 30px;
         font-weight: lighter;
         color: #303030;
         padding-bottom: 10px; }
+        @media only screen and (max-width: 1020px) {
+          .valuesContent #ourMission .valueText h3,
+          .valuesContent #ourVision .valueText h3,
+          .valuesContent #Situation .valueText h3,
+          .valuesContent #extraMile .valueText h3 {
+            font-size: 24px; } }
       .valuesContent #ourMission .valueText p,
       .valuesContent #ourVision .valueText p,
-      .valuesContent #Situation .valueText p {
+      .valuesContent #Situation .valueText p,
+      .valuesContent #extraMile .valueText p {
         font-size: 17px;
         line-height: 24px;
         color: #303030af; }
+        @media only screen and (max-width: 1020px) {
+          .valuesContent #ourMission .valueText p,
+          .valuesContent #ourVision .valueText p,
+          .valuesContent #Situation .valueText p,
+          .valuesContent #extraMile .valueText p {
+            font-size: 14px;
+            line-height: 22px; } }
   .valuesContent .hidden {
     display: none !important; }
 
@@ -1375,18 +1425,19 @@
   width: 100%; }
   .valuesRowContainer .thumbLinks {
     height: auto;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: unset;
-    margin-top: 80px;
-    margin-left: 150px; }
+    margin-top: 80px; }
     .valuesRowContainer .thumbLinks .Link {
       height: auto;
-      width: 30%;
+      width: 20%;
       text-align: center;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: 0.6s;
+      transform: scale(0.9); }
       .valuesRowContainer .thumbLinks .Link .thumbImg {
         height: 30vh;
         width: 100%;
@@ -1395,8 +1446,6 @@
           height: inherit;
           width: inherit;
           transition: 0.6s; }
-        .valuesRowContainer .thumbLinks .Link .thumbImg img:hover {
-          transform: scale(1.1); }
       .valuesRowContainer .thumbLinks .Link h4 {
         font-family: "Open Sans", sans-serif;
         font-size: 22px;
@@ -1404,13 +1453,26 @@
         text-transform: capitalize;
         transition: 0.6s;
         margin-top: 20px; }
-      .valuesRowContainer .thumbLinks .Link h4:hover {
-        color: #62adc2; }
+        @media only screen and (max-width: 600px) {
+          .valuesRowContainer .thumbLinks .Link h4 {
+            font-size: 18px;
+            text-align: left; } }
       .valuesRowContainer .thumbLinks .Link p {
         font-size: 17px;
         line-height: 24px;
         color: #303030af;
         margin-top: 10px; }
+        @media only screen and (max-width: 600px) {
+          .valuesRowContainer .thumbLinks .Link p {
+            font-size: 14px;
+            line-height: unset;
+            text-align: left; } }
+    .valuesRowContainer .thumbLinks .Link:hover {
+      background-color: #f7f7f7;
+      transform: scale(1.1);
+      box-shadow: 0px 4px 20px #30303092; }
+      .valuesRowContainer .thumbLinks .Link:hover h4 {
+        color: #62adc2; }
 
 .bestProtection {
   height: 40vh;
@@ -1421,6 +1483,9 @@
   justify-content: unset;
   align-items: unset;
   margin-top: 100px; }
+  @media only screen and (max-width: 768px) {
+    .bestProtection {
+      margin-top: 200px; } }
   .bestProtection .patrolVehicle {
     height: 100%;
     width: 50%; }
@@ -1439,6 +1504,22 @@
       padding-top: 70px;
       padding-left: 60px;
       width: 70%; }
+      @media only screen and (max-width: 1200px) {
+        .bestProtection .protectionText h2 {
+          width: 90%;
+          font-size: 30px; } }
+      @media only screen and (max-width: 768px) {
+        .bestProtection .protectionText h2 {
+          font-size: 20px;
+          padding-top: 50px; } }
+      @media only screen and (max-width: 600px) {
+        .bestProtection .protectionText h2 {
+          font-size: 18px; } }
+      @media only screen and (max-width: 425px) {
+        .bestProtection .protectionText h2 {
+          font-size: 14px;
+          width: 100%;
+          padding-left: 20px; } }
     .bestProtection .protectionText p {
       font-size: 18px;
       font-weight: lighter;
@@ -1446,6 +1527,13 @@
       width: 90%;
       padding-top: 20px;
       padding-left: 60px; }
+      @media only screen and (max-width: 600px) {
+        .bestProtection .protectionText p {
+          font-size: 14px; } }
+      @media only screen and (max-width: 425px) {
+        .bestProtection .protectionText p {
+          width: 100%;
+          padding-left: 20px; } }
 
 .meetTeam {
   height: auto;
@@ -1541,10 +1629,22 @@
       text-transform: capitalize;
       color: #303030;
       font-size: 26px; }
+      @media only screen and (max-width: 768px) {
+        .memberBioContainer .Bio h3 {
+          font-size: 20px; } }
+      @media only screen and (max-width: 600px) {
+        .memberBioContainer .Bio h3 {
+          font-size: 18px; } }
     .memberBioContainer .Bio h4 {
       font-family: "Open Sans", sans-serif;
       font-size: 20px;
       color: #62adc2; }
+      @media only screen and (max-width: 768px) {
+        .memberBioContainer .Bio h4 {
+          font-size: 18px; } }
+      @media only screen and (max-width: 600px) {
+        .memberBioContainer .Bio h4 {
+          font-size: 14px; } }
 
 .freeCons {
   background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/testBack.jpg);
@@ -1566,15 +1666,24 @@
       font-size: 26px;
       font-weight: lighter;
       color: #e7e7e7eb; }
+      @media only screen and (max-width: 425px) {
+        .freeCons .consultationText h2 {
+          font-size: 18px; } }
       .freeCons .consultationText h2 strong {
         color: #62adc2;
         font-size: 32px; }
+        @media only screen and (max-width: 425px) {
+          .freeCons .consultationText h2 strong {
+            font-size: 20px; } }
     .freeCons .consultationText p {
       font-size: 18px;
       font-weight: lighter;
       color: #e7e7e7eb;
       padding-top: 3px;
       padding-bottom: 20px; }
+      @media only screen and (max-width: 425px) {
+        .freeCons .consultationText p {
+          font-size: 14px; } }
     .freeCons .consultationText .opnConBtn {
       font-family: "Open Sans", sans-serif;
       font-weight: lighter;
@@ -1584,8 +1693,23 @@
       background-color: #62adc2;
       padding: 10px;
       cursor: pointer;
-      width: 160px;
+      width: 200px;
       margin-left: 615px; }
+      @media only screen and (max-width: 1200px) {
+        .freeCons .consultationText .opnConBtn {
+          margin-left: 490px; } }
+      @media only screen and (max-width: 1020px) {
+        .freeCons .consultationText .opnConBtn {
+          margin-left: 390px; } }
+      @media only screen and (max-width: 768px) {
+        .freeCons .consultationText .opnConBtn {
+          margin-left: 270px; } }
+      @media only screen and (max-width: 600px) {
+        .freeCons .consultationText .opnConBtn {
+          margin-left: 200px; } }
+      @media only screen and (max-width: 425px) {
+        .freeCons .consultationText .opnConBtn {
+          margin-left: 112px; } }
 
 .serviceHeader {
   background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/chaseofficer.jpg);
@@ -1644,7 +1768,7 @@
   display: grid;
   grid-template-columns: 32% 32% 32%;
   grid-gap: 20px;
-  margin: 60px 0 20px 90px; }
+  margin: 60px 0 20px 18px; }
   @media only screen and (max-width: 600px) {
     .servicesGrid {
       margin-left: 10px; } }
@@ -1716,8 +1840,12 @@
       padding-top: 30px;
       text-transform: capitalize; }
     .formContain .Banner .contactBanner {
-      padding-top: 40px;
+      padding-top: 20px;
       padding-left: 30px; }
+      @media only screen and (max-width: 768px) {
+        .formContain .Banner .contactBanner {
+          text-align: center;
+          padding-left: 0px; } }
       .formContain .Banner .contactBanner h4 {
         font-size: 20px;
         font-weight: lighter;
@@ -1725,6 +1853,9 @@
         text-transform: capitalize; }
         .formContain .Banner .contactBanner h4 .conBanIcon {
           padding-right: 10px; }
+        @media only screen and (max-width: 768px) {
+          .formContain .Banner .contactBanner h4 {
+            width: 100%; } }
       .formContain .Banner .contactBanner p {
         font-size: 14px;
         font-weight: lighter;
@@ -1733,6 +1864,18 @@
         width: 200px;
         font-size: 18px;
         padding-left: 30px; }
+        @media only screen and (max-width: 1200px) {
+          .formContain .Banner .contactBanner p {
+            font-size: 16px; } }
+        @media only screen and (max-width: 1020px) {
+          .formContain .Banner .contactBanner p {
+            padding-left: 0px;
+            font-size: 14px; } }
+        @media only screen and (max-width: 768px) {
+          .formContain .Banner .contactBanner p {
+            width: 100%; } }
+      .formContain .Banner .contactBanner .bannerEmail p {
+        word-wrap: break-word; }
 
 .contactForm {
   width: 60%;
@@ -1762,6 +1905,12 @@
   .contactForm .formRow {
     margin-top: 20px;
     margin-left: 60px; }
+    @media only screen and (max-width: 768px) {
+      .contactForm .formRow {
+        margin-left: 14px; } }
+    @media only screen and (max-width: 425px) {
+      .contactForm .formRow {
+        margin-left: 20px; } }
     .contactForm .formRow .Input {
       height: 5vh;
       width: 25%;
@@ -1771,6 +1920,10 @@
       border: none;
       border-bottom: 1px solid #30303092 !important;
       margin-left: 20px; }
+      @media only screen and (max-width: 425px) {
+        .contactForm .formRow .Input {
+          margin-left: 0px;
+          width: 30%; } }
   .contactForm #submit {
     width: 10vw;
     background-color: #62adc2;
@@ -1779,6 +1932,13 @@
     margin-left: 56px;
     font-size: 18px;
     text-transform: capitalize; }
+    @media only screen and (max-width: 768px) {
+      .contactForm #submit {
+        margin-left: 20px; } }
+    @media only screen and (max-width: 425px) {
+      .contactForm #submit {
+        margin-top: 30px;
+        width: 14vw; } }
 
 .contactMap {
   margin-top: 60px; }

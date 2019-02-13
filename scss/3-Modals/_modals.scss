@@ -18,6 +18,34 @@
     border: 4px solid $chase-blue;
     box-shadow: $global-shadow;
     transition: $global-Trans;
+    //Responsive
+    @include Laptop {
+      margin-left: 250px;
+    }
+    @include Tablet {
+      margin-left: 200px;
+    }
+    @include lgMobile {
+      margin-left: 160px;
+    }
+    @include Mobile {
+      width: 90%;
+      margin-left: 20px;
+    }
+    .concloseBtn {
+      cursor: pointer;
+      font-size: 40px;
+      float: right;
+      margin-right: 20px;
+      transition: $global-Trans;
+      //Responsive
+      @include lgLaptop {
+        font-size: 30px;
+      }
+    }
+    .concloseBtn:hover {
+      color: $chase-blue;
+    }
     h2 {
       font-family: $primary-font;
       font-size: 26px;
@@ -25,6 +53,23 @@
       // text-align: center;
       padding-top: 40px;
       padding-left: 64px;
+      //Responsive
+      @include lgLaptop {
+        font-size: 22px;
+        text-align: center;
+        padding-left: 0px;
+      }
+      @include Laptop {
+        font-size: 20px;
+      }
+      @include Tablet {
+        font-size: 15px;
+        padding-left: 10px;
+      }
+      @include lgMobile {
+        padding-left: 40px;
+        text-align: left;
+      }
     }
     .inputStyle {
       display: block;
@@ -37,6 +82,10 @@
       border: none;
       border-bottom: 1px solid #dedddd;
       background: transparent;
+      //Responsive
+      @include lgLaptop {
+        margin-left: 30px;
+      }
     }
     .sendConsult {
       height: 40px;
@@ -49,6 +98,22 @@
       margin-left: 280px;
       margin-top: 20px;
       cursor: pointer;
+      //Responsive
+      @include lgLaptop {
+        margin-left: 220px;
+      }
+      @include Laptop {
+        margin-left: 180px;
+      }
+      @include Tablet {
+        margin-left: 130px;
+      }
+      @include lgMobile {
+        margin-left: 80px;
+      }
+      @include Mobile {
+        margin-left: 120px;
+      }
     }
   }
 }

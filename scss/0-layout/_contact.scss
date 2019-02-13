@@ -6,6 +6,10 @@
     width: 26vw;
     background-color: $bgColor;
     position: relative;
+    //Responsive
+    @include lgMobile {
+      display: none;
+    }
     .stl {
       font-size: 30px;
       font-weight: $light-weight;
@@ -61,6 +65,11 @@
   width: 60%;
   background-color: $accent;
   @include Display(column, unset, unset);
+  //Responsive
+  @include lgMobile {
+    width: 80%;
+    padding-bottom: 10px;
+  }
   h3 {
     font-size: 30px;
     font-weight: $light-weight;
@@ -68,6 +77,13 @@
     padding-top: 30px;
     padding-left: 60px;
     text-transform: capitalize;
+    //Responsive
+    @include lgMobile {
+      font-size: 20px;
+      width: 100%;
+      padding-left: 0px;
+      text-align: center;
+    }
   }
   #messageInput {
     height: 30vh;

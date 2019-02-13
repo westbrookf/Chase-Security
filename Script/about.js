@@ -33,3 +33,12 @@ function openconsultForm() {
   const conMod = document.getElementById("conModule");
   conMod.style.display = "block";
 }
+//Close Consultation Modal
+let conClosed = document.getElementById("modClose");
+
+conClosed.addEventListener("click", closeconsultForm);
+
+function closeconsultForm() {
+  const conMod = document.getElementById("conModule");
+  conMod.style.display = "";
+}

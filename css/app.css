@@ -4,7 +4,7 @@
   background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/Barnes2.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   height: 100vh;
   width: 100%;
   background-attachment: fixed;
@@ -68,6 +68,9 @@
           @media only screen and (max-width: 600px) {
             .headerContain .navContainer .rowOne .headerLogo .logoText h1 {
               font-size: 35px; } }
+          @media only screen and (max-width: 375px) {
+            .headerContain .navContainer .rowOne .headerLogo .logoText h1 {
+              font-size: 28px; } }
           .headerContain .navContainer .rowOne .headerLogo .logoText h1 img {
             height: 60px;
             width: 70px; }
@@ -91,6 +94,10 @@
               font-size: 26px;
               letter-spacing: 4px;
               margin-left: 0px; } }
+          @media only screen and (max-width: 375px) {
+            .headerContain .navContainer .rowOne .headerLogo .logoText h4 {
+              font-size: 20px;
+              padding-top: 11px; } }
     .headerContain .navContainer .rowOne .headerContact {
       padding-top: 33px;
       padding-left: 3%;
@@ -118,7 +125,8 @@
           flex-direction: column;
           justify-content: unset;
           align-items: unset;
-          text-align: center; } }
+          text-align: center;
+          padding-top: 40px; } }
       .headerContain .navContainer .rowOne .headerContact .headerLink {
         font-family: "Open Sans", sans-serif;
         font-size: 20px;
@@ -170,6 +178,10 @@
           margin-left: 2%;
           width: 20%;
           padding: 6px 12px 6px 12px; }
+          @media only screen and (max-width: 768px) {
+            .headerContain .navContainer .rowTwo .mainMenu a {
+              font-size: 17px;
+              margin-left: 4%; } }
           @media only screen and (max-width: 600px) {
             .headerContain .navContainer .rowTwo .mainMenu a {
               font-size: 14px; } }
@@ -285,6 +297,9 @@
         @media only screen and (max-width: 425px) {
           .globalFooter .footerFlex .colOne .Logo h2 {
             font-size: 30px; } }
+        @media only screen and (max-width: 375px) {
+          .globalFooter .footerFlex .colOne .Logo h2 {
+            font-size: 24px; } }
         .globalFooter .footerFlex .colOne .Logo h2 img {
           height: 50px;
           width: 50px; }
@@ -296,6 +311,10 @@
             .globalFooter .footerFlex .colOne .Logo h2 img {
               height: 30px;
               width: 30px; } }
+          @media only screen and (max-width: 375px) {
+            .globalFooter .footerFlex .colOne .Logo h2 img {
+              height: 20px;
+              width: 20px; } }
     .globalFooter .footerFlex .colOne .compFootDesc {
       font-size: 18px;
       font-weight: lighter;
@@ -337,12 +356,18 @@
         @media only screen and (max-width: 425px) {
           .globalFooter .footerFlex .colOne .footLocLinks h4 {
             font-size: 12px; } }
+        @media only screen and (max-width: 375px) {
+          .globalFooter .footerFlex .colOne .footLocLinks h4 {
+            margin-top: 30px; } }
         .globalFooter .footerFlex .colOne .footLocLinks h4 .footLocIcon {
           font-size: 22px;
           padding-right: 20px; }
           @media only screen and (max-width: 768px) {
             .globalFooter .footerFlex .colOne .footLocLinks h4 .footLocIcon {
               padding-right: 10px; } }
+          @media only screen and (max-width: 375px) {
+            .globalFooter .footerFlex .colOne .footLocLinks h4 .footLocIcon {
+              font-size: 12px; } }
       .globalFooter .footerFlex .colOne .footLocLinks p {
         font-size: 18px;
         font-weight: lighter;
@@ -424,6 +449,9 @@
           @media only screen and (max-width: 425px) {
             .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ p {
               padding-top: 4px; } }
+          @media only screen and (max-width: 375px) {
+            .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ p {
+              font-size: 10px; } }
         .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ .btnSpace {
           margin-top: 20px; }
           @media only screen and (max-width: 1200px) {
@@ -435,6 +463,9 @@
           @media only screen and (max-width: 600px) {
             .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ .btnSpace {
               margin-top: 6px; } }
+          @media only screen and (max-width: 375px) {
+            .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ .btnSpace {
+              margin-top: 0px; } }
         .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ a {
           font-size: 18px;
           font-weight: lighter;
@@ -450,6 +481,9 @@
           @media only screen and (max-width: 600px) {
             .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ a {
               font-size: 9px; } }
+          @media only screen and (max-width: 375px) {
+            .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ a {
+              padding-top: 6px; } }
         .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ a:hover {
           color: #62adc2; }
     .globalFooter .footerFlex .colThree {
@@ -496,6 +530,9 @@
             @media only screen and (max-width: 425px) {
               .globalFooter .footerFlex .colThree .otherLinks .useLinks li a {
                 font-size: 12px; } }
+            @media only screen and (max-width: 375px) {
+              .globalFooter .footerFlex .colThree .otherLinks .useLinks li a {
+                font-size: 10px; } }
           .globalFooter .footerFlex .colThree .otherLinks .useLinks li a:hover {
             color: #62adc2; }
         .globalFooter .footerFlex .colThree .otherLinks .linksColTwo {
@@ -517,6 +554,9 @@
         @media only screen and (max-width: 1020px) {
           .globalFooter .footerFlex .colThree .footOptHours {
             margin-top: 50px; } }
+        @media only screen and (max-width: 375px) {
+          .globalFooter .footerFlex .colThree .footOptHours {
+            margin-top: 20px; } }
         .globalFooter .footerFlex .colThree .footOptHours h2 {
           font-family: "Open Sans", sans-serif;
           font-weight: lighter;
@@ -534,6 +574,9 @@
           @media only screen and (max-width: 425px) {
             .globalFooter .footerFlex .colThree .footOptHours h2 {
               font-size: 14px; } }
+          @media only screen and (max-width: 375px) {
+            .globalFooter .footerFlex .colThree .footOptHours h2 {
+              font-size: 12px; } }
         .globalFooter .footerFlex .colThree .footOptHours h4 {
           font-family: "Open Sans", sans-serif;
           font-size: 20px;
@@ -598,6 +641,9 @@
       .weaContain .aboutIntro {
         margin-left: 30px;
         padding-top: 40px; } }
+    @media only screen and (max-width: 375px) {
+      .weaContain .aboutIntro {
+        margin-left: 20px; } }
     .weaContain .aboutIntro .textblock {
       height: auto;
       width: 40%; }
@@ -644,6 +690,9 @@
         @media only screen and (max-width: 425px) {
           .weaContain .aboutIntro .textblock .btnContain {
             margin-left: 140px; } }
+        @media only screen and (max-width: 375px) {
+          .weaContain .aboutIntro .textblock .btnContain {
+            margin-left: 110px; } }
         .weaContain .aboutIntro .textblock .btnContain .mainRM {
           font-size: 18px;
           font-weight: lighter;
@@ -684,7 +733,7 @@
   background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/securityguard1.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   height: 100vh;
   width: 100%;
   height: 70vh;
@@ -739,6 +788,9 @@
       @media only screen and (max-width: 425px) {
         .supportContain #gridBlock h3 {
           font-size: 18px; } }
+      @media only screen and (max-width: 375px) {
+        .supportContain #gridBlock h3 {
+          font-size: 14px; } }
     .supportContain #gridBlock p {
       font-size: 18px;
       font-weight: lighter;
@@ -750,6 +802,9 @@
       @media only screen and (max-width: 425px) {
         .supportContain #gridBlock p {
           font-size: 14px; } }
+      @media only screen and (max-width: 375px) {
+        .supportContain #gridBlock p {
+          font-size: 12px; } }
 
 .hmeService {
   height: auto;
@@ -818,6 +873,9 @@
     @media only screen and (max-width: 600px) {
       .serviceNav .title {
         font-size: 22px; } }
+    @media only screen and (max-width: 375px) {
+      .serviceNav .title {
+        font-size: 16px; } }
   .serviceNav h3 {
     font-size: 30px;
     font-weight: lighter;
@@ -834,6 +892,9 @@
     @media only screen and (max-width: 425px) {
       .serviceNav h3 {
         font-size: 22px; } }
+    @media only screen and (max-width: 375px) {
+      .serviceNav h3 {
+        font-size: 18px; } }
   .serviceNav p {
     font-size: 17px;
     font-weight: lighter;
@@ -846,6 +907,9 @@
     @media only screen and (max-width: 425px) {
       .serviceNav p {
         font-size: 12px; } }
+    @media only screen and (max-width: 375px) {
+      .serviceNav p {
+        line-height: unset; } }
 
 .serviceThumbnails {
   width: 60vw;
@@ -933,7 +997,7 @@
   background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/gopro.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   height: 100vh;
   width: 100%;
   height: 50vh;
@@ -956,11 +1020,17 @@
       .videoReview .reviewText {
         width: 80%;
         padding-top: 40px; } }
+    @media only screen and (max-width: 375px) {
+      .videoReview .reviewText {
+        padding-top: 60px; } }
     .videoReview .reviewText .title {
       font-size: 26px;
       font-weight: lighter;
       color: #62adc2;
       text-transform: capitalize; }
+      @media only screen and (max-width: 375px) {
+        .videoReview .reviewText .title {
+          font-size: 18px; } }
     .videoReview .reviewText h3 {
       font-size: 40px;
       font-weight: lighter;
@@ -976,12 +1046,16 @@
       @media only screen and (max-width: 600px) {
         .videoReview .reviewText h3 {
           font-size: 24px; } }
+      @media only screen and (max-width: 375px) {
+        .videoReview .reviewText h3 {
+          font-size: 18px;
+          padding-top: 10px; } }
 
 .testimonialQuoteContain {
   background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/texture.png);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   height: 100vh;
   width: 100%;
   height: 70vh;
@@ -1021,6 +1095,9 @@
         @media only screen and (max-width: 425px) {
           .testimonialQuoteContain .quoteText .quoteForm h3 {
             font-size: 20px; } }
+        @media only screen and (max-width: 375px) {
+          .testimonialQuoteContain .quoteText .quoteForm h3 {
+            font-size: 17px; } }
       .testimonialQuoteContain .quoteText .quoteForm .inputStyle {
         height: 5vh;
         font-size: 18px;
@@ -1050,6 +1127,9 @@
         background-color: #62adc2;
         cursor: pointer;
         margin-top: 20px; }
+        @media only screen and (max-width: 375px) {
+          .testimonialQuoteContain .quoteText .quoteForm #submit {
+            width: 12vw; } }
       .testimonialQuoteContain .quoteText .quoteForm #submit:hover {
         background-color: #62adc2;
         box-shadow: 0px 4px 20px #30303092; }
@@ -1071,6 +1151,9 @@
       .testimonialQuoteContain .testimonialsContainer {
         margin-top: 10px;
         margin-right: 20px; } }
+    @media only screen and (max-width: 375px) {
+      .testimonialQuoteContain .testimonialsContainer {
+        margin-top: 0px; } }
     .testimonialQuoteContain .testimonialsContainer .title {
       font-size: 26px;
       font-weight: lighter;
@@ -1081,6 +1164,9 @@
       @media only screen and (max-width: 768px) {
         .testimonialQuoteContain .testimonialsContainer .title {
           font-size: 18px; } }
+      @media only screen and (max-width: 375px) {
+        .testimonialQuoteContain .testimonialsContainer .title {
+          font-size: 14px; } }
     .testimonialQuoteContain .testimonialsContainer h3 {
       font-size: 30px;
       font-weight: 400;
@@ -1091,6 +1177,9 @@
       @media only screen and (max-width: 768px) {
         .testimonialQuoteContain .testimonialsContainer h3 {
           font-size: 18px; } }
+      @media only screen and (max-width: 375px) {
+        .testimonialQuoteContain .testimonialsContainer h3 {
+          font-size: 14px; } }
     .testimonialQuoteContain .testimonialsContainer .testRow {
       padding-top: 60px;
       width: 100%;
@@ -1098,6 +1187,9 @@
       @media only screen and (max-width: 768px) {
         .testimonialQuoteContain .testimonialsContainer .testRow {
           padding-top: 30px; } }
+      @media only screen and (max-width: 375px) {
+        .testimonialQuoteContain .testimonialsContainer .testRow {
+          padding-top: 10px; } }
       .testimonialQuoteContain .testimonialsContainer .testRow #testSlide {
         display: none; }
       .testimonialQuoteContain .testimonialsContainer .testRow .testimonial {
@@ -1107,6 +1199,9 @@
           color: #62adc2;
           width: 100%;
           text-align: center; }
+          @media only screen and (max-width: 375px) {
+            .testimonialQuoteContain .testimonialsContainer .testRow .testimonial #testIcon {
+              font-size: 20px; } }
         .testimonialQuoteContain .testimonialsContainer .testRow .testimonial p {
           font-size: 17px;
           font-weight: lighter;
@@ -1134,6 +1229,9 @@
           @media only screen and (max-width: 768px) {
             .testimonialQuoteContain .testimonialsContainer .testRow .testimonial .user {
               font-size: 18px; } }
+          @media only screen and (max-width: 375px) {
+            .testimonialQuoteContain .testimonialsContainer .testRow .testimonial .user {
+              font-size: 14px; } }
 
 .mapContain {
   height: 70vh;
@@ -1155,7 +1253,8 @@
   margin-right: 166px; }
   @media only screen and (max-width: 600px) {
     .mapBanner {
-      margin-right: 120px; } }
+      margin-right: 120px;
+      display: none; } }
   .mapBanner .stl {
     font-size: 30px;
     font-weight: lighter;
@@ -1315,7 +1414,7 @@
   background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/chaseofficer.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   height: 100vh;
   width: 100%;
   height: 40vh; }
@@ -1358,6 +1457,12 @@
       .valuesContent #Situation,
       .valuesContent #extraMile {
         height: 50vh; } }
+    @media only screen and (max-width: 375px) {
+      .valuesContent #ourMission,
+      .valuesContent #ourVision,
+      .valuesContent #Situation,
+      .valuesContent #extraMile {
+        height: 64vh; } }
     .valuesContent #ourMission .valueImg,
     .valuesContent #ourVision .valueImg,
     .valuesContent #Situation .valueImg,
@@ -1467,6 +1572,9 @@
             font-size: 14px;
             line-height: unset;
             text-align: left; } }
+        @media only screen and (max-width: 375px) {
+          .valuesRowContainer .thumbLinks .Link p {
+            font-size: 11px; } }
     .valuesRowContainer .thumbLinks .Link:hover {
       background-color: #f7f7f7;
       transform: scale(1.1);
@@ -1583,7 +1691,7 @@
   background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/justin.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   height: 100vh;
   width: 100%; }
 
@@ -1591,7 +1699,7 @@
   background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/JH.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   height: 100vh;
   width: 100%; }
 
@@ -1599,7 +1707,7 @@
   background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/Mike.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   height: 100vh;
   width: 100%; }
 
@@ -1607,7 +1715,7 @@
   background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/mainLogo.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   height: 100vh;
   width: 100%; }
 
@@ -1650,7 +1758,7 @@
   background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/testBack.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   height: 100vh;
   width: 100%;
   background-attachment: fixed;
@@ -1710,12 +1818,15 @@
       @media only screen and (max-width: 425px) {
         .freeCons .consultationText .opnConBtn {
           margin-left: 112px; } }
+      @media only screen and (max-width: 375px) {
+        .freeCons .consultationText .opnConBtn {
+          margin-left: 90px; } }
 
 .serviceHeader {
   background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/chaseofficer.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   height: 100vh;
   width: 100%;
   height: 40vh; }
@@ -1783,6 +1894,9 @@
   width: 100%;
   transform: scale(0.9);
   transition: 0.6s; }
+  @media only screen and (max-width: 375px) {
+    .serveBlock {
+      padding-bottom: 20px; } }
   .serveBlock img {
     height: 52%;
     width: 100%;
@@ -1832,6 +1946,9 @@
     width: 26vw;
     background-color: #303030;
     position: relative; }
+    @media only screen and (max-width: 600px) {
+      .formContain .Banner {
+        display: none; } }
     .formContain .Banner .stl {
       font-size: 30px;
       font-weight: lighter;
@@ -1884,6 +2001,10 @@
   flex-direction: column;
   justify-content: unset;
   align-items: unset; }
+  @media only screen and (max-width: 600px) {
+    .contactForm {
+      width: 80%;
+      padding-bottom: 10px; } }
   .contactForm h3 {
     font-size: 30px;
     font-weight: lighter;
@@ -1891,6 +2012,12 @@
     padding-top: 30px;
     padding-left: 60px;
     text-transform: capitalize; }
+    @media only screen and (max-width: 600px) {
+      .contactForm h3 {
+        font-size: 20px;
+        width: 100%;
+        padding-left: 0px;
+        text-align: center; } }
   .contactForm #messageInput {
     height: 30vh;
     width: 86%;
@@ -1955,6 +2082,9 @@
 .lftCol {
   height: 100%;
   width: 20%; }
+  @media only screen and (max-width: 425px) {
+    .lftCol {
+      width: 26%; } }
   .lftCol .mreServices {
     height: auto;
     width: 100%;
@@ -1976,6 +2106,12 @@
       width: 100%;
       padding: 10px 0 10px 10px;
       border-top: 3px solid #f5f5f5; }
+      @media only screen and (max-width: 768px) {
+        .lftCol .mreServices a {
+          font-size: 16px; } }
+      @media only screen and (max-width: 600px) {
+        .lftCol .mreServices a {
+          font-size: 12px; } }
     .lftCol .mreServices a:hover {
       background-image: url(../imgs/texture.png);
       border: 2px solid #62adc2;
@@ -1993,6 +2129,16 @@
       width: 90%;
       text-align: center;
       padding: 20px; }
+      @media only screen and (max-width: 1020px) {
+        .lftCol .testimonialThumbnail p {
+          width: 100%;
+          font-size: 14px; } }
+      @media only screen and (max-width: 600px) {
+        .lftCol .testimonialThumbnail p {
+          font-size: 12px; } }
+      @media only screen and (max-width: 425px) {
+        .lftCol .testimonialThumbnail p {
+          font-size: 10px; } }
     .lftCol .testimonialThumbnail h4 {
       font-family: "Open Sans", sans-serif;
       font-size: 17px;
@@ -2012,12 +2158,33 @@
       color: #303030;
       padding-top: 10px;
       padding-left: 20px; }
+      @media only screen and (max-width: 1020px) {
+        .lftCol .miniContact h4 {
+          padding-left: 14px;
+          font-size: 16px; } }
+      @media only screen and (max-width: 768px) {
+        .lftCol .miniContact h4 {
+          font-size: 14px; } }
+      @media only screen and (max-width: 600px) {
+        .lftCol .miniContact h4 {
+          font-size: 10px; } }
     .lftCol .miniContact p {
       font-family: "Open Sans", sans-serif;
       font-size: 17px;
       font-weight: lighter;
       line-height: 22px;
       padding: 10px 0 10px 20px; }
+      @media only screen and (max-width: 1020px) {
+        .lftCol .miniContact p {
+          font-size: 14px; } }
+      @media only screen and (max-width: 768px) {
+        .lftCol .miniContact p {
+          font-size: 12px;
+          text-align: center;
+          padding-left: 0px; } }
+      @media only screen and (max-width: 600px) {
+        .lftCol .miniContact p {
+          font-size: 10px; } }
     .lftCol .miniContact .miniLoc {
       font-family: "Open Sans", sans-serif;
       font-size: 18px;
@@ -2026,6 +2193,14 @@
       color: #303030;
       padding-left: 20px;
       width: 100%; }
+      @media only screen and (max-width: 768px) {
+        .lftCol .miniContact .miniLoc {
+          padding-left: 40px;
+          font-size: 16px; } }
+      @media only screen and (max-width: 600px) {
+        .lftCol .miniContact .miniLoc {
+          padding-left: 20px;
+          font-size: 14px; } }
     .lftCol .miniContact .miniLoc:hover {
       color: #62adc2; }
 
@@ -2048,6 +2223,9 @@
     font-weight: lighter;
     color: #303030;
     text-transform: capitalize; }
+    @media only screen and (max-width: 425px) {
+      .serviceOverview h2 {
+        font-size: 22px; } }
   .serviceOverview .underline {
     height: 2px;
     width: 90px;
@@ -2059,17 +2237,23 @@
       font-family: "Open Sans", sans-serif;
       font-size: 18px;
       color: #62adc2; }
+      @media only screen and (max-width: 425px) {
+        .serviceOverview h4 strong {
+          font-size: 14px; } }
   .serviceOverview p {
     font-family: "Open Sans", sans-serif;
     font-size: 17px;
     color: #303030;
     line-height: 28px; }
+    @media only screen and (max-width: 425px) {
+      .serviceOverview p {
+        font-size: 14px; } }
 
 .photoLink {
   background: linear-gradient(to bottom, #30303046, #30303046), url(../imgs/consultPhoto.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   height: 100vh;
   width: 100%;
   height: 40vh;
@@ -2078,6 +2262,9 @@
   .photoLink img {
     height: 40vh;
     width: 100%; }
+    @media only screen and (max-width: 425px) {
+      .photoLink img {
+        height: 20vh; } }
   .photoLink .consultText {
     margin-top: -8px;
     height: auto;
@@ -2085,18 +2272,34 @@
     background-color: #e7e7e7;
     text-align: center;
     padding: 10px 0 10px 0; }
+    @media only screen and (max-width: 425px) {
+      .photoLink .consultText {
+        height: 22vh;
+        padding-top: 30px; } }
     .photoLink .consultText h4 {
       font-family: "Open Sans", sans-serif;
       font-size: 20px;
       font-weight: lighter;
       color: #303030;
       text-transform: capitalize; }
+      @media only screen and (max-width: 1020px) {
+        .photoLink .consultText h4 {
+          font-size: 14px; } }
+      @media only screen and (max-width: 425px) {
+        .photoLink .consultText h4 {
+          font-size: 12px;
+          padding-bottom: 20px;
+          padding-left: 12px;
+          width: 90%; } }
     .photoLink .consultText p {
       font-family: "Open Sans", sans-serif;
       font-size: 18px;
       text-transform: capitalize;
       color: #62adc2;
       cursor: pointer; }
+      @media only screen and (max-width: 425px) {
+        .photoLink .consultText p {
+          font-size: 12px; } }
 
 .researchAnalysis {
   height: auto;
@@ -2108,11 +2311,17 @@
     font-weight: lighter;
     color: #303030;
     text-transform: capitalize; }
+    @media only screen and (max-width: 425px) {
+      .researchAnalysis h2 {
+        font-size: 22px; } }
   .researchAnalysis p {
     font-family: "Open Sans", sans-serif;
     font-size: 17px;
     color: #303030;
     line-height: 28px; }
+    @media only screen and (max-width: 425px) {
+      .researchAnalysis p {
+        font-size: 14px; } }
   .researchAnalysis .chaseCheckmark {
     height: auto;
     width: 100%;
@@ -2134,6 +2343,9 @@
         color: #303030;
         text-align: center;
         text-transform: capitalize; }
+        @media only screen and (max-width: 425px) {
+          .researchAnalysis .chaseCheckmark .analysis h3 {
+            font-size: 14px; } }
   .researchAnalysis .resultBox {
     height: auto;
     width: 98%;
@@ -2146,6 +2358,9 @@
       font-weight: lighter;
       color: #303030;
       width: 100%; }
+      @media only screen and (max-width: 425px) {
+        .researchAnalysis .resultBox p {
+          font-size: 14px; } }
 
 .abtConModule {
   display: none;
@@ -2166,12 +2381,52 @@
     border: 4px solid #62adc2;
     box-shadow: 0px 4px 20px #30303092;
     transition: 0.6s; }
+    @media only screen and (max-width: 1020px) {
+      .abtConModule .consultationForm {
+        margin-left: 250px; } }
+    @media only screen and (max-width: 768px) {
+      .abtConModule .consultationForm {
+        margin-left: 200px; } }
+    @media only screen and (max-width: 600px) {
+      .abtConModule .consultationForm {
+        margin-left: 160px; } }
+    @media only screen and (max-width: 425px) {
+      .abtConModule .consultationForm {
+        width: 90%;
+        margin-left: 20px; } }
+    .abtConModule .consultationForm .concloseBtn {
+      cursor: pointer;
+      font-size: 40px;
+      float: right;
+      margin-right: 20px;
+      transition: 0.6s; }
+      @media only screen and (max-width: 1200px) {
+        .abtConModule .consultationForm .concloseBtn {
+          font-size: 30px; } }
+    .abtConModule .consultationForm .concloseBtn:hover {
+      color: #62adc2; }
     .abtConModule .consultationForm h2 {
       font-family: "Open Sans", sans-serif;
       font-size: 26px;
       width: 100%;
       padding-top: 40px;
       padding-left: 64px; }
+      @media only screen and (max-width: 1200px) {
+        .abtConModule .consultationForm h2 {
+          font-size: 22px;
+          text-align: center;
+          padding-left: 0px; } }
+      @media only screen and (max-width: 1020px) {
+        .abtConModule .consultationForm h2 {
+          font-size: 20px; } }
+      @media only screen and (max-width: 768px) {
+        .abtConModule .consultationForm h2 {
+          font-size: 15px;
+          padding-left: 10px; } }
+      @media only screen and (max-width: 600px) {
+        .abtConModule .consultationForm h2 {
+          padding-left: 40px;
+          text-align: left; } }
     .abtConModule .consultationForm .inputStyle {
       display: block;
       height: 5vh;
@@ -2183,6 +2438,9 @@
       border: none;
       border-bottom: 1px solid #dedddd;
       background: transparent; }
+      @media only screen and (max-width: 1200px) {
+        .abtConModule .consultationForm .inputStyle {
+          margin-left: 30px; } }
     .abtConModule .consultationForm .sendConsult {
       height: 40px;
       width: 120px;
@@ -2194,6 +2452,21 @@
       margin-left: 280px;
       margin-top: 20px;
       cursor: pointer; }
+      @media only screen and (max-width: 1200px) {
+        .abtConModule .consultationForm .sendConsult {
+          margin-left: 220px; } }
+      @media only screen and (max-width: 1020px) {
+        .abtConModule .consultationForm .sendConsult {
+          margin-left: 180px; } }
+      @media only screen and (max-width: 768px) {
+        .abtConModule .consultationForm .sendConsult {
+          margin-left: 130px; } }
+      @media only screen and (max-width: 600px) {
+        .abtConModule .consultationForm .sendConsult {
+          margin-left: 80px; } }
+      @media only screen and (max-width: 425px) {
+        .abtConModule .consultationForm .sendConsult {
+          margin-left: 120px; } }
 
 * {
   margin: 0;

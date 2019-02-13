@@ -34,6 +34,9 @@
     @include Mobile {
       height: 50vh;
     }
+    @include medMobile {
+      height: 64vh;
+    }
     .valueImg {
       height: 100%;
       width: 30%;
@@ -128,6 +131,9 @@
           font-size: 14px;
           line-height: unset;
           text-align: left;
+        }
+        @include medMobile {
+          font-size: 11px;
         }
       }
     }
@@ -372,6 +378,9 @@
       }
       @include Mobile {
         margin-left: 112px;
+      }
+      @include medMobile {
+        margin-left: 90px;
       }
     }
   }

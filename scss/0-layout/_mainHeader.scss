@@ -62,6 +62,9 @@
             @include lgMobile {
               font-size: 35px;
             }
+            @include medMobile {
+              font-size: 28px;
+            }
             img {
               height: 60px;
               width: 70px;
@@ -89,6 +92,10 @@
               letter-spacing: 4px;
               margin-left: 0px;
             }
+            @include medMobile {
+              font-size: 20px;
+              padding-top: 11px;
+            }
           }
         }
       }
@@ -114,6 +121,7 @@
         @include medMobile {
           @include Display(column, unset, unset);
           text-align: center;
+          padding-top: 40px;
         }
         .headerLink {
           font-family: $primary-font;
@@ -176,6 +184,10 @@
           width: 20%;
           padding: 6px 12px 6px 12px;
           //Responsive
+          @include Tablet {
+            font-size: 17px;
+            margin-left: 4%;
+          }
           @include lgMobile {
             font-size: 14px;
           }

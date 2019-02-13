@@ -3,7 +3,7 @@
   background: linear-gradient(to bottom, #30303046, #30303046), $showcase;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   height: 100vh;
   width: 100%;
 }

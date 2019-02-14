@@ -68,7 +68,7 @@
           @media only screen and (max-width: 600px) {
             .headerContain .navContainer .rowOne .headerLogo .logoText h1 {
               font-size: 35px; } }
-          @media only screen and (max-width: 375px) {
+          @media only screen and (max-width: 380px) {
             .headerContain .navContainer .rowOne .headerLogo .logoText h1 {
               font-size: 28px; } }
           .headerContain .navContainer .rowOne .headerLogo .logoText h1 img {
@@ -94,7 +94,7 @@
               font-size: 26px;
               letter-spacing: 4px;
               margin-left: 0px; } }
-          @media only screen and (max-width: 375px) {
+          @media only screen and (max-width: 380px) {
             .headerContain .navContainer .rowOne .headerLogo .logoText h4 {
               font-size: 20px;
               padding-top: 11px; } }
@@ -119,7 +119,7 @@
       @media only screen and (max-width: 425px) {
         .headerContain .navContainer .rowOne .headerContact {
           padding-top: 20px; } }
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 380px) {
         .headerContain .navContainer .rowOne .headerContact {
           display: flex;
           flex-direction: column;
@@ -141,7 +141,7 @@
             font-size: 14px; } }
       .headerContain .navContainer .rowOne .headerContact .headerEmail {
         padding-left: 30px; }
-        @media only screen and (max-width: 375px) {
+        @media only screen and (max-width: 380px) {
           .headerContain .navContainer .rowOne .headerContact .headerEmail {
             padding-left: 0px; } }
     .headerContain .navContainer .rowTwo {
@@ -190,7 +190,7 @@
               font-size: 14px;
               margin-left: 0%;
               width: 10%; } }
-          @media only screen and (max-width: 375px) {
+          @media only screen and (max-width: 380px) {
             .headerContain .navContainer .rowTwo .mainMenu a {
               font-size: 11px; } }
       .headerContain .navContainer .rowTwo .headSocIcon {
@@ -206,7 +206,7 @@
         @media only screen and (max-width: 425px) {
           .headerContain .navContainer .rowTwo .headSocIcon {
             margin-top: 10px; } }
-        @media only screen and (max-width: 375px) {
+        @media only screen and (max-width: 380px) {
           .headerContain .navContainer .rowTwo .headSocIcon {
             font-size: 16px; } }
       .headerContain .navContainer .rowTwo .headSocIcon:hover {
@@ -297,7 +297,7 @@
         @media only screen and (max-width: 425px) {
           .globalFooter .footerFlex .colOne .Logo h2 {
             font-size: 30px; } }
-        @media only screen and (max-width: 375px) {
+        @media only screen and (max-width: 380px) {
           .globalFooter .footerFlex .colOne .Logo h2 {
             font-size: 24px; } }
         .globalFooter .footerFlex .colOne .Logo h2 img {
@@ -311,7 +311,7 @@
             .globalFooter .footerFlex .colOne .Logo h2 img {
               height: 30px;
               width: 30px; } }
-          @media only screen and (max-width: 375px) {
+          @media only screen and (max-width: 380px) {
             .globalFooter .footerFlex .colOne .Logo h2 img {
               height: 20px;
               width: 20px; } }
@@ -356,7 +356,7 @@
         @media only screen and (max-width: 425px) {
           .globalFooter .footerFlex .colOne .footLocLinks h4 {
             font-size: 12px; } }
-        @media only screen and (max-width: 375px) {
+        @media only screen and (max-width: 380px) {
           .globalFooter .footerFlex .colOne .footLocLinks h4 {
             margin-top: 30px; } }
         .globalFooter .footerFlex .colOne .footLocLinks h4 .footLocIcon {
@@ -365,7 +365,7 @@
           @media only screen and (max-width: 768px) {
             .globalFooter .footerFlex .colOne .footLocLinks h4 .footLocIcon {
               padding-right: 10px; } }
-          @media only screen and (max-width: 375px) {
+          @media only screen and (max-width: 380px) {
             .globalFooter .footerFlex .colOne .footLocLinks h4 .footLocIcon {
               font-size: 12px; } }
       .globalFooter .footerFlex .colOne .footLocLinks p {
@@ -449,7 +449,7 @@
           @media only screen and (max-width: 425px) {
             .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ p {
               padding-top: 4px; } }
-          @media only screen and (max-width: 375px) {
+          @media only screen and (max-width: 380px) {
             .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ p {
               font-size: 10px; } }
         .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ .btnSpace {
@@ -463,7 +463,7 @@
           @media only screen and (max-width: 600px) {
             .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ .btnSpace {
               margin-top: 6px; } }
-          @media only screen and (max-width: 375px) {
+          @media only screen and (max-width: 380px) {
             .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ .btnSpace {
               margin-top: 0px; } }
         .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ a {
@@ -481,7 +481,7 @@
           @media only screen and (max-width: 600px) {
             .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ a {
               font-size: 9px; } }
-          @media only screen and (max-width: 375px) {
+          @media only screen and (max-width: 380px) {
             .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ a {
               padding-top: 6px; } }
         .globalFooter .footerFlex .colTwo .servminiThumb .footmreServ a:hover {
@@ -530,7 +530,7 @@
             @media only screen and (max-width: 425px) {
               .globalFooter .footerFlex .colThree .otherLinks .useLinks li a {
                 font-size: 12px; } }
-            @media only screen and (max-width: 375px) {
+            @media only screen and (max-width: 380px) {
               .globalFooter .footerFlex .colThree .otherLinks .useLinks li a {
                 font-size: 10px; } }
           .globalFooter .footerFlex .colThree .otherLinks .useLinks li a:hover {
@@ -554,7 +554,7 @@
         @media only screen and (max-width: 1020px) {
           .globalFooter .footerFlex .colThree .footOptHours {
             margin-top: 50px; } }
-        @media only screen and (max-width: 375px) {
+        @media only screen and (max-width: 380px) {
           .globalFooter .footerFlex .colThree .footOptHours {
             margin-top: 20px; } }
         .globalFooter .footerFlex .colThree .footOptHours h2 {
@@ -574,7 +574,7 @@
           @media only screen and (max-width: 425px) {
             .globalFooter .footerFlex .colThree .footOptHours h2 {
               font-size: 14px; } }
-          @media only screen and (max-width: 375px) {
+          @media only screen and (max-width: 380px) {
             .globalFooter .footerFlex .colThree .footOptHours h2 {
               font-size: 12px; } }
         .globalFooter .footerFlex .colThree .footOptHours h4 {
@@ -641,7 +641,7 @@
       .weaContain .aboutIntro {
         margin-left: 30px;
         padding-top: 40px; } }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 380px) {
       .weaContain .aboutIntro {
         margin-left: 20px; } }
     .weaContain .aboutIntro .textblock {
@@ -690,7 +690,7 @@
         @media only screen and (max-width: 425px) {
           .weaContain .aboutIntro .textblock .btnContain {
             margin-left: 140px; } }
-        @media only screen and (max-width: 375px) {
+        @media only screen and (max-width: 380px) {
           .weaContain .aboutIntro .textblock .btnContain {
             margin-left: 110px; } }
         .weaContain .aboutIntro .textblock .btnContain .mainRM {
@@ -788,7 +788,7 @@
       @media only screen and (max-width: 425px) {
         .supportContain #gridBlock h3 {
           font-size: 18px; } }
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 380px) {
         .supportContain #gridBlock h3 {
           font-size: 14px; } }
     .supportContain #gridBlock p {
@@ -802,7 +802,7 @@
       @media only screen and (max-width: 425px) {
         .supportContain #gridBlock p {
           font-size: 14px; } }
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 380px) {
         .supportContain #gridBlock p {
           font-size: 12px; } }
 
@@ -873,7 +873,7 @@
     @media only screen and (max-width: 600px) {
       .serviceNav .title {
         font-size: 22px; } }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 380px) {
       .serviceNav .title {
         font-size: 16px; } }
   .serviceNav h3 {
@@ -892,7 +892,7 @@
     @media only screen and (max-width: 425px) {
       .serviceNav h3 {
         font-size: 22px; } }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 380px) {
       .serviceNav h3 {
         font-size: 18px; } }
   .serviceNav p {
@@ -907,7 +907,7 @@
     @media only screen and (max-width: 425px) {
       .serviceNav p {
         font-size: 12px; } }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 380px) {
       .serviceNav p {
         line-height: unset; } }
 
@@ -1020,7 +1020,7 @@
       .videoReview .reviewText {
         width: 80%;
         padding-top: 40px; } }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 380px) {
       .videoReview .reviewText {
         padding-top: 60px; } }
     .videoReview .reviewText .title {
@@ -1028,7 +1028,7 @@
       font-weight: lighter;
       color: #62adc2;
       text-transform: capitalize; }
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 380px) {
         .videoReview .reviewText .title {
           font-size: 18px; } }
     .videoReview .reviewText h3 {
@@ -1046,7 +1046,7 @@
       @media only screen and (max-width: 600px) {
         .videoReview .reviewText h3 {
           font-size: 24px; } }
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 380px) {
         .videoReview .reviewText h3 {
           font-size: 18px;
           padding-top: 10px; } }
@@ -1095,7 +1095,7 @@
         @media only screen and (max-width: 425px) {
           .testimonialQuoteContain .quoteText .quoteForm h3 {
             font-size: 20px; } }
-        @media only screen and (max-width: 375px) {
+        @media only screen and (max-width: 380px) {
           .testimonialQuoteContain .quoteText .quoteForm h3 {
             font-size: 17px; } }
       .testimonialQuoteContain .quoteText .quoteForm .inputStyle {
@@ -1127,7 +1127,7 @@
         background-color: #62adc2;
         cursor: pointer;
         margin-top: 20px; }
-        @media only screen and (max-width: 375px) {
+        @media only screen and (max-width: 380px) {
           .testimonialQuoteContain .quoteText .quoteForm #submit {
             width: 12vw; } }
       .testimonialQuoteContain .quoteText .quoteForm #submit:hover {
@@ -1151,7 +1151,7 @@
       .testimonialQuoteContain .testimonialsContainer {
         margin-top: 10px;
         margin-right: 20px; } }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 380px) {
       .testimonialQuoteContain .testimonialsContainer {
         margin-top: 0px; } }
     .testimonialQuoteContain .testimonialsContainer .title {
@@ -1164,7 +1164,7 @@
       @media only screen and (max-width: 768px) {
         .testimonialQuoteContain .testimonialsContainer .title {
           font-size: 18px; } }
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 380px) {
         .testimonialQuoteContain .testimonialsContainer .title {
           font-size: 14px; } }
     .testimonialQuoteContain .testimonialsContainer h3 {
@@ -1177,7 +1177,7 @@
       @media only screen and (max-width: 768px) {
         .testimonialQuoteContain .testimonialsContainer h3 {
           font-size: 18px; } }
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 380px) {
         .testimonialQuoteContain .testimonialsContainer h3 {
           font-size: 14px; } }
     .testimonialQuoteContain .testimonialsContainer .testRow {
@@ -1187,7 +1187,7 @@
       @media only screen and (max-width: 768px) {
         .testimonialQuoteContain .testimonialsContainer .testRow {
           padding-top: 30px; } }
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 380px) {
         .testimonialQuoteContain .testimonialsContainer .testRow {
           padding-top: 10px; } }
       .testimonialQuoteContain .testimonialsContainer .testRow #testSlide {
@@ -1199,7 +1199,7 @@
           color: #62adc2;
           width: 100%;
           text-align: center; }
-          @media only screen and (max-width: 375px) {
+          @media only screen and (max-width: 380px) {
             .testimonialQuoteContain .testimonialsContainer .testRow .testimonial #testIcon {
               font-size: 20px; } }
         .testimonialQuoteContain .testimonialsContainer .testRow .testimonial p {
@@ -1229,7 +1229,7 @@
           @media only screen and (max-width: 768px) {
             .testimonialQuoteContain .testimonialsContainer .testRow .testimonial .user {
               font-size: 18px; } }
-          @media only screen and (max-width: 375px) {
+          @media only screen and (max-width: 380px) {
             .testimonialQuoteContain .testimonialsContainer .testRow .testimonial .user {
               font-size: 14px; } }
 
@@ -1251,6 +1251,9 @@
   float: right;
   margin-top: -517px;
   margin-right: 166px; }
+  @media only screen and (max-width: 768px) {
+    .mapBanner {
+      margin-top: -558px; } }
   @media only screen and (max-width: 600px) {
     .mapBanner {
       margin-right: 120px;
@@ -1457,7 +1460,7 @@
       .valuesContent #Situation,
       .valuesContent #extraMile {
         height: 50vh; } }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 380px) {
       .valuesContent #ourMission,
       .valuesContent #ourVision,
       .valuesContent #Situation,
@@ -1572,7 +1575,7 @@
             font-size: 14px;
             line-height: unset;
             text-align: left; } }
-        @media only screen and (max-width: 375px) {
+        @media only screen and (max-width: 380px) {
           .valuesRowContainer .thumbLinks .Link p {
             font-size: 11px; } }
     .valuesRowContainer .thumbLinks .Link:hover {
@@ -1818,7 +1821,7 @@
       @media only screen and (max-width: 425px) {
         .freeCons .consultationText .opnConBtn {
           margin-left: 112px; } }
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 380px) {
         .freeCons .consultationText .opnConBtn {
           margin-left: 90px; } }
 
@@ -1894,7 +1897,7 @@
   width: 100%;
   transform: scale(0.9);
   transition: 0.6s; }
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 380px) {
     .serveBlock {
       padding-bottom: 20px; } }
   .serveBlock img {

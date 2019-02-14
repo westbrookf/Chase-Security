@@ -127,7 +127,7 @@
 }
 //Medium Mobile
 @mixin medMobile {
-  @media only screen and(max-width: 375px) {
+  @media only screen and(max-width: 380px) {
     @content;
   }
 }

@@ -672,6 +672,9 @@
   margin-top: -517px;
   margin-right: 166px;
   //Responsive
+  @include Tablet {
+    margin-top: -558px;
+  }
   @include lgMobile {
     margin-right: 120px;
     display: none;

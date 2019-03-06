@@ -498,14 +498,14 @@
         }
       }
       .inputStyle {
-        height: 5vh;
+        width: 100%;
         font-size: 18px;
         font-weight: $light-weight;
         padding-left: 6px;
         background: transparent;
         border: none;
         border-bottom: 3px solid $accent;
-        margin-top: 20px;
+        display: block;
       }
       .serviceInterest {
         position: relative;

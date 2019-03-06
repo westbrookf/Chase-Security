@@ -1099,14 +1099,14 @@
           .testimonialQuoteContain .quoteText .quoteForm h3 {
             font-size: 17px; } }
       .testimonialQuoteContain .quoteText .quoteForm .inputStyle {
-        height: 5vh;
+        width: 100%;
         font-size: 18px;
         font-weight: lighter;
         padding-left: 6px;
         background: transparent;
         border: none;
         border-bottom: 3px solid #e7e7e7;
-        margin-top: 20px; }
+        display: block; }
       .testimonialQuoteContain .quoteText .quoteForm .serviceInterest {
         position: relative;
         height: 5vh;

@@ -230,15 +230,26 @@
     </div>
     <div class="testimonialQuoteContain">
       <div class="quoteText">
-        <form class="quoteForm" method="POST" data-netlify="true">
+        <form class="quoteForm" action="POST" name="freeQuote" data-netlify="true">
           <h3>request a free quote</h3>
-          <input
-          type="text"
-          class="first inputStyle"
-          placeholder="First Name"/>
-          <input type="text" class="last inputStyle" placeholder="Last Name" />
-          <input type="text" class="formPhone inputStyle" placeholder="Phone"/>
-          <input type="email" class="formEmail inputStyle" placeholder="Email"/>
+          <div>
+            <label for="Fname">First Name</label>
+            <input
+            type="text"
+            class="first inputStyle" name="Fname"/>
+          </div>
+          <div>
+            <label for="lName">Last Name</label>
+            <input type="text" class="last inputStyle" name="lName"/>
+          </div>
+          <div>
+            <label for="conPhone">Phone</label>
+            <input type="text" class="formPhone inputStyle" name="conPhone"/>
+          </div>
+          <div>
+            <label for="email">Email</label>
+          <input type="email" class="formEmail inputStyle" name="email" required/>
+          </div>
           <select class="serviceInterest">
             <option value="uniformed">Uniformed</option>
             <option value="Private">Private</option>

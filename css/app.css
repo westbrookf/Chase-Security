@@ -2041,15 +2041,16 @@
     @media only screen and (max-width: 425px) {
       .contactForm .formRow {
         margin-left: 20px; } }
+    .contactForm .formRow label {
+      text-align: center;
+      font-size: 20px; }
     .contactForm .formRow .Input {
-      height: 5vh;
-      width: 25%;
-      padding-left: 14px;
-      font-size: 14px;
+      width: 80%;
+      font-size: 18px;
       background-color: transparent;
       border: none;
       border-bottom: 1px solid #30303092 !important;
-      margin-left: 20px; }
+      margin-left: 40px; }
       @media only screen and (max-width: 425px) {
         .contactForm .formRow .Input {
           margin-left: 0px;
@@ -2058,10 +2059,12 @@
     width: 10vw;
     background-color: #62adc2;
     color: #e7e7e7eb;
-    margin-top: 40px;
+    margin-top: 30px;
+    margin-bottom: 40px;
     margin-left: 56px;
     font-size: 18px;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    cursor: pointer; }
     @media only screen and (max-width: 768px) {
       .contactForm #submit {
         margin-left: 20px; } }
@@ -2412,7 +2415,7 @@
       font-family: "Open Sans", sans-serif;
       font-size: 26px;
       width: 100%;
-      padding-top: 40px;
+      padding-top: 20px;
       padding-left: 64px; }
       @media only screen and (max-width: 1200px) {
         .abtConModule .consultationForm h2 {
@@ -2430,12 +2433,15 @@
         .abtConModule .consultationForm h2 {
           padding-left: 40px;
           text-align: left; } }
+    .abtConModule .consultationForm .inputMargin {
+      margin-top: 10px; }
+    .abtConModule .consultationForm label {
+      margin-top: 30px;
+      margin-left: 30px; }
     .abtConModule .consultationForm .inputStyle {
       display: block;
-      height: 5vh;
-      width: 80%;
-      margin-top: 10px;
-      margin-left: 60px;
+      width: 90%;
+      margin-left: 30px;
       font-size: 18px;
       padding-left: 6px;
       border: none;

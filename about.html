@@ -301,13 +301,25 @@
       </div>
     </section>
     <div class="abtConModule" id="conModule">
-      <form class="consultationForm" id="conForm">
+      <form action="POST" data-netlify="true" name="Consultation" class="consultationForm" id="conForm">
         <div class="concloseBtn" id="modClose">&times;</div>
         <h2>Complete the form to get your free consultation</h2>
-        <input type="text" class="first inputStyle" placeholder="First Name" />
-        <input type="text" class="last inputStyle" placeholder="Last Name" />
-        <input type="number" class="formPhone inputStyle" placeholder="Phone" />
-        <input type="email" class="formEmail inputStyle" placeholder="Email" />
+        <div class="inputMargin">
+          <label for="Name">First Name</label>
+          <input type="text" class="first inputStyle" name="Name" required />
+        </div>
+        <div class="inputMargin">
+          <label for="lastName">Last Name</label>
+          <input type="text" class="last inputStyle" name="lastName" required />
+        </div>
+        <div class="inputMargin">
+          <label for="phoneNumber">Phone</label>
+          <input type="number" class="formPhone inputStyle" name="phoneNumber" required />
+        </div>
+        <div class="inputMargin">
+          <label for="email">Email</label>
+          <input type="email" class="formEmail inputStyle" name="email" required/>
+        </div>
         <button
           type="submit"
           name="get a free quote"

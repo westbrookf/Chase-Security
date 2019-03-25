@@ -2,9 +2,9 @@
   @include Display(row, center, unset);
   margin-top: 40px;
   .Banner {
-    height: 70vh;
+    @include Background(url(../imgs/texture.png));
+    height: 80vh;
     width: 26vw;
-    background-color: $bgColor;
     position: relative;
     //Responsive
     @include lgMobile {
@@ -19,7 +19,7 @@
       text-transform: capitalize;
     }
     .contactBanner {
-      padding-top: 20px;
+      padding-top: 40px;
       padding-left: 30px;
       //Responsive
       @include Tablet {
@@ -113,17 +113,24 @@
     }
     .Input {
       // display: block;
-      width: 80%;
+      width: 60%;
       font-size: 18px;
       background-color: transparent;
       border: none;
-      border-bottom: 1px solid #30303092 !important;
+      border: 1px solid #30303092 !important;
       margin-left: 40px;
+      margin-top: 20px;
       //Responsive
       @include Mobile {
         margin-left: 0px;
         width: 30%;
       }
+    }
+    .emailinput {
+      margin-left: 45px;
+    }
+    .phoneinput {
+      margin-left: 35px;
     }
   }
   #submit {
@@ -133,7 +140,7 @@
     margin-top: 30px;
     margin-bottom: 40px;
     margin-left: 56px;
-    font-size: 18px;
+    font-size: 20px;
     text-transform: capitalize;
     cursor: pointer;
     //Responsive
